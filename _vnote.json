@@ -8,6 +8,9 @@
     "sub_directories": [
         {
             "name": "qt_projects"
+        },
+        {
+            "name": "drawing"
         }
     ],
     "tags": [
