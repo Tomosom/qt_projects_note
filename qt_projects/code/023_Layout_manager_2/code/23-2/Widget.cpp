@@ -62,11 +62,19 @@ void Widget::testGridLayout2()
     TestBtn4.setMinimumSize(160, 30);
 
     layout->setSpacing(10);
+
+    // 规律 : 鼠标改动窗口大小时, 只会扩展占用行数或列数最小的窗口(widget)
+#if 0
     layout->addWidget(&TestBtn1, 0, 0, 2, 1);
     layout->addWidget(&TestBtn2, 0, 1, 2, 1);
     layout->addWidget(&TestBtn3, 2, 0, 1, 2);
     layout->addWidget(&TestBtn4, 3, 0, 1, 2);
-
+#else
+    layout->addWidget(&TestBtn1, 0, 0, 2, 2);
+    layout->addWidget(&TestBtn2, 0, 2, 2, 2);
+    layout->addWidget(&TestBtn3, 0, 4, 1, 2);
+    layout->addWidget(&TestBtn4, 1, 4, 1, 2);
+#endif
     setLayout(layout);
 }
 

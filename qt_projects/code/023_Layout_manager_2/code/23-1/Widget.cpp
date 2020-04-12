@@ -8,7 +8,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent),
     //initControl();
     //testVBoxLayout();
     //testHBoxLayout();
-    //testVHBoxLayout();
+    testVHBoxLayout();
 }
 
 void Widget::testVHBoxLayout()
