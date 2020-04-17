@@ -4,6 +4,8 @@
 #include <QtGui/QWidget>
 #include <QPushButton>
 
+#define START_TIMER 1
+
 class Widget : public QWidget
 {
     Q_OBJECT
@@ -14,8 +16,10 @@ private:
     QPushButton TestBtn4;
 
     void initControl();
+#if START_TIMER
 private slots:
     void timerTimeout();
+#endif
 public:
     Widget(QWidget *parent = 0);
     ~Widget();

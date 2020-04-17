@@ -1,7 +1,11 @@
 #include "Widget.h"
 #include <QStackedLayout>
 #include <QHBoxLayout>
+
+#if START_TIMER
 #include <QtCore>
+#endif
+
 #include <QDebug>
 
 Widget::Widget(QWidget *parent) : QWidget(parent),
@@ -15,8 +19,9 @@ void Widget::initControl()
     QStackedLayout* sLayout = new QStackedLayout();
     QHBoxLayout* hLayout = new QHBoxLayout();
     QWidget* widget = new QWidget();
+#if START_TIMER
     QTimer* timer = new QTimer(this);
-
+#endif
     TestBtn1.setText("1st Button");
     TestBtn2.setText("2rd Button");
     TestBtn3.setText("3th Button");
@@ -28,7 +33,7 @@ void Widget::initControl()
     hLayout->addWidget(&TestBtn2);
     hLayout->addWidget(&TestBtn3);
 
-    widget->setLayout(hLayout);
+    widget->setLayout(hLayout); //栈式布局管理器间接嵌套
 
     sLayout->addWidget(&TestBtn1); // 0
     sLayout->addWidget(widget); // 1
@@ -38,13 +43,18 @@ void Widget::initControl()
 
     setLayout(sLayout);
 
+#if START_TIMER
     connect(timer, SIGNAL(timeout()), this, SLOT(timerTimeout()));
-
-    timer->start(2000);
+    timer->start(2000); // 2s
+#endif
 }
 
+#if START_TIMER
 void Widget::timerTimeout()
 {
+    //qDebug() << "triggered";
+
+    //layout()这个成员函数会将当前组件所拥有的布局管理器返回
     QStackedLayout* sLayout = dynamic_cast<QStackedLayout*>(layout());
 
     if( sLayout != NULL )
@@ -54,6 +64,7 @@ void Widget::timerTimeout()
         sLayout->setCurrentIndex(index);
     }
 }
+#endif
 
 Widget::~Widget()
 {
