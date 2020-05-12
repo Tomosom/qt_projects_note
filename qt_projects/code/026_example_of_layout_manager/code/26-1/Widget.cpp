@@ -54,8 +54,19 @@ QWidget* Widget::get1stPage()
     layout->addWidget(&fLbl3, 1, 0);
     layout->addWidget(&fLbl4, 1, 1);
 
-    ret->setLayout(layout);
+    qDebug() << ret;
+    qDebug() << fLbl1.parent();
+    qDebug() << fLbl2.parent();
+    qDebug() << fLbl3.parent();
+    qDebug() << fLbl4.parent();
 
+    ret->setLayout(layout); // 父子关系在这条语句决定
+
+    qDebug() << ret;
+    qDebug() << fLbl1.parent();
+    qDebug() << fLbl2.parent();
+    qDebug() << fLbl3.parent();
+    qDebug() << fLbl4.parent();
     return ret;
 }
 
