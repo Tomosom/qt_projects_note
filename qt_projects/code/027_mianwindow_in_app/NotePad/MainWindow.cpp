@@ -6,6 +6,7 @@ MainWindow::MainWindow()
 
 }
 
+/* 使用了二阶构造 */
 MainWindow* MainWindow::NewInstance()
 {
     MainWindow* ret = new MainWindow();
@@ -51,7 +52,7 @@ bool MainWindow::initFileMenu(QMenuBar* mb)
             menu->addAction(action);    // add Action item to Menu
         }
 
-        menu->addSeparator();
+        menu->addSeparator(); // 创建分隔符
 
         ret = ret && makeAction(action, "Exit(X)", Qt::CTRL + Qt::Key_X);
 

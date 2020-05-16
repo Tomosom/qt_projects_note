@@ -20,7 +20,7 @@ private:
     bool initFileMenu(QMenuBar* mb);
     bool makeAction(QAction*& action, QString text, int key);
 public:
-    static MainWindow* NewInstance();
+    static MainWindow* NewInstance(); /* ¶þ½×¹¹Ôì */
     ~MainWindow();
 };
 
