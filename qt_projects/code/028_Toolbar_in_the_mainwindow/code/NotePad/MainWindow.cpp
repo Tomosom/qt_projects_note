@@ -50,6 +50,7 @@ bool MainWindow::initToolBar()
     bool ret = true;
     QToolBar* tb = addToolBar("Tool Bar");
 
+    /* 设置图标大小 */
     tb->setIconSize(QSize(16, 16));
 
     ret = ret && initFileToolItem(tb);
