@@ -88,7 +88,7 @@ bool MainWindow::initStatusBar()
         label->setMinimumWidth(200);
         label->setAlignment(Qt::AlignCenter);
 
-        sb->addPermanentWidget(new QLabel());
+        sb->addPermanentWidget(new QLabel()); // 以这种方式加分隔符
         sb->addPermanentWidget(&statusLbl);
         sb->addPermanentWidget(label);
     }

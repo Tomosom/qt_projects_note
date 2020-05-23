@@ -1,7 +1,7 @@
 #include "MainWindow.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
-  lineEdit(this), plainEdit(this), textEdit(this)
+  lineEdit(this), plainEdit(this), textEdit(this) // 设置3个文本编辑器的父类
 {
     resize(600, 420);
 
@@ -20,8 +20,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     textEdit.move(20, 270);
     textEdit.resize(560, 130);
     textEdit.insertPlainText("QTextEdit");
-    textEdit.insertPlainText("\n");
-    textEdit.insertHtml("<img src=\"C:\\Users\\hp\\Desktop\\D.T.png\" />");
+    textEdit.insertPlainText("\n"); // 在 html 中 "\n" 不代表换行
+    //textEdit.insertPlainText("<img src=\"C:\\Users\\hp\\Desktop\\D.T.png\" />");
+    textEdit.insertHtml("<img src=\":/res/D.T.png\" />");
 }
 
 MainWindow::~MainWindow()
