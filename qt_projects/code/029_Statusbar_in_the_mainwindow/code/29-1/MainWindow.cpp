@@ -10,12 +10,16 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     QLabel* l = new QLabel("Label");
     QLineEdit* e = new QLineEdit();
     QPushButton* b = new QPushButton("Button");
-
-    sb->addPermanentWidget(l);
+#if 1
+    sb->addPermanentWidget(l); // 右半部分显示
     sb->addPermanentWidget(e);
     sb->addPermanentWidget(b);
-
-    sb->showMessage("D.T.Software");
+#else
+    sb->addWidget(l); // 左半部分显示
+    sb->addWidget(e);
+    sb->addWidget(b);
+#endif
+    sb->showMessage("D.T.Software"); // 左半部分显示
 }
 
 MainWindow::~MainWindow()
