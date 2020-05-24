@@ -4,12 +4,13 @@
 #include <QDebug>
 #include <QFileInfo>
 #include <QDateTime>
+#include <QDir>
 
 void write(QString f)
 {
     QFile file(f);
 
-    if( file.open(QIODevice::WriteOnly | QIODevice::Text) )
+    if( file.open(QIODevice::WriteOnly | QIODevice::Text) ) /* 默认是截断方式 */
     {
         file.write("D.T.Software\n");
         file.write("Delphi Tang\n");
@@ -23,7 +24,9 @@ void read(QString f)
 
     if( file.open(QIODevice::ReadOnly | QIODevice::Text) )
     {
-        QByteArray ba = file.readLine();
+        //QByteArray ba = file.readAll();     /* 全部读取 */
+        //QByteArray ba = file.read(4);         /* 读取4个字符 */
+        QByteArray ba = file.readLine();    /* 读取一行 */
         QString s(ba);
 
         qDebug() << s;
@@ -54,9 +57,16 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    write("C:/Users/hp/Desktop/test.txt");
-    read("C:/Users/hp/Desktop/test.txt");
-    info("C:/Users/hp/Desktop/test.txt");
-    
+    /* 当前路径 */
+    //qDebug() << QDir::currentPath();
+
+    //write("C:/Users/hp/Desktop/test.txt");
+    //read("C:/Users/hp/Desktop/test.txt");
+    //info("C:/Users/hp/Desktop/test.txt");
+
+    write("./test.txt");
+    read("./test.txt");
+    info("test.txt");
+
     return a.exec();
 }
