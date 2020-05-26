@@ -6,7 +6,8 @@
 
 void test_dir()
 {
-    const char* PATH = "C:/Users/hp/Desktop/QDir";
+    //const char* PATH = "C:/Users/hp/Desktop/QDir";
+    const char* PATH = "./QDir";
     QDir dir;
 
     if( !dir.exists(PATH) )
@@ -27,6 +28,8 @@ void test_dir()
     }
 }
 
+#define ERR 1
+
 unsigned int calculate_size(QString path)
 {
     QFileInfo info(path);
@@ -39,13 +42,28 @@ unsigned int calculate_size(QString path)
     else if( info.isDir() )
     {
         QDir dir(path);
+
+#if ERR
+        QStringList list = dir.entryList();
+#else
         QFileInfoList list = dir.entryInfoList();
+#endif
 
         for(int i=0; i<list.count(); i++)
         {
+#if ERR
+            if( (list[i] != ".") && (list[i] != "..") )
+#else
             if( (list[i].fileName() != ".") && (list[i].fileName() != "..") )
+#endif
             {
+#if ERR
+                qDebug() << list[i]; // 仅仅取到的是条目, 不是绝对路径
+                ret += calculate_size(list[i]);
+#else
+                qDebug() << list[i].absoluteFilePath();
                 ret += calculate_size(list[i].absoluteFilePath());
+#endif
             }
         }
     }
@@ -57,9 +75,9 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    test_dir();
+    //test_dir();
 
-    qDebug() << calculate_size("C:/Users/hp/Desktop/QDir");
-    
+    //qDebug() << calculate_size("C:/Users/hp/Desktop/QDir");
+    qDebug() << calculate_size("./QDir");
     return a.exec();
 }
