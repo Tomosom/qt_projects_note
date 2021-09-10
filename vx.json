@@ -11,7 +11,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "001_GUI_Program_principle_analysis",
             "created_time": "2020-04-06T16:05:40Z",
             "id": "0",
             "modified_time": "2020-04-06T16:05:40Z",
@@ -20,7 +20,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "002_GUI_Program_example_analysis_visual_studio",
             "created_time": "2020-04-06T16:06:05Z",
             "id": "0",
             "modified_time": "2020-04-06T16:06:05Z",
@@ -29,7 +29,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "003_The_birth_and_nature_of_QT",
             "created_time": "2020-04-06T16:06:17Z",
             "id": "0",
             "modified_time": "2020-04-06T16:06:17Z",
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "004_qt_compile_and_debug",
             "created_time": "2020-04-06T16:06:32Z",
             "id": "0",
             "modified_time": "2020-04-06T16:06:32Z",
@@ -47,7 +47,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "005_qt_creator_engineering_file",
             "created_time": "2020-04-06T16:06:45Z",
             "id": "0",
             "modified_time": "2020-04-06T16:06:45Z",
@@ -56,7 +56,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "006_window_components_and_window_types",
             "created_time": "2020-04-06T16:06:55Z",
             "id": "0",
             "modified_time": "2020-04-06T16:06:55Z",
@@ -65,7 +65,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "007_coordinate_system_in_QT",
             "created_time": "2020-04-06T16:07:08Z",
             "id": "0",
             "modified_time": "2020-04-06T16:07:08Z",
@@ -74,7 +74,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "008_calculator_interface",
             "created_time": "2020-04-06T16:07:18Z",
             "id": "0",
             "modified_time": "2020-04-06T16:07:18Z",
@@ -83,7 +83,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "009_calculator_interface_refactoring",
             "created_time": "2020-04-06T16:07:35Z",
             "id": "0",
             "modified_time": "2020-04-06T16:07:35Z",
@@ -92,7 +92,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "010_simple_message_handler",
             "created_time": "2020-04-06T16:07:47Z",
             "id": "0",
             "modified_time": "2020-04-06T16:07:47Z",
@@ -101,7 +101,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "011_QString_class",
             "created_time": "2020-04-06T16:08:00Z",
             "id": "0",
             "modified_time": "2020-04-06T16:08:00Z",
@@ -110,7 +110,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "012~014_calculator_add_algorithm",
             "created_time": "2020-04-06T16:08:44Z",
             "id": "0",
             "modified_time": "2020-04-06T16:08:44Z",
@@ -119,7 +119,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "015_Separation_of_user_interface_and_business_logic",
             "created_time": "2020-04-06T16:08:59Z",
             "id": "0",
             "modified_time": "2020-04-06T16:08:59Z",
@@ -128,7 +128,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "016_Parent-child_relationship_between_Qt_objects",
             "created_time": "2020-04-06T16:09:08Z",
             "id": "0",
             "modified_time": "2020-04-06T16:09:08Z",
@@ -137,7 +137,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "017_Dialogs_and_their_types",
             "created_time": "2020-04-06T16:09:20Z",
             "id": "0",
             "modified_time": "2020-04-06T16:09:20Z",
@@ -146,7 +146,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "018_Login_dialog_instance_analysis",
             "created_time": "2020-03-15T08:06:10Z",
             "id": "0",
             "modified_time": "2020-03-15T08:06:10Z",
@@ -155,7 +155,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "019_Standard_dialogs_in_Qt_1",
             "created_time": "2020-03-16T15:52:33Z",
             "id": "0",
             "modified_time": "2020-03-16T15:52:33Z",
@@ -164,7 +164,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "020_Standard_dialogs_in_Qt_2",
             "created_time": "2020-03-21T10:12:45Z",
             "id": "0",
             "modified_time": "2020-03-21T10:12:45Z",
@@ -173,7 +173,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "021_Standard_dialogs_in_Qt_3",
             "created_time": "2020-03-21T11:57:52Z",
             "id": "0",
             "modified_time": "2020-03-21T11:57:52Z",
@@ -182,7 +182,7 @@
             ]
         },
         {
-            "attachment_folder": "20200329004357712_13245",
+            "attachment_folder": "022_Layout_manager_1",
             "created_time": "2020-03-28T16:10:04Z",
             "id": "0",
             "modified_time": "2020-03-28T16:10:04Z",
@@ -191,7 +191,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "023_Layout_manager_2",
             "created_time": "2020-04-06T11:48:24Z",
             "id": "0",
             "modified_time": "2020-04-06T11:48:24Z",
@@ -200,7 +200,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "024_Layout_manager_3",
             "created_time": "2020-04-06T11:48:58Z",
             "id": "0",
             "modified_time": "2020-04-06T11:48:58Z",
@@ -209,7 +209,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "025_Layout_manager_4",
             "created_time": "2020-04-06T11:49:11Z",
             "id": "0",
             "modified_time": "2020-04-06T11:49:11Z",
@@ -218,7 +218,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "026_example_of_layout_manager",
             "created_time": "2020-04-06T11:49:52Z",
             "id": "0",
             "modified_time": "2020-04-06T11:49:52Z",
@@ -227,7 +227,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "027_mianwindow_in_app",
             "created_time": "2020-04-06T11:50:10Z",
             "id": "0",
             "modified_time": "2020-04-06T11:50:10Z",
@@ -236,7 +236,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "028_Toolbar_in_the_mainwindow",
             "created_time": "2020-04-06T11:50:22Z",
             "id": "0",
             "modified_time": "2020-04-06T11:50:22Z",
@@ -245,7 +245,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "029_Statusbar_in_the_mainwindow",
             "created_time": "2020-04-06T11:50:54Z",
             "id": "0",
             "modified_time": "2020-04-06T11:50:54Z",
@@ -254,7 +254,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "030_Text_editing_component_in_Qt",
             "created_time": "2020-04-06T11:51:08Z",
             "id": "0",
             "modified_time": "2020-04-06T11:51:08Z",
@@ -263,7 +263,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "031_Software_Development_Process_Description",
             "created_time": "2020-04-06T11:51:23Z",
             "id": "0",
             "modified_time": "2020-04-06T11:51:23Z",
@@ -272,7 +272,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "032_File_operations_in_Qt",
             "created_time": "2020-04-06T11:51:36Z",
             "id": "0",
             "modified_time": "2020-04-06T11:51:36Z",
@@ -281,7 +281,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "033_Text_and_data_streams",
             "created_time": "2020-04-06T11:51:48Z",
             "id": "0",
             "modified_time": "2020-04-06T11:51:48Z",
@@ -290,7 +290,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "034_Buffer_operations_and_directory_operations",
             "created_time": "2020-04-06T11:52:04Z",
             "id": "0",
             "modified_time": "2020-04-06T11:52:04Z",
@@ -299,7 +299,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "035_Data_access_in_text_editor",
             "created_time": "2020-04-06T11:52:18Z",
             "id": "0",
             "modified_time": "2020-04-06T11:52:18Z",
@@ -308,7 +308,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "036_Functional_interaction_in_text_editor",
             "created_time": "2020-04-06T11:52:29Z",
             "id": "0",
             "modified_time": "2020-04-06T11:52:29Z",
@@ -317,7 +317,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "037_Anatomy_of_QMap_and_QHash",
             "created_time": "2020-04-06T11:52:43Z",
             "id": "0",
             "modified_time": "2020-04-06T11:52:43Z",
@@ -326,7 +326,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "038_Event_handling_in_Qt_1",
             "created_time": "2020-04-06T11:52:55Z",
             "id": "0",
             "modified_time": "2020-04-06T11:52:55Z",
@@ -335,7 +335,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "039_Event_handling_in_Qt_2",
             "created_time": "2020-04-06T11:53:06Z",
             "id": "0",
             "modified_time": "2020-04-06T11:53:06Z",
@@ -344,7 +344,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "040_Anatomy_of_drag_event",
             "created_time": "2020-04-06T11:53:17Z",
             "id": "0",
             "modified_time": "2020-04-06T11:53:17Z",
@@ -353,7 +353,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "041_Implementation_of_editing_interactive_functions",
             "created_time": "2020-04-06T11:53:29Z",
             "id": "0",
             "modified_time": "2020-04-06T11:53:29Z",
@@ -362,7 +362,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "042_Text_printing_and_cursor_positioning",
             "created_time": "2020-04-06T11:53:40Z",
             "id": "0",
             "modified_time": "2020-04-06T11:53:40Z",
@@ -371,7 +371,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "043_Sending_custom_events_1",
             "created_time": "2020-04-06T11:53:51Z",
             "id": "0",
             "modified_time": "2020-04-06T11:53:51Z",
@@ -380,7 +380,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "044_Sending_custom_events_2",
             "created_time": "2020-04-06T11:54:02Z",
             "id": "0",
             "modified_time": "2020-04-06T11:54:02Z",
@@ -389,7 +389,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "045_Create_search_dialog",
             "created_time": "2020-04-06T11:54:13Z",
             "id": "0",
             "modified_time": "2020-04-06T11:54:13Z",
@@ -398,7 +398,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "046_Function_realization_of_search_dialog",
             "created_time": "2020-04-06T11:54:26Z",
             "id": "0",
             "modified_time": "2020-04-06T11:54:26Z",
@@ -407,7 +407,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "047_Color_palette_in_Qt",
             "created_time": "2020-04-06T11:54:47Z",
             "id": "0",
             "modified_time": "2020-04-06T11:54:47Z",
@@ -416,7 +416,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "048_Design_and_implementation_of_replacement_dialog",
             "created_time": "2020-04-06T11:55:01Z",
             "id": "0",
             "modified_time": "2020-04-06T11:55:01Z",
@@ -425,7 +425,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "049_Text_editor_project_continues_to_develop",
             "created_time": "2020-04-06T11:55:11Z",
             "id": "0",
             "modified_time": "2020-04-06T11:55:11Z",
@@ -434,7 +434,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "050_dialog_of_About",
             "created_time": "2020-04-06T11:55:24Z",
             "id": "0",
             "modified_time": "2020-04-06T11:55:24Z",
@@ -443,7 +443,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "051_Configuration_files_in_the_program",
             "created_time": "2020-04-06T11:55:35Z",
             "id": "0",
             "modified_time": "2020-04-06T11:55:35Z",
@@ -452,7 +452,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "052_Application_of_command_line_parameters",
             "created_time": "2020-04-06T11:55:47Z",
             "id": "0",
             "modified_time": "2020-04-06T11:55:47Z",
@@ -461,7 +461,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "053_Packaging_and_publishing_applications",
             "created_time": "2020-03-15T09:00:54Z",
             "id": "0",
             "modified_time": "2020-03-15T09:00:54Z",
@@ -470,7 +470,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "054_Multi-page_switching_component_in_Qt",
             "created_time": "2020-04-06T11:56:26Z",
             "id": "0",
             "modified_time": "2020-04-06T11:56:26Z",
@@ -479,7 +479,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "055_Model_view_design_pattern_1",
             "created_time": "2020-04-06T11:56:58Z",
             "id": "0",
             "modified_time": "2020-04-06T11:56:58Z",
@@ -488,7 +488,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "056_Model_view_design_pattern_2",
             "created_time": "2020-04-06T11:57:12Z",
             "id": "0",
             "modified_time": "2020-04-06T11:57:12Z",
@@ -497,7 +497,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "057_Model_view_design_pattern_3",
             "created_time": "2020-04-06T11:57:22Z",
             "id": "0",
             "modified_time": "2020-04-06T11:57:22Z",
@@ -506,7 +506,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "058_Custom_model_class_1",
             "created_time": "2020-04-06T11:57:33Z",
             "id": "0",
             "modified_time": "2020-04-06T11:57:33Z",
@@ -515,7 +515,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "059_Custom_model_class_2",
             "created_time": "2020-04-06T11:57:43Z",
             "id": "0",
             "modified_time": "2020-04-06T11:57:43Z",
@@ -524,7 +524,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "060_Custom_model_class_3",
             "created_time": "2020-04-06T11:57:53Z",
             "id": "0",
             "modified_time": "2020-04-06T11:57:53Z",
@@ -533,7 +533,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "061_Delegates_in_the_model_view_1",
             "created_time": "2020-04-06T12:02:19Z",
             "id": "0",
             "modified_time": "2020-04-06T12:02:19Z",
@@ -542,7 +542,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "062_Delegates_in_the_model_view_2",
             "created_time": "2020-04-06T12:02:32Z",
             "id": "0",
             "modified_time": "2020-04-06T12:02:32Z",
@@ -551,7 +551,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "063_Anatomy_of_views_and_delegates_1",
             "created_time": "2020-04-06T12:02:46Z",
             "id": "0",
             "modified_time": "2020-04-06T12:02:46Z",
@@ -560,7 +560,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "064_Anatomy_of_views_and_delegates_2",
             "created_time": "2020-04-06T12:03:04Z",
             "id": "0",
             "modified_time": "2020-04-06T12:03:04Z",
@@ -569,7 +569,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "065_Anatomy_of_signals_and_slots",
             "created_time": "2020-04-06T12:03:16Z",
             "id": "0",
             "modified_time": "2020-04-06T12:03:16Z",
@@ -578,7 +578,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "066_Basic_graphics_drawing_1",
             "created_time": "2020-04-06T12:03:26Z",
             "id": "0",
             "modified_time": "2020-04-06T12:03:26Z",
@@ -587,7 +587,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "067_Basic_graphics_drawing_2",
             "created_time": "2020-04-06T12:03:36Z",
             "id": "0",
             "modified_time": "2020-04-06T12:03:36Z",
@@ -596,7 +596,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "068_Basic_graphics_drawing_3",
             "created_time": "2020-04-06T12:03:47Z",
             "id": "0",
             "modified_time": "2020-04-06T12:03:47Z",
@@ -605,7 +605,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "069_Image_processing_and_rendering",
             "created_time": "2020-04-06T12:04:00Z",
             "id": "0",
             "modified_time": "2020-04-06T12:04:00Z",
@@ -614,7 +614,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "070_Text_drawing_skills",
             "created_time": "2020-04-06T12:04:11Z",
             "id": "0",
             "modified_time": "2020-04-06T12:04:11Z",
@@ -623,7 +623,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "071_Improvements_to_the_login_dialog",
             "created_time": "2020-04-06T12:04:21Z",
             "id": "0",
             "modified_time": "2020-04-06T12:04:21Z",
@@ -632,7 +632,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "072_The_concept_of_processes_and_threads",
             "created_time": "2020-04-06T12:04:32Z",
             "id": "0",
             "modified_time": "2020-04-06T12:04:32Z",
@@ -641,7 +641,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "073_Multithreaded_programming_in_Qt",
             "created_time": "2020-04-06T12:04:45Z",
             "id": "0",
             "modified_time": "2020-04-06T12:04:45Z",
@@ -650,7 +650,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "074_Multi-threaded_synchronization",
             "created_time": "2020-04-06T12:04:56Z",
             "id": "0",
             "modified_time": "2020-04-06T12:04:56Z",
@@ -659,7 +659,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "075_Mutex_between_multiple_threads_1",
             "created_time": "2020-04-06T12:05:06Z",
             "id": "0",
             "modified_time": "2020-04-06T12:05:06Z",
@@ -668,7 +668,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "076_Mutex_between_multiple_threads_2",
             "created_time": "2020-04-06T12:05:16Z",
             "id": "0",
             "modified_time": "2020-04-06T12:05:16Z",
@@ -677,7 +677,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "077_Analysis_and_Implementation_of_Banker_Algorithm",
             "created_time": "2020-04-06T12:05:29Z",
             "id": "0",
             "modified_time": "2020-04-06T12:05:29Z",
@@ -686,7 +686,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "078_Signals_and_slots_in_multithreading_1",
             "created_time": "2020-04-06T12:05:41Z",
             "id": "0",
             "modified_time": "2020-04-06T12:05:41Z",
@@ -695,7 +695,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "079_Signals_and_slots_in_multithreading_2",
             "created_time": "2020-04-06T12:05:53Z",
             "id": "0",
             "modified_time": "2020-04-06T12:05:53Z",
@@ -704,7 +704,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "080_Signals_and_slots_in_multithreading_3",
             "created_time": "2020-04-06T12:06:03Z",
             "id": "0",
             "modified_time": "2020-04-06T12:06:03Z",
@@ -713,7 +713,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "081_Signal_and_slot_connection",
             "created_time": "2020-04-06T12:06:14Z",
             "id": "0",
             "modified_time": "2020-04-06T12:06:14Z",
@@ -722,7 +722,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "082_Thread_lifetime_issues",
             "created_time": "2020-04-06T12:06:24Z",
             "id": "0",
             "modified_time": "2020-04-06T12:06:24Z",
@@ -731,7 +731,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "083_Another_way_to_create_threads",
             "created_time": "2020-04-06T12:06:36Z",
             "id": "0",
             "modified_time": "2020-04-06T12:06:36Z",
@@ -740,7 +740,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "084_Communication_between_multithreading_and_interface_components_1",
             "created_time": "2020-04-06T12:06:46Z",
             "id": "0",
             "modified_time": "2020-04-06T12:06:46Z",
@@ -749,7 +749,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "085_Communication_between_multithreading_and_interface_components_2",
             "created_time": "2020-04-06T12:06:57Z",
             "id": "0",
             "modified_time": "2020-04-06T12:06:57Z",
@@ -758,7 +758,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_01_Network_Programming_Fundamentals_1",
             "created_time": "2020-04-06T12:07:09Z",
             "id": "0",
             "modified_time": "2020-04-06T12:07:09Z",
@@ -767,7 +767,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_02_Network_Programming_Fundamentals_2",
             "created_time": "2020-04-06T12:07:24Z",
             "id": "0",
             "modified_time": "2020-04-06T12:07:24Z",
@@ -776,7 +776,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_03_TCP_client_programming",
             "created_time": "2020-04-06T12:07:33Z",
             "id": "0",
             "modified_time": "2020-04-06T12:07:33Z",
@@ -785,7 +785,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_04_TCP_server_programming",
             "created_time": "2020-04-06T12:07:43Z",
             "id": "0",
             "modified_time": "2020-04-06T12:07:43Z",
@@ -794,7 +794,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_05_Design_and_Implementation_of_Text_Protocol",
             "created_time": "2020-04-06T12:07:52Z",
             "id": "0",
             "modified_time": "2020-04-06T12:07:52Z",
@@ -803,7 +803,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_06_Assemble_text_protocol_object_from_byte_stream",
             "created_time": "2020-04-06T12:08:04Z",
             "id": "0",
             "modified_time": "2020-04-06T12:08:04Z",
@@ -812,7 +812,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_07_Chinese_processing_of_text_protocols",
             "created_time": "2020-04-06T12:08:14Z",
             "id": "0",
             "modified_time": "2020-04-06T12:08:14Z",
@@ -821,7 +821,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_08_Text_Protocol_Network_Application",
             "created_time": "2020-04-06T12:08:24Z",
             "id": "0",
             "modified_time": "2020-04-06T12:08:24Z",
@@ -830,7 +830,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_09_Build_a_web_chat_program_1",
             "created_time": "2020-04-06T12:08:35Z",
             "id": "0",
             "modified_time": "2020-04-06T12:08:35Z",
@@ -839,7 +839,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_10_Build_a_web_chat_program_2",
             "created_time": "2020-04-06T12:08:46Z",
             "id": "0",
             "modified_time": "2020-04-06T12:08:46Z",
@@ -848,7 +848,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_11_Build_a_web_chat_program_3",
             "created_time": "2020-04-06T12:08:58Z",
             "id": "0",
             "modified_time": "2020-04-06T12:08:58Z",
@@ -857,7 +857,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_12_Design_and_Implementation_of_Private_Chat_Mode",
             "created_time": "2020-04-06T12:09:12Z",
             "id": "0",
             "modified_time": "2020-04-06T12:09:12Z",
@@ -866,7 +866,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_13_Implementation_of_administrator_rights",
             "created_time": "2020-04-06T12:09:23Z",
             "id": "0",
             "modified_time": "2020-04-06T12:09:23Z",
@@ -875,7 +875,7 @@
             ]
         },
         {
-            "attachment_folder": "",
+            "attachment_folder": "extra_14_Improvement_of_Internet_chat_program",
             "created_time": "2020-04-06T12:09:34Z",
             "id": "0",
             "modified_time": "2020-04-06T12:09:34Z",
