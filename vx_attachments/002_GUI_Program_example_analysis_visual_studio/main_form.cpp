@@ -3,50 +3,50 @@
 #define STYLE_NAME    L"MainForm"
 #define BUTTON_ID     919
 
-/* Ö÷´°¿Ú¶¨Òåº¯Êı */
+/* ä¸»çª—å£å®šä¹‰å‡½æ•° */
 BOOL DefineMainWindow(HINSTANCE hInstance);
-/* Ö÷´°¿Ú´´½¨º¯Êı */
+/* ä¸»çª—å£åˆ›å»ºå‡½æ•° */
 HWND CreateMainWindow(HINSTANCE hInstance, wchar_t* title);
-/* Ö÷´°¿ÚÄÚ²¿ÔªËØ´´½¨º¯Êı */
+/* ä¸»çª—å£å†…éƒ¨å…ƒç´ åˆ›å»ºå‡½æ•° */
 HWND CreateButton(HWND parent, int id, wchar_t* text);
-/* Ö÷´°¿ÚÏÔÊ¾º¯Êı */
+/* ä¸»çª—å£æ˜¾ç¤ºå‡½æ•° */
 HWND DisplayMainWindow(HWND hWnd, int nCmdShow);
-/* Ö÷´°¿ÚÏûÏ¢´¦Àíº¯Êı */
+/* ä¸»çª—å£æ¶ˆæ¯å¤„ç†å‡½æ•° */
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
 
-static HWND MainWindow = NULL; // Ö÷´°¿Ú¾ä±ú±ê
+static HWND MainWindow = NULL; // ä¸»çª—å£å¥æŸ„æ ‡
 
 void App_exit()
 {
-	PostQuitMessage(0);
+    PostQuitMessage(0);
 }
 
 void Button_Handler(int id, int e)
 {
-	if ( (id == BUTTON_ID) && (e == BN_CLICKED) ) {
-		MessageBox(MainWindow, L"My button is clicked!", L"Click Message", 0);
-	}
+    if ( (id == BUTTON_ID) && (e == BN_CLICKED) ) {
+        MessageBox(MainWindow, L"My button is clicked!", L"Click Message", 0);
+    }
 }
 
 BOOL WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
     MSG Msg = {0};
 
-    /* 1.×Ô¶¨ÒåÖ÷´°¿ÚÑùÊ½ */
+    /* 1.è‡ªå®šä¹‰ä¸»çª—å£æ ·å¼ */
     if( !DefineMainWindow(hInstance) )
     {
         return FALSE;
     }
 
-    /* 2.´´½¨Ö÷´°¿Ú */
+    /* 2.åˆ›å»ºä¸»çª—å£ */
     MainWindow = CreateMainWindow(hInstance, STYLE_NAME);
 
     if( MainWindow )
     {
-        /* 3.´´½¨Ö÷´°¿ÚÖĞµÄ¿Ø¼şÔªËØ */
+        /* 3.åˆ›å»ºä¸»çª—å£ä¸­çš„æ§ä»¶å…ƒç´  */
         CreateButton(MainWindow, BUTTON_ID, L"My Button");
 
-        /* 4.ÔÚÆÁÄ»ÉÏÏÔÊ¾Ö÷´°¿Ú */
+        /* 4.åœ¨å±å¹•ä¸Šæ˜¾ç¤ºä¸»çª—å£ */
         DisplayMainWindow(MainWindow, nCmdShow);
     }
     else
@@ -54,12 +54,12 @@ BOOL WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
         return FALSE;
     }
 
-    /* 5.½øÈëÏûÏ¢Ñ­»· */
+    /* 5.è¿›å…¥æ¶ˆæ¯å¾ªç¯ */
     while( GetMessage(&Msg, NULL, NULL, NULL) )
     {
-        /* 6.·­Òë²¢×ª»»ÏµÍ³ÏûÏ¢ */
+        /* 6.ç¿»è¯‘å¹¶è½¬æ¢ç³»ç»Ÿæ¶ˆæ¯ */
         TranslateMessage(&Msg);
-        /* 7.·Ö·¢ÏûÏ¢µ½¶ÔÓ¦µÄÏûÏ¢´¦Àíº¯Êı */
+        /* 7.åˆ†å‘æ¶ˆæ¯åˆ°å¯¹åº”çš„æ¶ˆæ¯å¤„ç†å‡½æ•° */
         DispatchMessage(&Msg);
     }
 
@@ -68,20 +68,20 @@ BOOL WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
 
 BOOL DefineMainWindow(HINSTANCE hInstance)
 {
-    static WNDCLASS WndClass = {0}; // ÏµÍ³½á¹¹ÌåÀàĞÍ
-                                    // ÓÃÓÚÃèÊö´°¿ÚÑùÊ½
+    static WNDCLASS WndClass = {0}; // ç³»ç»Ÿç»“æ„ä½“ç±»å‹
+                                    // ç”¨äºæè¿°çª—å£æ ·å¼
     WndClass.style         = 0;
     WndClass.cbClsExtra    = 0;
     WndClass.cbClsExtra    = 0;
-    WndClass.hbrBackground = (HBRUSH)(COLOR_WINDOW);          // ¶¨Òå´°¿Ú±³¾°É«
-    WndClass.hCursor       = LoadCursor(NULL, IDC_ARROW);     // ¶¨ÒåÊó±êÑùÊ½
-    WndClass.hIcon         = LoadIcon(NULL, IDI_APPLICATION); // ¶¨Òå´°¿Ú×óÉÏ½ÇÍ¼±ê
-    WndClass.hInstance     = hInstance;                       // ¶¨Òå´°¿ÚÊ½ÑùÊôÓÚµ±Ç°Ó¦ÓÃ³ÌĞò
-    WndClass.lpfnWndProc   = WndProc;                         // ´°¿ÚÏûÏ¢´¦Àíº¯Êı
-    WndClass.lpszClassName = STYLE_NAME;                      // ´°¿ÚÑùÊ½Ãû
+    WndClass.hbrBackground = (HBRUSH)(COLOR_WINDOW);          // å®šä¹‰çª—å£èƒŒæ™¯è‰²
+    WndClass.hCursor       = LoadCursor(NULL, IDC_ARROW);     // å®šä¹‰é¼ æ ‡æ ·å¼
+    WndClass.hIcon         = LoadIcon(NULL, IDI_APPLICATION); // å®šä¹‰çª—å£å·¦ä¸Šè§’å›¾æ ‡
+    WndClass.hInstance     = hInstance;                       // å®šä¹‰çª—å£å¼æ ·å±äºå½“å‰åº”ç”¨ç¨‹åº
+    WndClass.lpfnWndProc   = WndProc;                         // çª—å£æ¶ˆæ¯å¤„ç†å‡½æ•°
+    WndClass.lpszClassName = STYLE_NAME;                      // çª—å£æ ·å¼å
     WndClass.lpszMenuName  = NULL;
 
-    /* ½«¶¨ÒåºÃµÄ´°¿ÚÊ½Ñù×¢²áµ½ÏµÍ³ */
+    /* å°†å®šä¹‰å¥½çš„çª—å£å¼æ ·æ³¨å†Œåˆ°ç³»ç»Ÿ */
     return RegisterClass(&WndClass);
 }
 
@@ -89,17 +89,17 @@ HWND CreateMainWindow(HINSTANCE hInstance, wchar_t* title)
 {
     HWND hwnd = NULL;
 
-    hwnd = CreateWindow(STYLE_NAME,            // Í¨¹ı¶¨ÒåºÃµÄ´°¿ÚÊ½Ñù´´½¨Ö÷´°¿Ú
-                        title,                 // Ö÷´°¿Ú±êÌâ
-                        WS_OVERLAPPEDWINDOW,   // ´´½¨ºóÖ÷´°¿ÚµÄÏÔÊ¾·ç¸ñ
-                        CW_USEDEFAULT,         // Ö÷´°¿Ú×óÉÏ½Ç x ×ø±ê
-                        CW_USEDEFAULT,         // Ö÷´°¿Ú×óÉÏ½Ç y ×ø±ê
-                        CW_USEDEFAULT,         // Ö÷´°¿Ú¿í¶È
-                        CW_USEDEFAULT,         // Ö÷´°¿Ú¸ß¶È
-                        NULL,                  // ¸¸´°¿Ú
-                        NULL,                  // ´°¿Ú²Ëµ¥À¸
-                        hInstance,             // Ö÷´°¿ÚÊôÓÚµ±Ç°Ó¦ÓÃ³ÌĞò
-                        NULL);                 // ´°¿Ú²ÎÊı
+    hwnd = CreateWindow(STYLE_NAME,            // é€šè¿‡å®šä¹‰å¥½çš„çª—å£å¼æ ·åˆ›å»ºä¸»çª—å£
+                        title,                 // ä¸»çª—å£æ ‡é¢˜
+                        WS_OVERLAPPEDWINDOW,   // åˆ›å»ºåä¸»çª—å£çš„æ˜¾ç¤ºé£æ ¼
+                        CW_USEDEFAULT,         // ä¸»çª—å£å·¦ä¸Šè§’ x åæ ‡
+                        CW_USEDEFAULT,         // ä¸»çª—å£å·¦ä¸Šè§’ y åæ ‡
+                        CW_USEDEFAULT,         // ä¸»çª—å£å®½åº¦
+                        CW_USEDEFAULT,         // ä¸»çª—å£é«˜åº¦
+                        NULL,                  // çˆ¶çª—å£
+                        NULL,                  // çª—å£èœå•æ 
+                        hInstance,             // ä¸»çª—å£å±äºå½“å‰åº”ç”¨ç¨‹åº
+                        NULL);                 // çª—å£å‚æ•°
 
     return hwnd;
 
@@ -107,8 +107,8 @@ HWND CreateMainWindow(HINSTANCE hInstance, wchar_t* title)
 
 HWND DisplayMainWindow(HWND hWnd, int nCmdShow)
 {
-    ShowWindow(hWnd,nCmdShow); // ÏÔÊ¾´°¿Ú
-    UpdateWindow(hWnd);        // Ë¢ĞÂ´°¿Ú
+    ShowWindow(hWnd,nCmdShow); // æ˜¾ç¤ºçª—å£
+    UpdateWindow(hWnd);        // åˆ·æ–°çª—å£
 
     return hWnd;
 }
@@ -118,34 +118,33 @@ HWND CreateButton(HWND parent, int id, wchar_t* text)
     HINSTANCE hInstance = (HINSTANCE)GetWindowLong(parent, GWL_HINSTANCE);
     HWND hwnd = NULL;
 
-    hwnd = CreateWindow(L"button",                               // Í¨¹ıÏµÍ³Ô¤¶¨ÒåÊ½Ñù´´½¨´°¿ÚÔªËØ
-                        text,                                    // ´°¿ÚÔªËØ±êÌâ
-                        WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,   // ´°¿ÚÔªËØµÄÏÔÊ¾·ç¸ñ
-                        50,                                      // ´°¿ÚÔªËØÔÚ´°¿ÚÖĞµÄ×óÉÏ½Ç x ×ø±ê
-                        50,                                      // ´°¿ÚÔªËØÔÚ´°¿ÚÖĞµÄ×óÉÏ½Ç y ×ø±ê
-                        200,                                     // ´°¿ÚÔªËØµÄ¿í¶È
-                        60,                                      // ´°¿ÚÔªËØµÄ¸ß¶È
-                        parent,                                  // ´°¿ÚÔªËØËùÔÚµÄ¸¸´°¿Ú
-                        (HMENU)id,                               // ´°¿ÚÔªËØ ID Öµ
-                        hInstance,                               // ´°¿ÚÔªËØÊôÓÚµ±Ç°Ó¦ÓÃ³ÌĞò
-                        NULL);                                   // ´°¿ÚÔªËØ²ÎÊı
+    hwnd = CreateWindow(L"button",                               // é€šè¿‡ç³»ç»Ÿé¢„å®šä¹‰å¼æ ·åˆ›å»ºçª—å£å…ƒç´ 
+                        text,                                    // çª—å£å…ƒç´ æ ‡é¢˜
+                        WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,   // çª—å£å…ƒç´ çš„æ˜¾ç¤ºé£æ ¼
+                        50,                                      // çª—å£å…ƒç´ åœ¨çª—å£ä¸­çš„å·¦ä¸Šè§’ x åæ ‡
+                        50,                                      // çª—å£å…ƒç´ åœ¨çª—å£ä¸­çš„å·¦ä¸Šè§’ y åæ ‡
+                        200,                                     // çª—å£å…ƒç´ çš„å®½åº¦
+                        60,                                      // çª—å£å…ƒç´ çš„é«˜åº¦
+                        parent,                                  // çª—å£å…ƒç´ æ‰€åœ¨çš„çˆ¶çª—å£
+                        (HMENU)id,                               // çª—å£å…ƒç´  ID å€¼
+                        hInstance,                               // çª—å£å…ƒç´ å±äºå½“å‰åº”ç”¨ç¨‹åº
+                        NULL);                                   // çª—å£å…ƒç´ å‚æ•°
 
-	return hwnd;
+    return hwnd;
 }
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
-	/* ´¦ÀíÍË³öÏûÏ¢ */
-	if ( message == WM_DESTROY ) {
-		App_exit();
-		
-	}
+    /* å¤„ç†é€€å‡ºæ¶ˆæ¯ */
+    if ( message == WM_DESTROY ) {
+        App_exit();
+    }
 
-	/* °´Å¥ÏûÏ¢ */
-	if (message == WM_COMMAND) {
-		Button_Handler(LOWORD(wParam), HIWORD(wParam));
-	}
+    /* æŒ‰é’®æ¶ˆæ¯ */
+    if (message == WM_COMMAND) {
+        Button_Handler(LOWORD(wParam), HIWORD(wParam));
+    }
 
-    /* µ÷ÓÃÏµÍ³Ìá¹©µÄÄ¬ÈÏÏûÏ¢´¦Àíº¯Êı */
+    /* è°ƒç”¨ç³»ç»Ÿæä¾›çš„é»˜è®¤æ¶ˆæ¯å¤„ç†å‡½æ•° */
     return DefWindowProc(hWnd, message, wParam, lParam);
 }
