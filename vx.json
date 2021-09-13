@@ -41,7 +41,7 @@
             "attachment_folder": "004_qt_compile_and_debug",
             "created_time": "2020-04-06T16:06:32Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:06:32Z",
+            "modified_time": "2021-09-12T14:23:37Z",
             "name": "004_Hello_QT.md",
             "tags": [
             ]
@@ -50,7 +50,7 @@
             "attachment_folder": "005_qt_creator_engineering_file",
             "created_time": "2020-04-06T16:06:45Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:06:45Z",
+            "modified_time": "2021-09-12T14:30:43Z",
             "name": "005_Qt_Creator工程介绍.md",
             "tags": [
             ]
@@ -59,7 +59,7 @@
             "attachment_folder": "006_window_components_and_window_types",
             "created_time": "2020-04-06T16:06:55Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:06:55Z",
+            "modified_time": "2021-09-12T14:37:03Z",
             "name": "006_窗口部件及窗口类型.md",
             "tags": [
             ]
@@ -68,7 +68,7 @@
             "attachment_folder": "007_coordinate_system_in_QT",
             "created_time": "2020-04-06T16:07:08Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:07:08Z",
+            "modified_time": "2021-09-12T14:45:12Z",
             "name": "007_Qt中的坐标系统.md",
             "tags": [
             ]
@@ -77,7 +77,7 @@
             "attachment_folder": "008_calculator_interface",
             "created_time": "2020-04-06T16:07:18Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:07:18Z",
+            "modified_time": "2021-09-12T14:54:10Z",
             "name": "008_启航_第一个应用实例.md",
             "tags": [
             ]
@@ -86,7 +86,7 @@
             "attachment_folder": "009_calculator_interface_refactoring",
             "created_time": "2020-04-06T16:07:35Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:07:35Z",
+            "modified_time": "2021-09-12T16:03:42Z",
             "name": "009_计算器界面代码重构.md",
             "tags": [
             ]
@@ -95,7 +95,7 @@
             "attachment_folder": "010_simple_message_handler",
             "created_time": "2020-04-06T16:07:47Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:07:47Z",
+            "modified_time": "2021-09-12T16:12:57Z",
             "name": "010_初探Qt中的消息处理.md",
             "tags": [
             ]
@@ -104,7 +104,7 @@
             "attachment_folder": "011_QString_class",
             "created_time": "2020-04-06T16:08:00Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:08:00Z",
+            "modified_time": "2021-09-12T16:18:01Z",
             "name": "011_Qt中的字符串类.md",
             "tags": [
             ]
@@ -113,7 +113,7 @@
             "attachment_folder": "012~014_calculator_add_algorithm",
             "created_time": "2020-04-06T16:08:44Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:08:44Z",
+            "modified_time": "2021-09-13T16:06:37Z",
             "name": "012-014_计算器核心解析算法.md",
             "tags": [
             ]
@@ -122,7 +122,7 @@
             "attachment_folder": "015_Separation_of_user_interface_and_business_logic",
             "created_time": "2020-04-06T16:08:59Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:08:59Z",
+            "modified_time": "2021-09-13T16:11:47Z",
             "name": "015_用户界面与业务逻辑的分离.md",
             "tags": [
             ]
@@ -131,7 +131,7 @@
             "attachment_folder": "016_Parent-child_relationship_between_Qt_objects",
             "created_time": "2020-04-06T16:09:08Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:09:08Z",
+            "modified_time": "2021-09-13T16:15:34Z",
             "name": "016_Qt对象间的父子关系.md",
             "tags": [
             ]
@@ -140,7 +140,7 @@
             "attachment_folder": "017_Dialogs_and_their_types",
             "created_time": "2020-04-06T16:09:20Z",
             "id": "0",
-            "modified_time": "2020-04-06T16:09:20Z",
+            "modified_time": "2021-09-13T16:21:17Z",
             "name": "017_对话框及其类型.md",
             "tags": [
             ]
