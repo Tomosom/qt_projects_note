@@ -1,0 +1,6 @@
+cmdline_compile/Makefile
+cmdline_compile/Makefile.Debug
+cmdline_compile/Makefile.Release
+cmdline_compile/cmdline_compile.pro
+cmdline_compile/debug/
+qt_creator_debug/qt_creator_debug.pro
