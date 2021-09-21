@@ -8,22 +8,31 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     Widget w;
 
-    QPushButton b(&w);  // Éú³ÉQPushButton¶ÔÏó,Æä¸¸×é¼şÎªQWidget
+#if 1
+    QPushButton b(&w); // ç”ŸæˆQPushButtonå¯¹è±¡,å…¶çˆ¶ç»„ä»¶ä¸ºQWidget
     QPushButton b1(&w);
-
-    b.setText("Button");    //ÉèÖÃÏÔÊ¾µÄ×Ö·û´®
-    b.move(10, 10);         // ÒÆ¶¯×ø±ê
-    b.resize(100, 25);      // ÉèÖÃ´óĞ¡
-
-    b1.setText("Button");    //ÉèÖÃÏÔÊ¾µÄ×Ö·û´®
-    b1.move(110, 10);         // ÒÆ¶¯×ø±ê
-    b1.resize(100, 25);      // ÉèÖÃ´óĞ¡
+    b.setText("Button");  // è®¾ç½®æ˜¾ç¤ºçš„å­—ç¬¦ä¸²
+    b.move(10, 10);       // ç§»åŠ¨åæ ‡
+    b.resize(100, 25);    // è®¾ç½®å¤§å°
+    b1.setText("Button"); // è®¾ç½®æ˜¾ç¤ºçš„å­—ç¬¦ä¸²
+    b1.move(110, 10);     // ç§»åŠ¨åæ ‡
+    b1.resize(100, 25);   // è®¾ç½®å¤§å°
+#endif
 
     w.resize(220, 300);
+
+#if 0
+    /*
+     * å½“æˆ‘ä»¬è®¾ç½®çš„å®½åº¦å¦‚æœå°äºæ“ä½œç³»ç»Ÿæ‰€éœ€è¦æ»¡è¶³çš„æœ€å°å®½åº¦æ—¶ï¼Œ
+     * ä¼šä»¥æ“ä½œç³»ç»Ÿå¯¹çª—å£è§„å®šçš„æœ€å°å®½åº¦æ¥å–ä»£è®¾å®šçš„å€¼
+     */
+    w.resize(1, 1);
+#endif
+
     w.move(120, 120);
 
     w.show();
-    
+
     qDebug()<<"QWidget : ";
     qDebug()<<w.x();
     qDebug()<<w.y();
