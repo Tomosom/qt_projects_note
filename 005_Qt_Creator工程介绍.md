@@ -69,8 +69,9 @@
 工程目录：[HelloWorld](vx_attachments\005_qt_creator_engineering_file\HelloWorld)
 
 - 新建工程 HelloWorld
-    打开 QtCreator -> 创建项目 -> QT控件项目 -> QT Gui应用
-    (构建的项目生成的中间文件和可执行文件均会自动放到另一个目录)
+    - 打开 QtCreator -> 创建项目 -> QT控件项目 -> QT Gui应用
+    - 选择基类为QMainWindow
+    > 构建的项目生成的中间文件和可执行文件均会自动放到另一个目录
 
 - 调试:
     单步跳过：执行到断点后，执行下一条语句

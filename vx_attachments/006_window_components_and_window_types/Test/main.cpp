@@ -6,28 +6,29 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
 #if 1
-    /* QWidget Ïà¹Ø¹¦ÄÜ²âÊÔ */
+    /* QWidget ç›¸å…³åŠŸèƒ½æµ‹è¯• */
     //QWidget w;
     //QWidget w(NULL, Qt::Dialog);
-    QWidget w(NULL, Qt::Window|Qt::WindowStaysOnTopHint|Qt::WindowContextHelpButtonHint);
+    //QWidget w(NULL, Qt::Window);
     //QWidget w(NULL, Qt::SplashScreen);
+    QWidget w(NULL, Qt::Window|Qt::WindowStaysOnTopHint|Qt::WindowContextHelpButtonHint);
 
     QLabel l(&w);
 
     l.setText("i am a label.");
-
-    w.setWindowTitle("tao");
-    w.resize(400, 300);
+    w.setWindowTitle("tomosom");
+    // è®¾ç½®çª—å£å±…ä¸­æ˜¾ç¤º
+    w.resize(300,  100);
+    w.move((QApplication::desktop()->width() - w.width()) / 2,
+           (QApplication::desktop()->height() - w.height()) / 2);
     w.show();
-
 #else
-    /* QLabel×÷Îª´°¿Ú,ÎŞÊµ¼ÊÒâÒå */
+    /* QLabelä½œä¸ºçª—å£,æ— å®é™…æ„ä¹‰ */
     QLabel l;
     l.setWindowTitle("tao");
     l.setText("i am a label.");
     l.show();
-
 #endif
-    
+
     return a.exec();
 }
