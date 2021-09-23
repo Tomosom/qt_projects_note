@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QWidget *w = new QWidget(NULL, Qt::WindowCloseButtonHint);  // Òş²Ø×î´ó×îĞ¡»¯°´Å¥
+    QWidget *w = new QWidget(NULL, Qt::WindowCloseButtonHint);  // éšè—æœ€å¤§æœ€å°åŒ–æŒ‰é’®
     QLineEdit *le = new QLineEdit(w);
     QPushButton *button[20] = {0};
     const char *btnText[20] = {
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
     le->move(10, 10);
     le->resize(240, 30);
-    le->setReadOnly(true);  // ÉèÖÃÎÄ±¾¿òÖ»¶Á
+    le->setReadOnly(true);  // è®¾ç½®æ–‡æœ¬æ¡†åªè¯»
 
     for(int i = 0; i < 4; i++) {
         for (int j = 0; j < 5; j++) {
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
     }
 
     w->show();
-    w->setFixedSize(w->width(), w->height());   // ¹Ì¶¨´°¿Ú´óĞ¡
+    w->setFixedSize(w->width(), w->height());   // å›ºå®šçª—å£å¤§å°
 
     ret = a.exec();
 
