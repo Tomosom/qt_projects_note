@@ -11,7 +11,7 @@ private:
     QLineEdit *m_edit;
     QPushButton *m_button[20];
 
-    // ±ÜÃâÉú³É°ë³ÉÆ·,¶ş½×¹¹Ôì·¨
+    // é¿å…ç”ŸæˆåŠæˆå“,äºŒé˜¶æ„é€ æ³•
     QCalculatorUI();
     bool construct();
 public:
