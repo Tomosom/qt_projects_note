@@ -46,7 +46,7 @@ void Sample_2()
     qDebug() << s;
 }
 
-/* 使用QT的比较操作符重载直接比较 */
+/* 浣跨敤QT鐨勬瘮杈冩搷浣滅閲嶈浇鐩存帴姣旇緝 */
 void Sample_3(QString* a, int len)
 {
     for(int i=0; i<len; i++)
@@ -90,7 +90,7 @@ int main()
 
     for(int i=0; i<5; i++)
     {
-        qDebug() << company[i];
+        qDebug() << company[i]; // Borland IBM Microsoft Oracle Tom
     }
 
     return 0;
