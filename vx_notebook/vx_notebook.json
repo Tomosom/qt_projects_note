@@ -9,7 +9,7 @@
     ],
     "image_folder": "vx_images",
     "name": "qt_projects_note",
-    "next_node_id": "2",
-    "version": "1",
+    "tag_graph": "",
+    "version": 2,
     "version_controller": "dummy.vnotex"
 }
