@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-#if 1
+#if 0
     QApplication a(argc, argv);
     int ret = -1;
 
@@ -24,8 +24,8 @@ int main(int argc, char *argv[])
 
     //c.expression("5 * 8");
     //c.expression("5 - 8 * (5-6)");
-    c.expression("(5 - 8) * (5-6)");
-    qDebug()<<c.result();
+    //c.expression("(5 - 8) * (5-6)");
+    //qDebug()<<c.result();
     return 0;
 #endif
 
