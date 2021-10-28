@@ -24,11 +24,11 @@ protected:
     bool isRight(QString s);
     int priority(QString s);
 
-    /* 匹配算法 */
-    bool match(QQueue<QString> &exp);
     /* 最终根据后缀表达式计算结果 */
     QString calculate(QQueue<QString> &exp);
     QString calculate(QString l, QString op, QString r);
+    /* 匹配算法 */
+    bool match(QQueue<QString> &exp);
     /* 中缀转后缀 */
     bool transform(QQueue<QString> &exp, QQueue<QString> &output);
     /* 分离算法 */

@@ -84,13 +84,11 @@ int QCalculatorDec::priority(QString s)
 {
     int ret = 0;
 
-    if( (s == "+") || (s == "-") )
-    {
+    if ((s == "+") || (s == "-")) {
         ret = 1;
     }
 
-    if( (s == "*") || (s == "/") )
-    {
+    if ((s == "*") || (s == "/")) {
         ret = 2;
     }
 
