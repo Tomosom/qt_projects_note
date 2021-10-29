@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-#if 0
+#if 1
     QApplication a(argc, argv);
     int ret = -1;
 
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     }
 
     return ret;
-#else
+#else // 测试代码
     QCalculatorDec c;
 
     //c.expression("5 * 8");

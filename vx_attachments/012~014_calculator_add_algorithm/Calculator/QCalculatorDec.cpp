@@ -6,7 +6,7 @@ QCalculatorDec::QCalculatorDec()
     m_exp = "";
     m_result = "";
 
-#if 1 // 单元测试代码
+#if 0 // 单元测试代码
     QQueue<QString> r = split("+9.11 + ( -3 - 1 ) * -5 ");
     //QQueue<QString> r = split("+9.11 + -3 - 1 ) * -5 ");
 
@@ -100,7 +100,7 @@ bool QCalculatorDec::expression(const QString& exp)
     bool ret = false;
 
     QQueue<QString> spExp = split(exp);
-    QQueue<QString> posExp; //
+    QQueue<QString> posExp; // 后缀表达式队列
 
     m_exp = exp;
 

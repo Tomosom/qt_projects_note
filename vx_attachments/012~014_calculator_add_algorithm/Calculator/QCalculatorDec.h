@@ -9,6 +9,7 @@
 #include <QStack>
 #include <QQueue>
 
+/* 计算十进制的四则运算表达式 */
 class QCalculatorDec
 {
 protected:
