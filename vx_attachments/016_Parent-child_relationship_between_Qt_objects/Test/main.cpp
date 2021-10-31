@@ -4,7 +4,41 @@
 #include <QDebug>
 #include <QPushButton>
 
-class MObj : public QObject
+/* é€šè¿‡QObjectå¯¹è±¡æ¥å£æ‰‹åŠ¨æ·»åŠ çˆ¶å­å…³ç³» */
+void fcTest()
+{
+    QObject *p = new QObject();
+    QObject *c1 = new QObject();
+    QObject *c2 = new QObject();
+
+    c1->setParent(p);
+    c2->setParent(p);
+
+    qDebug() << "c1: " << c1;
+    qDebug() << "c2: " << c2;
+
+    const QObjectList &list = p->children();
+    for (int i = 0; i < list.length(); i++) {
+        qDebug() << list[i];
+    }
+
+    qDebug() << "p: " << p;
+
+    qDebug() << "c1 parent: " << c1->parent();
+    qDebug() << "c2 parent: " << c2->parent();
+
+    /*
+        c1:  QObject(0x3b190)
+        c2:  QObject(0x3b0e0)
+        QObject(0x3b190)
+        QObject(0x3b0e0)
+        p:  QObject(0x3b1f0)
+        c1 parent:  QObject(0x3b1f0)
+        c2 parent:  QObject(0x3b1f0)
+     */
+}
+
+class MObj : public QObject /* QTçˆ¶å­å…³ç³»çš„ä½¿ç”¨ï¼Œéœ€ç»§æ‰¿è‡ªQObjectç±» */
 {
     QString m_name;
 public:
@@ -21,32 +55,6 @@ public:
     }
 };
 
-/* Í¨¹ıQObject¶ÔÏó½Ó¿ÚÊÖ¶¯Ìí¼Ó¸¸×Ó¹ØÏµ */
-void fcTest()
-{
-    QObject* p = new QObject();
-    QObject* c1 = new QObject();
-    QObject* c2 = new QObject();
-
-    c1->setParent(p);
-    c2->setParent(p);
-
-    qDebug() << "c1: " << c1;
-    qDebug() << "c2: " << c2;
-
-    const QObjectList& list = p->children();
-
-    for(int i=0; i<list.length(); i++)
-    {
-        qDebug() << list[i];
-    }
-
-    qDebug() << "p: " << p;
-
-    qDebug() << "c1 parent: " << c1->parent();
-    qDebug() << "c2 parent: " << c2->parent();
-}
-
 void delTest()
 {
     MObj* obj1 = new MObj("obj1");
@@ -54,38 +62,50 @@ void delTest()
     MObj* obj3 = new MObj("obj3");
     MObj* obj4 = new MObj("obj4");
 
+    /*
+     *   1
+     *  / \
+     * 2   3
+     *    /
+     *   4
+     */
     obj2->setParent(obj1);
     obj3->setParent(obj1);
     obj4->setParent(obj3);
 
     delete obj3;
-    //delete obj4; // ÈôÌí¼Ó´Ë¾ä,´úÂë»áÒòÖØ¸´delete¶øÍ£ÔÚ´Ë´¦
+    //delete obj4; // è‹¥æ·»åŠ æ­¤å¥,ä»£ç ä¼šå› é‡å¤deleteåœ¨æ­¤å¤„é”™è¯¯é€€å‡º
 
+    /* æ­¤æ—¶obj1çš„childrenåº”è¯¥åªæœ‰obj2äº† */
     const QObjectList& list = obj1->children();
-
     qDebug() << "obj2: " << obj2;
-
-    for(int i=0; i<list.length(); i++)
-    {
+    for (int i = 0; i < list.length(); i++) {
         qDebug() << list[i];
     }
 
+    /*
+        Constructor:  "obj1"
+        Constructor:  "obj2"
+        Constructor:  "obj3"
+        Constructor:  "obj4"
+        Destructor:  "obj3"
+        Destructor:  "obj4"
+        obj2:  QObject(0x1e7ef0)
+        QObject(0x1e7ef0)
+     */
 }
 
-/* Àà³ÉÔ±ÊÇ·ñÊÇÆächildren */
+/* ç±»æˆå‘˜æ˜¯å¦æ˜¯å…¶children */
 void class_new_children()
 {
-
     QPushButton *pb = new QPushButton;
-
-    QPushButton *pb1 = new QPushButton(pb); // ´Ë´¦»á pb1->setParent(pb);
+    QPushButton *pb1 = new QPushButton(pb); // æ­¤å¤„ä¼š pb1->setParent(pb);
 
     qDebug() << "parent : " << pb;
     qDebug() << "child->parent : " << pb1->parent();
 
     delete pb;
-    //delete pb1; // ÈôÌí¼Ó´Ë¾ä,´úÂë»áÒòÖØ¸´delete¶øÍ£ÔÚ´Ë´¦,²»»á´òÓ¡ÏÂÃæµÄÓï¾ä
-
+    //delete pb1; // è‹¥æ·»åŠ æ­¤å¥,ä»£ç ä¼šå› é‡å¤deleteåœ¨æ­¤å¤„é”™è¯¯é€€å‡º,ä¸ä¼šæ‰“å°ä¸‹é¢çš„è¯­å¥
     qDebug() << "over";
 }
 
@@ -95,10 +115,14 @@ int main(int argc, char *argv[])
     //QCoreApplication a(argc, argv);
     QApplication a(argc, argv);
 
+    /* test1 */
     //fcTest();
-    //delTest();
 
-    class_new_children();
+    /* test2 */
+    delTest();
+
+    /* self test */
+    //class_new_children();
 
     return a.exec();
 }
