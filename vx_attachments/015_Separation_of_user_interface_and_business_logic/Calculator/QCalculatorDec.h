@@ -1,5 +1,5 @@
 /*
- * ¹¦ÄÜ:¼ÆËãÊ®½øÖÆµÄËÄÔòÔËËã±í´ïÊ½
+ * åŠŸèƒ½:è®¡ç®—åè¿›åˆ¶çš„å››åˆ™è¿ç®—è¡¨è¾¾å¼
  */
 
 #ifndef QCALCULATORDEC_H
@@ -13,8 +13,8 @@
 class QCalculatorDec : public ICalculator
 {
 protected:
-    QString m_exp; // Ô­Ê¼µÄÓÃ»§ÊäÈëµÄËÄÔò±í´ïÊ½
-    QString m_result; //¼ÆËã½á¹û
+    QString m_exp; // åŸå§‹çš„ç”¨æˆ·è¾“å…¥çš„å››åˆ™è¡¨è¾¾å¼
+    QString m_result; //è®¡ç®—ç»“æœ
 
     bool isDigitOrDot(QChar c);
     bool isSymbol(QChar c);
@@ -25,14 +25,14 @@ protected:
     bool isRight(QString s);
     int priority(QString s);
 
-    /* Æ¥ÅäËã·¨ */
+    /* åŒ¹é…ç®—æ³• */
     bool match(QQueue<QString> &exp);
-    /* ×îÖÕ¸ù¾İºó×º±í´ïÊ½¼ÆËã½á¹û */
+    /* æœ€ç»ˆæ ¹æ®åç¼€è¡¨è¾¾å¼è®¡ç®—ç»“æœ */
     QString calculate(QQueue<QString> &exp);
     QString calculate(QString l, QString op, QString r);
-    /* ÖĞ×º×ªºó×º */
+    /* ä¸­ç¼€è½¬åç¼€ */
     bool transform(QQueue<QString> &exp, QQueue<QString> &output);
-    /* ·ÖÀëËã·¨ */
+    /* åˆ†ç¦»ç®—æ³• */
     QQueue<QString> split(const QString& exp);
 
 public:

@@ -2,7 +2,7 @@
 //#include "QCalculatorDec.h"
 #include <QDebug>
 
-QCalculatorUI::QCalculatorUI() : QWidget(NULL, Qt::WindowCloseButtonHint) // ¶¥²ã´°¿Ú½çÃæÀà
+QCalculatorUI::QCalculatorUI() : QWidget(NULL, Qt::WindowCloseButtonHint) // é¡¶å±‚çª—å£ç•Œé¢ç±»
 {
     m_cal = NULL;
     //m_edit = new QLineEdit(this);
@@ -22,7 +22,7 @@ bool QCalculatorUI::construct()
     if (m_edit != NULL) {
         m_edit->move(10, 10);
         m_edit->resize(240, 30);
-        m_edit->setReadOnly(true);  // ÉèÖÃÎÄ±¾¿òÖ»¶Á
+        m_edit->setReadOnly(true);  // è®¾ç½®æ–‡æœ¬æ¡†åªè¯»
         m_edit->setAlignment(Qt::AlignRight);
     } else {
         return false;
@@ -45,7 +45,7 @@ bool QCalculatorUI::construct()
     return ret;
 }
 
-// ¶ş½×¹¹Ôì·¨,ÒªÃ´µÃµ½Ò»¸öÍêÈ«µÄ¶ÔÏó,ÒªÃ´µÃµ½Ò»¸ö¿ÕÖ¸Õë,²»»áµÃµ½Ò»¸ö°ë³ÉÆ·¶ÔÏó
+// äºŒé˜¶æ„é€ æ³•,è¦ä¹ˆå¾—åˆ°ä¸€ä¸ªå®Œå…¨çš„å¯¹è±¡,è¦ä¹ˆå¾—åˆ°ä¸€ä¸ªç©ºæŒ‡é’ˆ,ä¸ä¼šå¾—åˆ°ä¸€ä¸ªåŠæˆå“å¯¹è±¡
 QCalculatorUI *QCalculatorUI::NewInstance()
 {
     QCalculatorUI *ret = new QCalculatorUI();
@@ -61,12 +61,12 @@ QCalculatorUI *QCalculatorUI::NewInstance()
 void QCalculatorUI::show()
 {
     QWidget::show();
-    setFixedSize(width(), height());   // ¹Ì¶¨´°¿Ú´óĞ¡
+    setFixedSize(width(), height());   // å›ºå®šçª—å£å¤§å°
 }
 
 void QCalculatorUI::onButtonClicked()
 {
-    QPushButton *btn = dynamic_cast<QPushButton*>(sender()); // µÃµ½±»µã»÷µÄ°´Å¥Ö¸Õë
+    QPushButton *btn = dynamic_cast<QPushButton*>(sender()); // å¾—åˆ°è¢«ç‚¹å‡»çš„æŒ‰é’®æŒ‡é’ˆ
     if(btn != NULL) {
         QString clickText = btn->text();
 
@@ -107,6 +107,6 @@ ICalculator *QCalculatorUI::getCalculator()
     return m_cal;
 }
 
-QCalculatorUI::~QCalculatorUI() // ¶¥²ã´°¿Ú½çÃæÀà
+QCalculatorUI::~QCalculatorUI() // é¡¶å±‚çª—å£ç•Œé¢ç±»
 {
 }

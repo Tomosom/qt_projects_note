@@ -9,7 +9,7 @@ bool QCalculator::construct()
     m_ui = QCalculatorUI::NewInstance();
 
     if (m_ui != NULL) {
-        m_ui->setCalculator(&m_cal);
+        m_ui->setCalculator(&m_cal); /* 将UI和核心算法关联在一起 */
     }
 
     return (m_ui != NULL);

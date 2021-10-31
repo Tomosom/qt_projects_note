@@ -14,7 +14,7 @@ private:
     QPushButton *m_button[20];
     ICalculator *m_cal;
 
-    // ±ÜÃâÉú³É°ë³ÉÆ·,¶ş½×¹¹Ôì·¨
+    // é¿å…ç”ŸæˆåŠæˆå“,äºŒé˜¶æ„é€ æ³•
     QCalculatorUI();
     bool construct();
 
@@ -26,7 +26,7 @@ public:
 
     void show();
 
-    // ½Ó¿Ú
+    // æ¥å£
     void setCalculator(ICalculator *cal);
     ICalculator *getCalculator();
 

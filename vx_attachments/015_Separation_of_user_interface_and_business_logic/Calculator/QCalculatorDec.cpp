@@ -251,13 +251,13 @@ QString QCalculatorDec::calculate(QQueue<QString> &exp)
         if (isNumber(e)) {
             stack.push(e);
         } else if (isOperator(e)) {
-            // 1. ´ÓÕ»ÖĞµ¯³öÓÒ²Ù×÷Êı;
+            // 1. ä»æ ˆä¸­å¼¹å‡ºå³æ“ä½œæ•°;
             QString rp = !stack.isEmpty() ? stack.pop() : "";
-            // 2. ´ÓÕ»ÖĞµ¯³ö×ó²Ù×÷Êı;
+            // 2. ä»æ ˆä¸­å¼¹å‡ºå·¦æ“ä½œæ•°;
             QString lp = !stack.isEmpty() ? stack.pop() : "";
-            // 3. ¸ù¾İ·ûºÅ½øĞĞÔËËã;
+            // 3. æ ¹æ®ç¬¦å·è¿›è¡Œè¿ç®—;
             QString result = calculate(lp, e, rp);
-            // 4. ½«ÔËËã½á¹ûÑ¹ÈëÕ»ÖĞ;
+            // 4. å°†è¿ç®—ç»“æœå‹å…¥æ ˆä¸­;
             if (result != "Error") {
                 stack.push(result);
             } else {
