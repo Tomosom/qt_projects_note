@@ -9,11 +9,11 @@ class Dialog : public QDialog
     Q_OBJECT
 protected:
     QPushButton ModalBtn;
-    QPushButton NormalBtn;
+    QPushButton ModelessBtn;
     QPushButton MixedBtn;
 protected slots:
     void ModalBtn_Clicked();
-    void NormalBtn_Clicked();
+    void ModelessBtn_Clicked();
     void MixedBtn_Clicked();
 public:
     Dialog(QWidget *parent = 0);

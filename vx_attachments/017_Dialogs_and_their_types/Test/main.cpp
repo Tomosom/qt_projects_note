@@ -8,15 +8,18 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    /* QWidget Óë QDialog µÄÇø±ğ²âÊÔ */
+    /* å®éªŒä¸€: QWidget ä¸ QDialog çš„åŒºåˆ«æµ‹è¯• */
 #if 0
 #if 0
+    /* ç°è±¡: ä¼šç”Ÿæˆä¸¤ä¸ªçª—å£è€Œä¸ä¼šåµŒå…¥ */
+    /* åŸå› : QDialogä¸èƒ½ä½œä¸ºå­éƒ¨ä»¶åµŒå…¥å…¶å®ƒå®¹å™¨ä¸­ */
     QWidget widget;
-    QDialog dialog(&widget); // »áÉú³ÉÁ½¸ö´°¿Ú¶ø²»»áÇ¶Èë
-#endif
-#if 1
+    QDialog dialog(&widget);
+#else
+    /* ç°è±¡: åªæœ‰ä¸€ä¸ªdialogçª—å£ */
+    /* åŸå› : QWidgetä½œä¸ºå­éƒ¨ä»¶åµŒå…¥åˆ°QDialogå¯¹è±¡ä¸­ */
     QDialog dialog;
-    QWidget widget(&dialog); // Ö»ÓĞÒ»¸ödialog´°¿Ú
+    QWidget widget(&dialog);
 #endif
     dialog.show();
     dialog.setWindowTitle("i am dialog");
@@ -24,18 +27,16 @@ int main(int argc, char *argv[])
     widget.setWindowTitle("i am widget");
 
     return a.exec();
-#endif
 
-#if 1
-    /* ¶Ô»°¿ò¹¦ÄÜ²âÊÔ */
-    Dialog dlg;
-#if 0
-    /* ¶Ô»°¿òÀàĞÍ²âÊÔ */
-    dlg.show();
-    return a.exec();
 #else
-    /* ·µ»ØÖµ²âÊÔ */
-    int r = dlg.exec();
+
+    /* å¯¹è¯æ¡†åŠŸèƒ½æµ‹è¯• */
+    Dialog dlg;
+#if 0 /* å®éªŒäºŒ: å¯¹è¯æ¡†ç±»å‹æµ‹è¯• */
+    dlg.show(); /* ç¬¬ä¸€ä¸ªçª—å£ï¼Œéæ¨¡æ€æ–¹å¼æ˜¾ç¤º */
+    return a.exec();
+#else /* å®éªŒä¸‰: è¿”å›å€¼æµ‹è¯• */
+    int r = dlg.exec(); /* ç¬¬ä¸€ä¸ªçª—å£ï¼Œæ¨¡æ€æ–¹å¼æ˜¾ç¤º */
     if (r == QDialog::Accepted) {
         qDebug() << "Accepted";
     } else if (r == QDialog::Rejected) {
@@ -43,10 +44,11 @@ int main(int argc, char *argv[])
     } else {
         qDebug() << r;
     }
-    //return a.exec(); // ÈôÓÃ´Ë·µ»Ø,Ôò³ÌĞò×îÖÕ±ØĞëÇ¿ÖÆ¹Ø±Õ
+    //return a.exec(); /* è‹¥ç”¨æ­¤è¿”å›,åˆ™ç¨‹åºæœ€ç»ˆå¿…é¡»å¼ºåˆ¶å…³é—­ */
     /*
-     * Èç¹ûËµÎÒÃÇÒª½«Ò»¸ö¶Ô»°¿òÒÔÄ£Ì¬¶Ô»°¿òµÄ·½Ê½ÔËĞĞµÄ»°,×îºó·µ»ØµÄ¾Í²»ÊÇa.exec()ÁË,¶øÊÇ·µ»ØÓÃ»§µÄÑ¡Ôñ
-     * a.exec()ÆäÊµ¾ÍÊÇ½øÈëÏûÏ¢Ñ­»·
+     * å¦‚æœè¯´æˆ‘ä»¬è¦å°†ä¸€ä¸ªå¯¹è¯æ¡†ä»¥æ¨¡æ€å¯¹è¯æ¡†çš„æ–¹å¼è¿è¡Œçš„è¯,
+     * æœ€åè¿”å›çš„å°±ä¸åº”è¯¥æ˜¯a.exec()äº†,è€Œåº”è¿”å›ç”¨æˆ·çš„é€‰æ‹©rå˜é‡ã€‚
+     * a.exec()å…¶å®å°±æ˜¯è¿›å…¥æ¶ˆæ¯å¾ªç¯, è‹¥è¿”å›a.exec()ï¼Œåˆ™ä¼šæœ‰ä¸¤æ¬¡æ¶ˆæ¯å¾ªç¯ã€‚
      */
     return r;
 #endif
