@@ -18,7 +18,7 @@ QLoginDialog::QLoginDialog(QWidget* parent) : QDialog(parent, Qt::WindowCloseBut
 
     PwdEdit.move(85, 65);
     PwdEdit.resize(180, 25);
-    PwdEdit.setEchoMode(QLineEdit::Password); // ÉèÖÃ±à¼­¿òÃÜÂëÏÔÊ¾Îª*ºÅ
+    PwdEdit.setEchoMode(QLineEdit::Password); /* è®¾ç½®ç¼–è¾‘æ¡†å¯†ç æ˜¾ç¤ºä¸º*å· */
 
     CancelBtn.setText("Cancel");
     CancelBtn.move(85, 110);
@@ -29,7 +29,7 @@ QLoginDialog::QLoginDialog(QWidget* parent) : QDialog(parent, Qt::WindowCloseBut
     LoginBtn.resize(85, 30);
 
     setWindowTitle("Login");
-    setFixedSize(285, 170); // ¶Ô»°¿òµÄ´óĞ¡²»¿É±ä
+    setFixedSize(285, 170); /* å¯¹è¯æ¡†çš„å¤§å°ä¸å¯å˜ */
 
     connect(&LoginBtn, SIGNAL(clicked()), this, SLOT(LoginBtn_Clicked()));
     connect(&CancelBtn, SIGNAL(clicked()), this, SLOT(CancelBtn_Clicked()));
@@ -39,10 +39,10 @@ void QLoginDialog::LoginBtn_Clicked()
 {
     qDebug() << "LoginBtn_Clicked() Begin";
 
-    m_user = UserEdit.text().trimmed(); // trimmed±íÊ¾°ÑÇ°ºóµÄ¿Õ¸ñÈ¥µô
+    m_user = UserEdit.text().trimmed(); /* trimmedè¡¨ç¤ºæŠŠå‰åçš„ç©ºæ ¼å»æ‰ */
     m_pwd = PwdEdit.text();
 
-    done(Accepted); // done()º¯Êı·µ»Ø
+    done(Accepted); /* done()å‡½æ•°è¿”å› */
 
     qDebug() << "LoginBtn_Clicked() End";
 }
