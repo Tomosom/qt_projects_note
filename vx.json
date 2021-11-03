@@ -175,7 +175,7 @@
             "attachment_folder": "019_Standard_dialogs_in_Qt_1",
             "created_time": "2020-03-16T15:52:33Z",
             "id": "21",
-            "modified_time": "2020-03-16T15:52:33Z",
+            "modified_time": "2021-11-03T15:28:29Z",
             "name": "019_Qt中的标准对话框-上.md",
             "signature": "51292134535014",
             "tags": [
@@ -185,7 +185,7 @@
             "attachment_folder": "020_Standard_dialogs_in_Qt_2",
             "created_time": "2020-03-21T10:12:45Z",
             "id": "22",
-            "modified_time": "2020-03-21T10:12:45Z",
+            "modified_time": "2021-11-03T15:29:57Z",
             "name": "020_Qt中的标准对话框-中.md",
             "signature": "20733442223974",
             "tags": [
@@ -195,7 +195,7 @@
             "attachment_folder": "021_Standard_dialogs_in_Qt_3",
             "created_time": "2020-03-21T11:57:52Z",
             "id": "23",
-            "modified_time": "2020-03-21T11:57:52Z",
+            "modified_time": "2021-11-03T15:31:11Z",
             "name": "021_Qt中的标准对话框-下.md",
             "signature": "23349077307238",
             "tags": [
@@ -205,7 +205,7 @@
             "attachment_folder": "022_Layout_manager_1",
             "created_time": "2020-03-28T16:10:04Z",
             "id": "24",
-            "modified_time": "2020-03-28T16:10:04Z",
+            "modified_time": "2021-11-03T15:32:13Z",
             "name": "022_布局管理器_1.md",
             "signature": "139119920770918",
             "tags": [
@@ -215,7 +215,7 @@
             "attachment_folder": "023_Layout_manager_2",
             "created_time": "2020-04-06T11:48:24Z",
             "id": "25",
-            "modified_time": "2020-04-06T11:48:24Z",
+            "modified_time": "2021-11-03T15:32:59Z",
             "name": "023_布局管理器_2.md",
             "signature": "62725337476966",
             "tags": [
@@ -225,7 +225,7 @@
             "attachment_folder": "024_Layout_manager_3",
             "created_time": "2020-04-06T11:48:58Z",
             "id": "26",
-            "modified_time": "2020-04-06T11:48:58Z",
+            "modified_time": "2021-11-03T15:33:57Z",
             "name": "024_布局管理器_3.md",
             "signature": "16760597475174",
             "tags": [
@@ -235,7 +235,7 @@
             "attachment_folder": "025_Layout_manager_4",
             "created_time": "2020-04-06T11:49:11Z",
             "id": "27",
-            "modified_time": "2020-04-06T11:49:11Z",
+            "modified_time": "2021-11-03T15:34:23Z",
             "name": "025_布局管理器_4.md",
             "signature": "658765082470",
             "tags": [
@@ -245,7 +245,7 @@
             "attachment_folder": "026_example_of_layout_manager",
             "created_time": "2020-04-06T11:49:52Z",
             "id": "28",
-            "modified_time": "2020-04-06T11:49:52Z",
+            "modified_time": "2021-11-03T15:35:36Z",
             "name": "026_布局管理综合实例.md",
             "signature": "1255765536614",
             "tags": [
@@ -255,7 +255,7 @@
             "attachment_folder": "027_mianwindow_in_app",
             "created_time": "2020-04-06T11:50:10Z",
             "id": "29",
-            "modified_time": "2020-04-06T11:50:10Z",
+            "modified_time": "2021-11-03T15:36:53Z",
             "name": "027_应用程序中的主窗口.md",
             "signature": "53181920145254",
             "tags": [
@@ -265,7 +265,7 @@
             "attachment_folder": "028_Toolbar_in_the_mainwindow",
             "created_time": "2020-04-06T11:50:22Z",
             "id": "30",
-            "modified_time": "2020-04-06T11:50:22Z",
+            "modified_time": "2021-11-03T15:38:03Z",
             "name": "028_主窗口中的工具栏.md",
             "signature": "74824260349798",
             "tags": [
@@ -275,7 +275,7 @@
             "attachment_folder": "029_Statusbar_in_the_mainwindow",
             "created_time": "2020-04-06T11:50:54Z",
             "id": "31",
-            "modified_time": "2020-04-06T11:50:54Z",
+            "modified_time": "2021-11-03T15:39:39Z",
             "name": "029_主窗口中的状态栏.md",
             "signature": "80386242998118",
             "tags": [
@@ -285,7 +285,7 @@
             "attachment_folder": "030_Text_editing_component_in_Qt",
             "created_time": "2020-04-06T11:51:08Z",
             "id": "32",
-            "modified_time": "2020-04-06T11:51:08Z",
+            "modified_time": "2021-11-03T15:41:11Z",
             "name": "030_Qt中的文本编辑组件.md",
             "signature": "84689800228710",
             "tags": [
@@ -295,7 +295,7 @@
             "attachment_folder": "031_Software_Development_Process_Description",
             "created_time": "2020-04-06T11:51:23Z",
             "id": "33",
-            "modified_time": "2020-04-06T11:51:23Z",
+            "modified_time": "2021-11-03T15:42:48Z",
             "name": "031_软件开发流程简介.md",
             "signature": "85450009440102",
             "tags": [
@@ -305,7 +305,7 @@
             "attachment_folder": "032_File_operations_in_Qt",
             "created_time": "2020-04-06T11:51:36Z",
             "id": "34",
-            "modified_time": "2020-04-06T11:51:36Z",
+            "modified_time": "2021-11-03T15:43:49Z",
             "name": "032_Qt中的文件操作.md",
             "signature": "23396321947494",
             "tags": [
@@ -315,7 +315,7 @@
             "attachment_folder": "033_Text_and_data_streams",
             "created_time": "2020-04-06T11:51:48Z",
             "id": "35",
-            "modified_time": "2020-04-06T11:51:48Z",
+            "modified_time": "2021-11-03T15:45:12Z",
             "name": "033_文本流和数据流.md",
             "signature": "93314094559078",
             "tags": [
@@ -325,7 +325,7 @@
             "attachment_folder": "034_Buffer_operations_and_directory_operations",
             "created_time": "2020-04-06T11:52:04Z",
             "id": "36",
-            "modified_time": "2020-04-06T11:52:04Z",
+            "modified_time": "2021-11-03T15:46:25Z",
             "name": "034_缓冲区操作与目录操作.md",
             "signature": "63442597015398",
             "tags": [
@@ -335,7 +335,7 @@
             "attachment_folder": "035_Data_access_in_text_editor",
             "created_time": "2020-04-06T11:52:18Z",
             "id": "37",
-            "modified_time": "2020-04-06T11:52:18Z",
+            "modified_time": "2021-11-03T15:47:26Z",
             "name": "035_文本编辑器中的数据存取.md",
             "signature": "49556967747430",
             "tags": [
@@ -345,7 +345,7 @@
             "attachment_folder": "036_Functional_interaction_in_text_editor",
             "created_time": "2020-04-06T11:52:29Z",
             "id": "38",
-            "modified_time": "2020-04-06T11:52:29Z",
+            "modified_time": "2021-11-03T15:48:06Z",
             "name": "036_文本编辑器中的功能交互.md",
             "signature": "8028928962406",
             "tags": [
@@ -355,7 +355,7 @@
             "attachment_folder": "037_Anatomy_of_QMap_and_QHash",
             "created_time": "2020-04-06T11:52:43Z",
             "id": "39",
-            "modified_time": "2020-04-06T11:52:43Z",
+            "modified_time": "2021-11-03T15:48:32Z",
             "name": "037_深度解析QMap与QHash.md",
             "signature": "85523023884134",
             "tags": [
@@ -365,7 +365,7 @@
             "attachment_folder": "038_Event_handling_in_Qt_1",
             "created_time": "2020-04-06T11:52:55Z",
             "id": "40",
-            "modified_time": "2020-04-06T11:52:55Z",
+            "modified_time": "2021-11-03T15:50:49Z",
             "name": "038_Qt中的事件处理-上.md",
             "signature": "110240560672614",
             "tags": [
@@ -375,7 +375,7 @@
             "attachment_folder": "039_Event_handling_in_Qt_2",
             "created_time": "2020-04-06T11:53:06Z",
             "id": "41",
-            "modified_time": "2020-04-06T11:53:06Z",
+            "modified_time": "2021-11-03T15:51:43Z",
             "name": "039_Qt中的事件处理-下.md",
             "signature": "112954980003686",
             "tags": [
@@ -515,7 +515,7 @@
             "attachment_folder": "053_Packaging_and_publishing_applications",
             "created_time": "2020-03-15T09:00:54Z",
             "id": "110",
-            "modified_time": "2020-03-15T09:00:54Z",
+            "modified_time": "2021-11-03T15:53:22Z",
             "name": "053【应用程序的打包与发布】.md",
             "signature": "118731711016806",
             "tags": [

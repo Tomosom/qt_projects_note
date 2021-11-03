@@ -1,4 +1,4 @@
-# QMap深度解析
+# 1. QMap深度解析
 - <font color=#d0d>QMap</font> 是一个以<font color=red>升序键顺序</font>存储<font color=red>键值对</font>的数据结构
     - <font color=#d0d>QMap</font> 原型为 `class QMap<K, T>` 模板
     - <font color=#d0d>QMap</font> 中的键值对根据 Key 进行了排序 (升序)
@@ -55,9 +55,9 @@
         - 当Key存在：<font color=blue>更新 Value 的值</font>
         - 当Key不存在：<font color=#d0d>插入新的键值对</font>
 
-# [<u>编程实验 QMap使用体验</u>](code/037_Anatomy_of_QMap_and_QHash)
+# 2. 编程实验 QMap使用体验
 
-# QHash深度解析
+# 3. QHash深度解析
 - <font color=#d0d>QHash</font> 是Qt中的哈希数据结构
     - <font color=#d0d>QHash</font> 原型为 `class QHash<K, T>` 模板
     - <font color=#d0d>QHash</font> 中的键值对在内部无序排列
@@ -80,9 +80,9 @@
     }
     ```
 
-# [<u>编程实验 QHash 使用体验</u>](code/037_Anatomy_of_QMap_and_QHash)
+# 4. [<u>编程实验 QHash 使用体验</u>](code/037_Anatomy_of_QMap_and_QHash)
 
-# QMap和QHash对比分析
+# 5. QMap和QHash对比分析
 - QMap 和 QHash 的接口相同，可直接替换使用
     - <font color=blue>QHash</font> 的查找速度明显快于 QMap
         > 因为使用 QHash 时必须 key 对象所对应的类型必须实现一个全局的 qHash() 函数, 查找会根据哈希函数计算出来的值来进行, 调用了qHash() 这个函数后, 就可以直接定位到对应的值在哪里, 速度上是占了优势, 这个优势是用空间替换来的
@@ -93,10 +93,10 @@
     - <font color=blue>QHash</font> 的键必须提供 `operator==()` 和 `qHash(key)` 函数
     - <font color=blue>QMap</font> 的键类型必须提供 `operator<()` 函数
 
-# [<u>编程实验 文本编辑器中的后缀映射</u>](code/037_Anatomy_of_QMap_and_QHash)
+# 6. [<u>编程实验 文本编辑器中的后缀映射</u>](code/037_Anatomy_of_QMap_and_QHash)
 解决自动保存文件后缀问题
 
-# 小结<font color=#d0d>
+# 7. 小结<font color=#d0d>
 - Qt中提供了用于存储键值对的</font>类模板
 - <font color=blue>QHash</font> 和 <font color=red>QMap</font> 遵循相同的使用接口
 - <font color=blue>QHash</font> 的查找速度快于 <font color=red>QMap</font>
