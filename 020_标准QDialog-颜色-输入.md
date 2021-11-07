@@ -5,14 +5,12 @@
 
 - 颜色对话框的使用方式
     ```cpp
-    // 构造颜色对话框对象
+    /* 构造颜色对话框对象 */
     QColorDialog dlg(this);
-    // 设置颜色对话框的相关属性
+    /* 设置颜色对话框的相关属性 */
     dlg.setWindowTitle("Color Editor");
-    dlg.setCurrentColor(Qt::red); // 初始颜色
-
-    if( dlg.exec() == QColorDialog::Accepted )
-    {
+    dlg.setCurrentColor(Qt::red); /* 初始颜色 */
+    if (dlg.exec() == QColorDialog::Accepted) {
         qDebug() << dlg.selectedColor();
     }
     ```
@@ -33,16 +31,14 @@
 
 - 输入对话框的实用方式
     ```cpp
-    // 构造输入对话框对象
+    /* 构造输入对话框对象 */
     QInputDialog dlg(this);
-    // 设置输入对话框的相关属性
+    /* 设置输入对话框的相关属性 */
     dlg.setWindowTitle("Input Test");
     dlg.setLabelText("Please input an integer:");
-    // dlg.setInputMode(QInputDialog::TextInput); // 数入文本
-    dlg.setInputMode(QInputDialog::IntInput);     // 输入整数
-
-    if( dlg.exec() == QInputDialog::Accepted )
-    {
+    // dlg.setInputMode(QInputDialog::TextInput); /* 数入文本 */
+    dlg.setInputMode(QInputDialog::IntInput);     /* 输入整数 */
+    if (dlg.exec() == QInputDialog::Accepted) {
         // qDebug() << dlg.textValue();
         qDebug() << dlg.intValue();
     }
