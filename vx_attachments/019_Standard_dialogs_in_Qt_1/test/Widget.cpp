@@ -3,7 +3,6 @@
 #include <QMessageBox>
 #include <QFileDialog>
 
-
 Widget::Widget(QWidget *parent) : QWidget(parent),
     SimpleMsgBtn(this), CustomMsgBtn(this), OpenFileBtn(this), SaveFileBtn(this)
 {
@@ -35,9 +34,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent),
 void Widget::SimpleMsgBtn_Clicked()
 {
     QMessageBox msg(this);
-
     msg.setText("This is a message dialog!");
-
     msg.exec();
 }
 
@@ -48,17 +45,15 @@ void Widget::CustomMsgBtn_Clicked()
 
     msg.setWindowTitle("Window Title");
     msg.setText("This is a detail message dialog!");
-    msg.setIcon(QMessageBox::Information); // µ¯³ö¶Ô»°¿òÊ±»áÓĞÉùÒô
+    msg.setIcon(QMessageBox::Information); // å¼¹å‡ºå¯¹è¯æ¡†æ—¶ä¼šæœ‰å£°éŸ³
     msg.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel | QMessageBox::YesToAll);
 
-    if( msg.exec() == QMessageBox::Ok )
-    {
+    if (msg.exec() == QMessageBox::Ok) {
         qDebug() << "Ok button is clicked!";
     }
-#else // ¼ò»¯Ğ´·¨
+#else /* ç®€åŒ–å†™æ³• */
     if (QMessageBox::information(this,"Window Title", "this is box!",
-                                 QMessageBox::Ok | QMessageBox::Cancel | QMessageBox::YesToAll)
-            == QMessageBox::Ok) {
+        QMessageBox::Ok | QMessageBox::Cancel | QMessageBox::YesToAll) == QMessageBox::Ok) {
         qDebug() << "Ok button is clicked!";
     }
 #endif
@@ -69,15 +64,12 @@ void Widget::OpenFileBtn_Clicked()
     QFileDialog dlg(this);
 
     dlg.setAcceptMode(QFileDialog::AcceptOpen);
-    dlg.setFilter("Text(*.txt)");
+    dlg.setFilter("Image(*.png *.xpm *.jpg);;Text(*.txt);;All(*.*)");
     dlg.setFileMode(QFileDialog::ExistingFiles);
 
-    if( dlg.exec() == QFileDialog::Accepted )
-    {
+    if (dlg.exec() == QFileDialog::Accepted) {
         QStringList fs = dlg.selectedFiles();
-
-        for(int i=0; i<fs.count(); i++)
-        {
+        for (int i = 0; i < fs.count(); i++) {
             qDebug() << fs[i];
         }
     }
@@ -90,13 +82,9 @@ void Widget::SaveFileBtn_Clicked()
     dlg.setAcceptMode(QFileDialog::AcceptSave);
     dlg.setFilter("Text(*.txt)");
 
-
-    if( dlg.exec() == QFileDialog::Accepted )
-    {
+    if (dlg.exec() == QFileDialog::Accepted) {
         QStringList fs = dlg.selectedFiles();
-
-        for(int i=0; i<fs.count(); i++)
-        {
+        for (int i = 0; i < fs.count(); i++) {
             qDebug() << fs[i];
         }
     }
@@ -104,5 +92,4 @@ void Widget::SaveFileBtn_Clicked()
 
 Widget::~Widget()
 {
-    
 }
