@@ -32,12 +32,9 @@ Widget::Widget(QWidget *parent) : QWidget(parent),
 void Widget::FontDialogBtn_Clicked()
 {
     QFontDialog dlg(this);
-
     dlg.setWindowTitle("Font Dialog Test");
     dlg.setCurrentFont(QFont("Courier New", 10, QFont::Bold));
-
-    if( dlg.exec() == QFontDialog::Accepted )
-    {
+    if (dlg.exec() == QFontDialog::Accepted) {
         qDebug() << dlg.selectedFont();
     }
 }
@@ -45,14 +42,13 @@ void Widget::FontDialogBtn_Clicked()
 void Widget::ProgressDialogBtn_Clicked()
 {
     QProgressDialog dlg(this);
-
     dlg.setWindowTitle("Updating...");
     dlg.setLabelText("Downloading update from server...");
     dlg.setMinimum(0);
     dlg.setMaximum(100);
     dlg.setValue(35);
 
-    // create a new thread
+    /* create a new thread */
 
     dlg.exec();
 }
@@ -60,25 +56,18 @@ void Widget::ProgressDialogBtn_Clicked()
 void Widget::PrintDialogBtn_Clicked()
 {
     QPrintDialog dlg(this);
-
     dlg.setWindowTitle("Print Dialog Test");
-
-    if( dlg.exec() == QPrintDialog::Accepted )
-    {
+    if (dlg.exec() == QPrintDialog::Accepted) {
         QPrinter* p = dlg.printer();
         QTextDocument td;
-
         //td.setPlainText("Printer object test!");
-        td.setHtml("<h1>Print html object test</hl>"); // h1‘⁄html÷–±Ì æ◊÷ÃÂ¥Û–¥
-
+        td.setHtml("<h1>Print html object test</hl>"); /* h1Âú®html‰∏≠Ë°®Á§∫Â≠ó‰ΩìÂ§ßÂÜô */
         //p->setOutputFileName("D:\\test.xps");
         p->setOutputFileName("D:\\test.pdf");
-
         td.print(p);
     }
 }
 
 Widget::~Widget()
 {
-    
 }

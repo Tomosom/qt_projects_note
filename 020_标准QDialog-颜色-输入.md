@@ -25,7 +25,7 @@
     > `QColor`的应用领域：图像识别。
     > `QDebug()`的默认打印方式`QColor(ARGB 1, 0, 0, 1)`
 
-- QColorDialog 中的实用函数
+- QColorDialog 中的实用函数（简化写法）
     - `QColorDialog::getColor`
 
 # 2. 输入对话框
@@ -52,7 +52,7 @@
     - `QInputDialog::IntInput` - 输入整型数
     - `QInputDialog::DoubleInput` - 输入浮点数
 
-- `QInputDialog` 中的实用函数
+- `QInputDialog` 中的实用函数（简化写法）
     - `QInputDialog::getDouble`
     - `QInputDialog::getInt`
     - `QInputDialog::getItem` - 下拉选项
