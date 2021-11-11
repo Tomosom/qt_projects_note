@@ -1,7 +1,8 @@
 # 1. 颜色对话框
-- Qt 中提供了预定义的颜色对话框QColorDialog类
-- QColorDialog类用于提供指定颜色的对话框部件
+- Qt 中提供了<font color=red>预定义的</font>颜色对话框`QColorDialog`类
+- `QColorDialog`类用于提供<font color=red>指定颜色的对话框部件</font>
 ![](vx_images/020_1.png)
+> 遗留问题：颜色对话框的这个自定义颜色是保存在哪里的，如何保证的下次打开的时候自定义颜色仍然存在？
 
 - 颜色对话框的使用方式
     ```cpp
@@ -10,23 +11,26 @@
     /* 设置颜色对话框的相关属性 */
     dlg.setWindowTitle("Color Editor");
     dlg.setCurrentColor(Qt::red); /* 初始颜色 */
-    if (dlg.exec() == QColorDialog::Accepted) {
+    if (dlg.exec() == QColorDialog::Accepted) { /* 模态显示 */
         qDebug() << dlg.selectedColor();
     }
     ```
+
 - QColor
-    - Qt中的<font color=red>QColor</font>类用来在程序中表示颜色的概念
-    - <font color=red>QColor</font>类同时支持<font color=red>多种颜色表示方式</font>
-        - RGB : 以红, 绿, 蓝为基准的三色模型
-        - HSV : 以色调, 饱和度, 明度为基准的六角椎体模型
-        - CMYK : 以天蓝, 品红, 黄色, 黑为基准的全彩印刷色彩模型
+    - Qt中的`QColor`类用来在程序中表示颜色的概念
+    - `QColor`类同时支持<font color=red>多种颜色表示方式</font>
+        - `RGB` : 以<font color=red>红, 绿, 蓝</font>为基准的<font color=red>三色模型</font>
+        - `HSV` : 以<font color=red>色调, 饱和度, 明度</font>为基准的<font color=red>六角椎体模型</font>
+        - `CMYK` : 以<font color=red>天蓝, 品红, 黄色, 黑</font>为基准的<font color=red>全彩印刷色彩模型</font>
+    > `QColor`的应用领域：图像识别。
+    > `QDebug()`的默认打印方式`QColor(ARGB 1, 0, 0, 1)`
 
 - QColorDialog 中的实用函数
-    - QColorDialog::getColor
+    - `QColorDialog::getColor`
 
 # 2. 输入对话框
-- Qt中提供了预定义的输入对话框QInputDialog类
-- QInputDialog类用于需要临时进行数据输入的场合
+- Qt中提供了<font color=red>预定义的</font>输入对话框`QInputDialog`类
+- `QInputDialog`类用于<font color=red>需要临时进行数据输入的场合</font>
 ![](vx_images/020_2.png)
 
 - 输入对话框的实用方式
@@ -43,18 +47,18 @@
         qDebug() << dlg.intValue();
     }
     ```
-- 输入对话框的输入模式
-    - QInputDialog::TextInput - 输入文本字符串
-    - QInputDialog::IntInput - 输入整型数
-    - QInputDialog::DoubleInput - 输入浮点数
+- 输入对话框的<font color=red>输入模式</font>
+    - `QInputDialog::TextInput` - 输入文本字符串
+    - `QInputDialog::IntInput` - 输入整型数
+    - `QInputDialog::DoubleInput` - 输入浮点数
 
-- QInputDialog 中的实用函数
-    - QInputDialog::getDouble
-    - QInputDialog::getInt
-    - QInputDialog::getItem - 下拉选项
-    - QInputDialog::getText
+- `QInputDialog` 中的实用函数
+    - `QInputDialog::getDouble`
+    - `QInputDialog::getInt`
+    - `QInputDialog::getItem` - 下拉选项
+    - `QInputDialog::getText`
 
 # 3. 小结
-- <font color=red>QColorDialog</font> 类用于提供指定颜色的对话框部件
-- <font color=red>QColor</font> 类用来在程序中表示颜色的概念
-- <font color=red>QInputDialog</font> 类用于需要临时进行数据输入的场合
+- `QColorDialog` 类用于<font color=red>提供指定颜色的对话框部件</font>
+- `QColor` 类用来在程序中表示<font color=red>颜色</font>的概念
+- `QInputDialog` 类用于<font color=red>需要临时进行数据输入的场合</font>

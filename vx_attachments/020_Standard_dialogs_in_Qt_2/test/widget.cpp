@@ -24,14 +24,11 @@ Widget::Widget(QWidget *parent) : QWidget(parent),
 void Widget::ColorDialogBtn_Clicked()
 {
     QColorDialog dlg(this);
-
     dlg.setWindowTitle("Color Editor");
-    dlg.setCurrentColor(QColor(100, 111, 222));
-
-    if( dlg.exec() == QColorDialog::Accepted )
-    {
+    /* Qt中的预定义颜色 Qt::blue */
+    dlg.setCurrentColor(QColor(100, 111, 222)); /* 自定义颜色 */
+    if (dlg.exec() == QColorDialog::Accepted) {
         QColor color = dlg.selectedColor();
-
         qDebug() << color;
         qDebug() << color.red();
         qDebug() << color.green();
@@ -46,17 +43,13 @@ void Widget::InputDialogBtn_Clicked()
 {
 #if 0
     QInputDialog dlg(this);
-
     dlg.setWindowTitle("Input Test");
     dlg.setLabelText("Please input an integer:");
-    dlg.setInputMode(QInputDialog::IntInput); // Ĭ��0 ~ 99
+    dlg.setInputMode(QInputDialog::IntInput); /* 默认0 ~ 99 */
     dlg.setIntMinimum(0);
     dlg.setIntMaximum(255);
     //dlg.setInputMode(QInputDialog::TextInput);
-
-
-    if( dlg.exec() == QInputDialog::Accepted )
-    {
+    if (dlg.exec() == QInputDialog::Accepted) {
         qDebug() << dlg.intValue();
         //qDebug() << dlg.textValue();
     }
@@ -72,5 +65,4 @@ void Widget::InputDialogBtn_Clicked()
 
 Widget::~Widget()
 {
-    
 }
