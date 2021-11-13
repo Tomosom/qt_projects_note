@@ -1,16 +1,21 @@
 #include "Widget.h"
 #include <QVBoxLayout>
 
-
 Widget::Widget(QWidget *parent) : QWidget(parent),
     TestBtn1(this), TestBtn2(this), TestBtn3(this), TestBtn4(this)
 {
+    /* 实验一 */
     //initControl();
+
+    /* 实验二 */
     //testVBoxLayout();
     //testHBoxLayout();
+
+    /* 实验三 */
     testVHBoxLayout();
 }
 
+/* 实验三：布局管理器的嵌套 */
 void Widget::testVHBoxLayout()
 {
     QHBoxLayout* hLayout1 = new QHBoxLayout();
@@ -48,6 +53,7 @@ void Widget::testVHBoxLayout()
     setLayout(vLayout);
 }
 
+/* 实验二：水平布局管理器 */
 void Widget::testHBoxLayout()
 {
     QHBoxLayout* layout = new QHBoxLayout();
@@ -77,6 +83,7 @@ void Widget::testHBoxLayout()
     setLayout(layout);
 }
 
+/* 实验二：垂直布局管理器 */
 void Widget::testVBoxLayout()
 {
     QVBoxLayout* layout = new QVBoxLayout();
@@ -106,6 +113,7 @@ void Widget::testVBoxLayout()
     setLayout(layout);
 }
 
+/* 实验一：存在的问题 */
 void Widget::initControl()
 {
     TestBtn1.setText("Test Button 1");
@@ -127,5 +135,4 @@ void Widget::initControl()
 
 Widget::~Widget()
 {
-    
 }
