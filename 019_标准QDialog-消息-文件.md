@@ -1,6 +1,6 @@
 # 1. 标准对话框总览
 - Qt 为开发者提供了一些<font color=red>可复用的</font>对话框类型
-- Qt 提供的可复用对话框<font color=red>全部继承自<font color=blue>QDialog</font>类</font>
+- Qt 提供的可复用对话框<font color=red>全部继承自<font color=red>QDialog</font>类</font>
     ![](vx_images/019_1.png)
 - Qt中的标准对话框<font color=red>遵循相同的使用方式</font>
 

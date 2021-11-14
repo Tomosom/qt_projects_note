@@ -11,16 +11,16 @@
 代码：实验一
 
 # 3. 布局管理器
-- 解决方案 : <font color=#00d>布局管理器</font>
-    - 提供相关的类<font color=#d0d>对界面组件进行布局管理</font>
-        - 能够<font color=#d00>自动排列</font>窗口中的界面组件
-        - 窗口变化后<font color=#d0d>自动更新界面组件的大小</font>
+- 解决方案 : <font color=red>布局管理器</font>
+    - 提供相关的类<font color=red>对界面组件进行布局管理</font>
+        - 能够<font color=red>自动排列</font>窗口中的界面组件
+        - 窗口变化后<font color=red>自动更新界面组件的大小</font>
 
 - 布局管理器介绍
-    - `QLayout` 是 Qt 中<font color=#d00>布局管理器的抽象基类</font>
-    - 通过继承 `QLayout` 实现了<font color=#d00>功能各异且互补</font>的布局管理器（非抽象基类）
-    - Qt 中可以<font color=#d0d>根据需要自定义</font>布局管理器
-    - 布局管理器<font color=#d0d>不是界面部件</font>, <font color=red>而是界面部件的定位策略</font>
+    - `QLayout` 是 Qt 中<font color=red>布局管理器的抽象基类</font>
+    - 通过继承 `QLayout` 实现了<font color=red>功能各异且互补</font>的布局管理器（非抽象基类）
+    - Qt 中可以<font color=red>根据需要自定义</font>布局管理器
+    - 布局管理器<font color=red>不是界面部件</font>, <font color=red>而是界面部件的定位策略</font>
 
 ![](vx_images/022_1.png)
 > 有兴趣可实现自定义布局管理器
@@ -43,9 +43,9 @@
     - `layout->setSpacing(30);`
 
 # 6. 布局管理器的嵌套
-- 布局管理器可以<font color=#00d>相互嵌套</font>, <font color=#d0d>形成更加复杂的布局方式</font>
-    - <font color=#d00>布局嵌套</font>几乎可以完成<font color=green>所有常用</font>的界面布局
-    - <font color=#00d>自定义布局类</font>可以达到<font color=#d0d>个性化界面布局</font>的效果
+- 布局管理器可以<font color=red>相互嵌套</font>, <font color=red>形成更加复杂的布局方式</font>
+    - <font color=red>布局嵌套</font>几乎可以完成<font color=red>所有常用</font>的界面布局
+    - <font color=red>自定义布局类</font>可以达到<font color=red>个性化界面布局</font>的效果
         > 自己编写一个布局管理器是个比较麻烦的事情，我们能用现成的就用现成的。
 - QBoxLayout 嵌套实例
     ![](vx_images/022_3.png)
@@ -55,10 +55,10 @@
 代码：实验三
 
 # 8. 小结
-- <font color=blue>绝对定位</font>的布局方式<font color=red>无法自适应</font>窗口的变化
-- Qt 提供了相关的类对<font color=#d0d>界面组件进行布局管理</font>
-- Qt 预定义了<font color=blue>功能各异且互补</font>的布局管理器
-- 布局管理器能够<font color=blue>相互嵌套形成复杂的布局</font>
+- <font color=red>绝对定位</font>的布局方式<font color=red>无法自适应</font>窗口的变化
+- Qt 提供了相关的类对<font color=red>界面组件进行布局管理</font>
+- Qt 预定义了<font color=red>功能各异且互补</font>的布局管理器
+- 布局管理器能够<font color=red>相互嵌套形成复杂的布局</font>
 
 课后作业 :
 改写计算器工程界面代码,使用layout

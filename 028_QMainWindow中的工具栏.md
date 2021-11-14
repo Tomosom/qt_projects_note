@@ -2,8 +2,8 @@
 
 - 工具栏的概念和意义
     - 应用程序中<font color=red>集成各种功能</font>实现快捷使用的一个区域
-    - 工具栏并<font color=#d0d>不是</font>应用程序中<font color=#d0d>必须</font>存在的组件
-    - 工具栏中的元素<font color=#d0d>可以是各种窗口组件</font>
+    - 工具栏并<font color=red>不是</font>应用程序中<font color=red>必须</font>存在的组件
+    - 工具栏中的元素<font color=red>可以是各种窗口组件</font>
     - 工具栏中的元素<font color=red>通常以图标按钮的方式存在</font>
 
 - 在Qt中提供与工具栏相关的类组件
@@ -63,7 +63,7 @@
 
 
 # 4. 小结
-- 工具栏是<font color=blue>集成各种功能</font>的一个快捷区域
-- Qt中通过 <font color=#d0d>QToolBar</font> 进行工具栏的创建
-- <font color=#d0d>QToolBar</font> 能够加入任意的 <font color=red>QWidget</font> 组件
-- <font color=#d0d>QToolBar</font> 中的元素通常以<font color=blue>图标按钮</font>的方式存在
+- 工具栏是<font color=red>集成各种功能</font>的一个快捷区域
+- Qt中通过 <font color=red>QToolBar</font> 进行工具栏的创建
+- <font color=red>QToolBar</font> 能够加入任意的 <font color=red>QWidget</font> 组件
+- <font color=red>QToolBar</font> 中的元素通常以<font color=red>图标按钮</font>的方式存在

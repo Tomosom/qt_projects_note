@@ -1,15 +1,15 @@
 # 1. 主窗口的概念
 
 - 应用程序中的主窗口
-    - 主窗口是与用户<font color=blue>进行长时间交互的顶层窗口</font>
+    - 主窗口是与用户<font color=red>进行长时间交互的顶层窗口</font>
     - 程序的<font color=red>绝大多数功能</font>直接由主窗口提供
-    - 主窗口通常是<font color=#d0d>应用程序启动后显示的第一个窗口</font>
-    - 整个程序由<font color=blue>一个主窗口</font>和<font color=blue>多个对话框</font>组成
+    - 主窗口通常是<font color=red>应用程序启动后显示的第一个窗口</font>
+    - 整个程序由<font color=red>一个主窗口</font>和<font color=red>多个对话框</font>组成
 
 - Qt中的主窗口
     - Qt开发平台中aj妾支持主窗口的概念
     - QMainWindow是Qt中主窗口的基类
-    - QMainWindow继承于<font color=blue>QWidget</font>是一种<font color=red>容器类型</font>(非数据结构中的容器)的组件
+    - QMainWindow继承于<font color=red>QWidget</font>是一种<font color=red>容器类型</font>(非数据结构中的容器)的组件
 
     ![](vx_images/027_1.png)
 
@@ -47,8 +47,8 @@
         - `KEY` - Qt中代表键值的常量
 
 # 4. 小结
-- 主窗口是与用户<font color=blue>进行长时间交互的顶层窗口</font>
-- 主窗口通常是<font color=#d0d>应用程序启动后显示的第一个窗口</font>
+- 主窗口是与用户<font color=red>进行长时间交互的顶层窗口</font>
+- 主窗口通常是<font color=red>应用程序启动后显示的第一个窗口</font>
 - <font color=red>QMainWindow</font> 是Qt中主窗口的基类
 - <font color=red>QMainWindow</font> 是一种<font color=red>容器类型</font>的窗口组件
 - <font color=red>QMainWindow</font> 中封装了菜单栏，工具栏，状态栏等组件
