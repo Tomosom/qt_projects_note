@@ -19,7 +19,8 @@ QWidget* currentWidget()
 void setCurrentIndex(int index)
 int currentlndex()
 ```
-# 2. [<u>实验 - 栈式布局初探</u>](code/025_Layout_manager_4)
+# 2. 实验 - 栈式布局初探
+实验目录：[25-1](vx_attachments\025_Layout_manager_4\25-1)
 
 # 3. 计时器
 - 计时器的概念 - QTimer
@@ -36,7 +37,8 @@ int currentlndex()
         3. 连接计时器消息和消息处理函数(信号与槽)
         4. 设置计时器时间间隔并启动计时
 
-# 4. [<u>实验 - 计时器的使用</u>](code/025_Layout_manager_4)
+# 4. 实验 - 计时器的使用
+实验目录：[25-1](vx_attachments\025_Layout_manager_4\25-1)
 
 # 5. 小结
 - <font color=#00d>QStackedLayout</font>以栈的方式管理界面组件

@@ -14,7 +14,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent, Qt::WindowCloseButtonHint)
     //layout->addRow("Address:", addrEdit);
     layout->addRow("Address----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:", addrEdit);
     //layout->setRowWrapPolicy(QFormLayout::WrapAllRows);
-    layout->setRowWrapPolicy(QFormLayout::WrapLongRows); // Õë¶ÔÇ¶ÈëÊ½Ð¡ÆÁ,ÎÄ×ÖÌ«³¤Ê±»»ÐÐ
+    layout->setRowWrapPolicy(QFormLayout::WrapLongRows); /* é’ˆå¯¹åµŒå…¥å¼å°å±,æ–‡å­—å¤ªé•¿æ—¶æ¢è¡Œ */
     layout->setLabelAlignment(Qt::AlignRight);
     layout->setSpacing(10);
 
@@ -24,5 +24,4 @@ Widget::Widget(QWidget *parent) : QWidget(parent, Qt::WindowCloseButtonHint)
 
 Widget::~Widget()
 {
-    
 }

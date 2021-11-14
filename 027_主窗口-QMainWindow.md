@@ -36,6 +36,8 @@
     ```
 
 # 3. 实验 - 主窗口中创建菜单
+实验目录：[NotePad](vx_attachments\027_mianwindow_in_app\NotePad)
+
 (复习二阶构造)
 
 - 小技巧
