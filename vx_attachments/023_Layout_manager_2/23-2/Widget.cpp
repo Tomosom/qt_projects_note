@@ -5,7 +5,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent),
     TestBtn1(this), TestBtn2(this), TestBtn3(this), TestBtn4(this)
 {
     //testGridLayout1();
-    //testGridLayout2();
+    testGridLayout2();
 }
 
 void Widget::testGridLayout1()
@@ -29,6 +29,7 @@ void Widget::testGridLayout1()
     TestBtn4.setMinimumSize(160, 30);
 
     layout->setSpacing(10);
+
     layout->addWidget(&TestBtn1, 0, 0);
     layout->addWidget(&TestBtn2, 0, 1);
     layout->addWidget(&TestBtn3, 1, 0);
@@ -63,18 +64,13 @@ void Widget::testGridLayout2()
 
     layout->setSpacing(10);
 
-    // ¹æÂÉ : Êó±ê¸Ä¶¯´°¿Ú´óÐ¡Ê±, Ö»»áÀ©Õ¹Õ¼ÓÃÐÐÊý»òÁÐÊý×îÐ¡µÄ´°¿Ú(widget)
-#if 0
+    /* è§„å¾‹: é¼ æ ‡æ”¹åŠ¨çª—å£å¤§å°æ—¶, åªä¼šæ‰©å±•å ç”¨è¡Œæ•°æˆ–åˆ—æ•°æœ€å°çš„çª—å£(widget) */
+    /* param: 1,ç¬¬å‡ è¡Œ; 2,ç¬¬å‡ åˆ—; 3,å ç”¨å‡ è¡Œ; 4,å ç”¨å‡ åˆ— */
     layout->addWidget(&TestBtn1, 0, 0, 2, 1);
     layout->addWidget(&TestBtn2, 0, 1, 2, 1);
     layout->addWidget(&TestBtn3, 2, 0, 1, 2);
     layout->addWidget(&TestBtn4, 3, 0, 1, 2);
-#else
-    layout->addWidget(&TestBtn1, 0, 0, 2, 2);
-    layout->addWidget(&TestBtn2, 0, 2, 2, 2);
-    layout->addWidget(&TestBtn3, 0, 4, 1, 2);
-    layout->addWidget(&TestBtn4, 1, 4, 1, 2);
-#endif
+
     setLayout(layout);
 }
 
