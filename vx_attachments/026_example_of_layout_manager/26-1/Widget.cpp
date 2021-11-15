@@ -12,15 +12,17 @@ Widget::Widget(QWidget *parent) : QWidget(parent)
 
 void Widget::initControl()
 {
-    QVBoxLayout* vLayout = new QVBoxLayout();
-    QHBoxLayout* hLayout = new QHBoxLayout();
+    QVBoxLayout *vLayout = new QVBoxLayout();
+    QHBoxLayout *hLayout = new QHBoxLayout();
 
     preBtn.setText("Pre Page");
     preBtn.setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+    //preBtn.setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     preBtn.setMinimumSize(160, 30);
 
     nextBtn.setText("Next Page");
     nextBtn.setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+    //nextBtn.setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     nextBtn.setMinimumSize(160, 30);
 
     connect(&preBtn, SIGNAL(clicked()), this, SLOT(onPreBtnClicked()));
@@ -39,10 +41,10 @@ void Widget::initControl()
     setLayout(vLayout);
 }
 
-QWidget* Widget::get1stPage()
+QWidget *Widget::get1stPage()
 {
-    QWidget* ret = new QWidget();
-    QGridLayout* layout = new QGridLayout();
+    QWidget *ret = new QWidget();
+    QGridLayout *layout = new QGridLayout();
 
     fLbl1.setText("This");
     fLbl2.setText("is");
@@ -54,26 +56,42 @@ QWidget* Widget::get1stPage()
     layout->addWidget(&fLbl3, 1, 0);
     layout->addWidget(&fLbl4, 1, 1);
 
-    qDebug() << ret;
+    qDebug() << "parent:" << ret;
     qDebug() << fLbl1.parent();
     qDebug() << fLbl2.parent();
     qDebug() << fLbl3.parent();
     qDebug() << fLbl4.parent();
 
-    ret->setLayout(layout); // ���ӹ�ϵ������������
+    /* 设置布局管理的同时隐式的指定了父子关系, 父子关系在这条语句决定 */
+    ret->setLayout(layout);
 
-    qDebug() << ret;
+    qDebug() << "parent:" << ret;
     qDebug() << fLbl1.parent();
     qDebug() << fLbl2.parent();
     qDebug() << fLbl3.parent();
     qDebug() << fLbl4.parent();
+
+    /*
+     * 实验结果:
+     * parent: QWidget(0xc605950)
+     * QObject(0x0)
+     * QObject(0x0)
+     * QObject(0x0)
+     * QObject(0x0)
+     * parent: QWidget(0xc605950)
+     * QWidget(0xc605950)
+     * QWidget(0xc605950)
+     * QWidget(0xc605950)
+     * QWidget(0xc605950)
+     */
+
     return ret;
 }
 
-QWidget* Widget::get2ndPage()
+QWidget *Widget::get2ndPage()
 {
-    QWidget* ret = new QWidget();
-    QFormLayout* layout = new QFormLayout();
+    QWidget *ret = new QWidget();
+    QFormLayout *layout = new QFormLayout();
 
     sLineEdit.setText("This is 2rd page");
 
@@ -84,7 +102,7 @@ QWidget* Widget::get2ndPage()
     return ret;
 }
 
-QWidget* Widget::get3rdPage()
+QWidget *Widget::get3rdPage()
 {
     QWidget* ret = new QWidget();
     QVBoxLayout* layout = new QVBoxLayout();
