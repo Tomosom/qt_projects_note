@@ -10,11 +10,11 @@ bool Application::exec()
 {
     MSG Msg = {0};
 
-    /* ½øÈëÏûÏ¢Ñ­»· */
+    /* è¿›å…¥æ¶ˆæ¯å¾ªç¯ */
     while(GetMessage(&Msg, NULL, NULL, NULL)) {
-        /* ·­Òë²¢×ª»»ÏµÍ³ÏûÏ¢ */
+        /* ç¿»è¯‘å¹¶è½¬æ¢ç³»ç»Ÿæ¶ˆæ¯ */
         TranslateMessage(&Msg);
-        /* ·Ö·¢ÏûÏ¢µ½¶ÔÓ¦µÄÏûÏ¢´¦Àíº¯Êı */
+        /* åˆ†å‘æ¶ˆæ¯åˆ°å¯¹åº”çš„æ¶ˆæ¯å¤„ç†å‡½æ•° */
         DispatchMessage(&Msg);
     }
 

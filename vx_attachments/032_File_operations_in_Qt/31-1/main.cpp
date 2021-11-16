@@ -10,7 +10,7 @@ void write(QString f)
 {
     QFile file(f);
 
-    if( file.open(QIODevice::WriteOnly | QIODevice::Text) ) /* Ä¬ÈÏÊÇ½Ø¶Ï·½Ê½ */
+    if( file.open(QIODevice::WriteOnly | QIODevice::Text) ) /* é»˜è®¤æ˜¯æˆªæ–­æ–¹å¼ */
     {
         file.write("D.T.Software\n");
         file.write("Delphi Tang\n");
@@ -24,9 +24,9 @@ void read(QString f)
 
     if( file.open(QIODevice::ReadOnly | QIODevice::Text) )
     {
-        //QByteArray ba = file.readAll();     /* È«²¿¶ÁÈ¡ */
-        //QByteArray ba = file.read(4);         /* ¶ÁÈ¡4¸ö×Ö·û */
-        QByteArray ba = file.readLine();    /* ¶ÁÈ¡Ò»ĞĞ */
+        //QByteArray ba = file.readAll();     /* å…¨éƒ¨è¯»å– */
+        //QByteArray ba = file.read(4);         /* è¯»å–4ä¸ªå­—ç¬¦ */
+        QByteArray ba = file.readLine();    /* è¯»å–ä¸€è¡Œ */
         QString s(ba);
 
         qDebug() << s;
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    /* µ±Ç°Â·¾¶ */
+    /* å½“å‰è·¯å¾„ */
     //qDebug() << QDir::currentPath();
 
     //write("C:/Users/hp/Desktop/test.txt");

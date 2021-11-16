@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
     if( writer.open() )
     {
         writer.write("D.T.Software\r\n");
-        writer.write("ÖÐÎÄ²âÊÔ\r\n");
-        writer.write("µÒÌ©Èí¼þ\r\n");
+        writer.write("ä¸­æ–‡æµ‹è¯•\r\n");
+        writer.write("ç‹„æ³°è½¯ä»¶\r\n");
         writer.close();
     }
 

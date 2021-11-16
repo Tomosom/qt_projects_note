@@ -12,59 +12,59 @@ MainWindow::MainWindow(HINSTANCE hInstance, const wchar_t* title) : Widget(NULL)
 
 void MainWindow::show()
 {
-    ShowWindow(m_hwnd, SW_SHOWNORMAL); // ÏÔÊ¾´°¿Ú
-    UpdateWindow(m_hwnd);              // Ë¢ÐÂ´°¿Ú
+    ShowWindow(m_hwnd, SW_SHOWNORMAL); // æ˜¾ç¤ºçª—å£
+    UpdateWindow(m_hwnd);              // åˆ·æ–°çª—å£
 }
 
 BOOL MainWindow::defineMainWindow(HINSTANCE hInstance)
 {
-    static WNDCLASS WndClass = {0}; // ÏµÍ³½á¹¹ÌåÀàÐÍ
-                                    // ÓÃÓÚÃèÊö´°¿ÚÑùÊ½
+    static WNDCLASS WndClass = {0}; // ç³»ç»Ÿç»“æž„ä½“ç±»åž‹
+                                    // ç”¨äºŽæè¿°çª—å£æ ·å¼
     WndClass.style         = 0;
     WndClass.cbClsExtra    = 0;
     WndClass.cbClsExtra    = 0;
-    WndClass.hbrBackground = (HBRUSH)(COLOR_WINDOW);          // ¶¨Òå´°¿Ú±³¾°É«
-    WndClass.hCursor       = LoadCursor(NULL, IDC_ARROW);     // ¶¨ÒåÊó±êÑùÊ½
-    WndClass.hIcon         = LoadIcon(NULL, IDI_APPLICATION); // ¶¨Òå´°¿Ú×óÉÏ½ÇÍ¼±ê
-    WndClass.hInstance     = hInstance;                       // ¶¨Òå´°¿ÚÊ½ÑùÊôÓÚµ±Ç°Ó¦ÓÃ³ÌÐò
-    WndClass.lpfnWndProc   = WndProc;                         // ´°¿ÚÏûÏ¢´¦Àíº¯Êý
-    WndClass.lpszClassName = STYLE_NAME;                      // ´°¿ÚÑùÊ½Ãû
+    WndClass.hbrBackground = (HBRUSH)(COLOR_WINDOW);          // å®šä¹‰çª—å£èƒŒæ™¯è‰²
+    WndClass.hCursor       = LoadCursor(NULL, IDC_ARROW);     // å®šä¹‰é¼ æ ‡æ ·å¼
+    WndClass.hIcon         = LoadIcon(NULL, IDI_APPLICATION); // å®šä¹‰çª—å£å·¦ä¸Šè§’å›¾æ ‡
+    WndClass.hInstance     = hInstance;                       // å®šä¹‰çª—å£å¼æ ·å±žäºŽå½“å‰åº”ç”¨ç¨‹åº
+    WndClass.lpfnWndProc   = WndProc;                         // çª—å£æ¶ˆæ¯å¤„ç†å‡½æ•°
+    WndClass.lpszClassName = STYLE_NAME;                      // çª—å£æ ·å¼å
     WndClass.lpszMenuName  = NULL;
 
-    /* ½«¶¨ÒåºÃµÄ´°¿ÚÊ½Ñù×¢²áµ½ÏµÍ³ */
+    /* å°†å®šä¹‰å¥½çš„çª—å£å¼æ ·æ³¨å†Œåˆ°ç³»ç»Ÿ */
     return RegisterClass(&WndClass);
 }
 
 void MainWindow::createMainWindow(HINSTANCE hInstance, const wchar_t* title)
 {
-	// ¾ÓÖÐ´°¿Ú
+	// å±…ä¸­çª—å£
     int scrWidth = GetSystemMetrics(SM_CXSCREEN);
     int scrHeight = GetSystemMetrics(SM_CYSCREEN);
     int width = 600; // CW_USEDEFAULT
     int height = 200; // CW_USEDEFAULT
-	m_hwnd = CreateWindow(STYLE_NAME,            // Í¨¹ý¶¨ÒåºÃµÄ´°¿ÚÊ½Ñù´´½¨Ö÷´°¿Ú
-                          title,                 // Ö÷´°¿Ú±êÌâ
-                          WS_OVERLAPPEDWINDOW,   // ´´½¨ºóÖ÷´°¿ÚµÄÏÔÊ¾·ç¸ñ
-						  (scrWidth - width) / 2,   // Ö÷´°¿Ú×óÉÏ½Ç x ×ø±ê
-						  (scrHeight - height) / 2, // Ö÷´°¿Ú×óÉÏ½Ç y ×ø±ê
-						  width,                 // Ö÷´°¿Ú¿í¶È
-						  height,                // Ö÷´°¿Ú¸ß¶È
-						  NULL,                  // ¸¸´°¿Ú
-						  NULL,                  // ´°¿Ú²Ëµ¥À¸
-						  hInstance,             // Ö÷´°¿ÚÊôÓÚµ±Ç°Ó¦ÓÃ³ÌÐò
-						  NULL);                 // ´°¿Ú²ÎÊý
+	m_hwnd = CreateWindow(STYLE_NAME,            // é€šè¿‡å®šä¹‰å¥½çš„çª—å£å¼æ ·åˆ›å»ºä¸»çª—å£
+                          title,                 // ä¸»çª—å£æ ‡é¢˜
+                          WS_OVERLAPPEDWINDOW,   // åˆ›å»ºåŽä¸»çª—å£çš„æ˜¾ç¤ºé£Žæ ¼
+						  (scrWidth - width) / 2,   // ä¸»çª—å£å·¦ä¸Šè§’ x åæ ‡
+						  (scrHeight - height) / 2, // ä¸»çª—å£å·¦ä¸Šè§’ y åæ ‡
+						  width,                 // ä¸»çª—å£å®½åº¦
+						  height,                // ä¸»çª—å£é«˜åº¦
+						  NULL,                  // çˆ¶çª—å£
+						  NULL,                  // çª—å£èœå•æ 
+						  hInstance,             // ä¸»çª—å£å±žäºŽå½“å‰åº”ç”¨ç¨‹åº
+						  NULL);                 // çª—å£å‚æ•°
 #if 0
-    m_hwnd = CreateWindow(STYLE_NAME,            // Í¨¹ý¶¨ÒåºÃµÄ´°¿ÚÊ½Ñù´´½¨Ö÷´°¿Ú
-                          title,                 // Ö÷´°¿Ú±êÌâ
-                          WS_OVERLAPPEDWINDOW,   // ´´½¨ºóÖ÷´°¿ÚµÄÏÔÊ¾·ç¸ñ
-                          CW_USEDEFAULT,         // Ö÷´°¿Ú×óÉÏ½Ç x ×ø±ê
-                          CW_USEDEFAULT,         // Ö÷´°¿Ú×óÉÏ½Ç y ×ø±ê
-                          CW_USEDEFAULT,         // Ö÷´°¿Ú¿í¶È
-                          CW_USEDEFAULT,         // Ö÷´°¿Ú¸ß¶È
-                          NULL,                  // ¸¸´°¿Ú
-                          NULL,                  // ´°¿Ú²Ëµ¥À¸
-                          hInstance,             // Ö÷´°¿ÚÊôÓÚµ±Ç°Ó¦ÓÃ³ÌÐò
-                          NULL);                 // ´°¿Ú²ÎÊý
+    m_hwnd = CreateWindow(STYLE_NAME,            // é€šè¿‡å®šä¹‰å¥½çš„çª—å£å¼æ ·åˆ›å»ºä¸»çª—å£
+                          title,                 // ä¸»çª—å£æ ‡é¢˜
+                          WS_OVERLAPPEDWINDOW,   // åˆ›å»ºåŽä¸»çª—å£çš„æ˜¾ç¤ºé£Žæ ¼
+                          CW_USEDEFAULT,         // ä¸»çª—å£å·¦ä¸Šè§’ x åæ ‡
+                          CW_USEDEFAULT,         // ä¸»çª—å£å·¦ä¸Šè§’ y åæ ‡
+                          CW_USEDEFAULT,         // ä¸»çª—å£å®½åº¦
+                          CW_USEDEFAULT,         // ä¸»çª—å£é«˜åº¦
+                          NULL,                  // çˆ¶çª—å£
+                          NULL,                  // çª—å£èœå•æ 
+                          hInstance,             // ä¸»çª—å£å±žäºŽå½“å‰åº”ç”¨ç¨‹åº
+                          NULL);                 // çª—å£å‚æ•°
 #endif
 }
 
@@ -75,7 +75,7 @@ LRESULT CALLBACK MainWindow::WndProc(HWND hwnd, UINT message, WPARAM wParam, LPA
 			PostQuitMessage(0);
 			break;
     }
-    /* µ÷ÓÃÏµÍ³Ìá¹©µÄÄ¬ÈÏÏûÏ¢´¦Àíº¯Êý */
+    /* è°ƒç”¨ç³»ç»Ÿæä¾›çš„é»˜è®¤æ¶ˆæ¯å¤„ç†å‡½æ•° */
     return DefWindowProc(hwnd, message, wParam, lParam);
 }
 

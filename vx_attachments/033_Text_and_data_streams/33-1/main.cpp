@@ -8,15 +8,15 @@ int main(int argc, char *argv[])
     //QFile file("C:/Users/hp/Desktop/test.hex");
     QFile file("test.hex");
 
-    /* Ã»ÓĞ¼Ó QIODevice::Text ±íÊ¾ÒÔ×Ö½ÚÁ÷µÄ·½Ê½´ò¿ªÎÄ¼ş */
+    /* æ²¡æœ‰åŠ  QIODevice::Text è¡¨ç¤ºä»¥å­—èŠ‚æµçš„æ–¹å¼æ‰“å¼€æ–‡ä»¶ */
     if( file.open(QIODevice::WriteOnly) )
     {
         QString dt = "D.T.Software";
         double value = 3.14;
 
-        /* Ê¹ÓÃQFile½øĞĞÊı¾İ»òÎÄ±¾µÄ¶ÁĞ´ÊÇ¿ÉĞĞµÄ,´Ë´¦Îª²»·½±ãµÄµØ·½-ÀàĞÍ×ª»» */
-        file.write(dt.toStdString().c_str()); // ½«QStringÊı¾İ×ªÎªÖ±½ÓµÄ¶ş½øÖÆÊı¾İ
-        file.write(reinterpret_cast<char*>(&value), sizeof(value)); // ½«Æä×ª»»Îª×Ö½ÚÀàĞÍµÄÊı¾İ
+        /* ä½¿ç”¨QFileè¿›è¡Œæ•°æ®æˆ–æ–‡æœ¬çš„è¯»å†™æ˜¯å¯è¡Œçš„,æ­¤å¤„ä¸ºä¸æ–¹ä¾¿çš„åœ°æ–¹-ç±»å‹è½¬æ¢ */
+        file.write(dt.toStdString().c_str()); // å°†QStringæ•°æ®è½¬ä¸ºç›´æ¥çš„äºŒè¿›åˆ¶æ•°æ®
+        file.write(reinterpret_cast<char*>(&value), sizeof(value)); // å°†å…¶è½¬æ¢ä¸ºå­—èŠ‚ç±»å‹çš„æ•°æ®
 
         file.close();
     }

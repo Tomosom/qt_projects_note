@@ -6,7 +6,7 @@ MainWindow::MainWindow()
 
 }
 
-/* Ê¹ÓÃÁË¶þ½×¹¹Ôì */
+/* ä½¿ç”¨äº†äºŒé˜¶æž„é€  */
 MainWindow* MainWindow::NewInstance()
 {
     MainWindow* ret = new MainWindow();
@@ -40,7 +40,7 @@ bool MainWindow::initMenuBar()
 
 bool MainWindow::initFileMenu(QMenuBar* mb)
 {
-    QMenu *menu = new QMenu("File(&F)"); // ALT + F ¿ì½Ý¼ü´ò¿ª²Ëµ¥
+    QMenu *menu = new QMenu("File(&F)"); // ALT + F å¿«æ·é”®æ‰“å¼€èœå•
     bool ret = (menu != NULL);
 
     if( ret ) {
@@ -52,7 +52,7 @@ bool MainWindow::initFileMenu(QMenuBar* mb)
             menu->addAction(action);    // add Action item to Menu
         }
 
-        menu->addSeparator(); // ´´½¨·Ö¸ô·û
+        menu->addSeparator(); // åˆ›å»ºåˆ†éš”ç¬¦
 
         ret = ret && makeAction(action, "Exit(X)", Qt::CTRL + Qt::Key_X);
 

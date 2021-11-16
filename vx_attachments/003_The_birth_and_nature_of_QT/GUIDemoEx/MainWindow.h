@@ -8,11 +8,11 @@ class MainWindow : public Widget
 protected:
     static const wchar_t STYLE_NAME[];
 
-    /* Ö÷´°¿Ú¶¨Òåº¯Êı */
+    /* ä¸»çª—å£å®šä¹‰å‡½æ•° */
     BOOL defineMainWindow(HINSTANCE hInstance);
-    /* Ö÷´°¿Ú´´½¨º¯Êı */
+    /* ä¸»çª—å£åˆ›å»ºå‡½æ•° */
     void createMainWindow(HINSTANCE hInstance, const wchar_t* title);
-    /* Ö÷´°¿ÚÏûÏ¢´¦Àíº¯Êı */
+    /* ä¸»çª—å£æ¶ˆæ¯å¤„ç†å‡½æ•° */
     static LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
 public:
     MainWindow(HINSTANCE hInstance, const wchar_t* title);

@@ -1,7 +1,7 @@
 #include "MainWindow.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
-  lineEdit(this), plainEdit(this), textEdit(this) // ÉèÖÃ3¸öÎÄ±¾±à¼­Æ÷µÄ¸¸Àà
+  lineEdit(this), plainEdit(this), textEdit(this) // è®¾ç½®3ä¸ªæ–‡æœ¬ç¼–è¾‘å™¨çš„çˆ¶ç±»
 {
     resize(600, 420);
 
@@ -20,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     textEdit.move(20, 270);
     textEdit.resize(560, 130);
     textEdit.insertPlainText("QTextEdit");
-    textEdit.insertPlainText("\n"); // ÔÚ html ÖĞ "\n" ²»´ú±í»»ĞĞ
+    textEdit.insertPlainText("\n"); // åœ¨ html ä¸­ "\n" ä¸ä»£è¡¨æ¢è¡Œ
     //textEdit.insertPlainText("<img src=\"C:\\Users\\hp\\Desktop\\D.T.png\" />");
     textEdit.insertHtml("<img src=\":/res/D.T.png\" />");
 }

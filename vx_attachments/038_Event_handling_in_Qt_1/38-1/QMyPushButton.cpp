@@ -6,19 +6,19 @@ QMyPushButton::QMyPushButton(QWidget* parent, QButtonListener* listener) : QPush
     m_listener = listener;
 }
 
-void QMyPushButton::mouseReleaseEvent(QMouseEvent *e) /* µ÷ÓÃÖØĞ´µÄº¯Êı */
+void QMyPushButton::mouseReleaseEvent(QMouseEvent *e) /* è°ƒç”¨é‡å†™çš„å‡½æ•° */
 {
     if( m_listener != NULL )
     {
-        m_listener(this, e); /* µ÷ÓÃº¯ÊıÖ¸Õë */
+        m_listener(this, e); /* è°ƒç”¨å‡½æ•°æŒ‡é’ˆ */
 
-        /* ¸üĞÂ½çÃæÏà¹ØµÄÂß¼­, ÈôÎŞÏÂÃæÓï¾ä,°´Å¥°´ÏÂÈ¥ºó²»ÄÜµ¯ÆğÀ´ */
-        e->accept(); /* ±ê¼Çµ±Ç°µÄÊÂ¼şÒÑ¾­±»´¦ÀíÁË */
-        setDown(false); /* ´¦ÀíUIµÄ¸üĞÂ, false : Ê¹°´Å¥µ¯ÆğÀ´ */
+        /* æ›´æ–°ç•Œé¢ç›¸å…³çš„é€»è¾‘, è‹¥æ— ä¸‹é¢è¯­å¥,æŒ‰é’®æŒ‰ä¸‹å»åä¸èƒ½å¼¹èµ·æ¥ */
+        e->accept(); /* æ ‡è®°å½“å‰çš„äº‹ä»¶å·²ç»è¢«å¤„ç†äº† */
+        setDown(false); /* å¤„ç†UIçš„æ›´æ–°, false : ä½¿æŒ‰é’®å¼¹èµ·æ¥ */
     }
     else
     {
-        /* Ä¬ÈÏµÄQPushButtonµÄĞĞÎª */
+        /* é»˜è®¤çš„QPushButtonçš„è¡Œä¸º */
         QPushButton::mouseReleaseEvent(e);
     }
 }

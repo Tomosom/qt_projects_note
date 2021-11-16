@@ -58,7 +58,7 @@ unsigned int calculate_size(QString path)
 #endif
             {
 #if ERR
-                qDebug() << list[i]; // 仅仅取到的是条目, 不是绝对路径
+                qDebug() << list[i]; // 浠呬粎鍙栧埌鐨勬槸鏉＄洰, 涓嶆槸缁濆璺緞
                 ret += calculate_size(list[i]);
 #else
                 qDebug() << list[i].absoluteFilePath();

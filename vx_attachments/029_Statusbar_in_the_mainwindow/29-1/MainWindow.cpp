@@ -11,15 +11,15 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     QLineEdit* e = new QLineEdit();
     QPushButton* b = new QPushButton("Button");
 #if 1
-    sb->addPermanentWidget(l); // 右半部分显示
+    sb->addPermanentWidget(l); // 鍙冲崐閮ㄥ垎鏄剧ず
     sb->addPermanentWidget(e);
     sb->addPermanentWidget(b);
 #else
-    sb->addWidget(l); // 左半部分显示
+    sb->addWidget(l); // 宸﹀崐閮ㄥ垎鏄剧ず
     sb->addWidget(e);
     sb->addWidget(b);
 #endif
-    sb->showMessage("D.T.Software"); // 左半部分显示
+    sb->showMessage("D.T.Software"); // 宸﹀崐閮ㄥ垎鏄剧ず
 }
 
 MainWindow::~MainWindow()

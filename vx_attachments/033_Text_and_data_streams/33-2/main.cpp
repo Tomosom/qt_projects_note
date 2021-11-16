@@ -38,11 +38,11 @@ void data_stream_test(QString f)
 {
     QFile file(f);
 
-    if( file.open(QIODevice::WriteOnly) ) /* ´Ë´¦Ã»ÓĞ QIODevice::Text */
+    if( file.open(QIODevice::WriteOnly) ) /* æ­¤å¤„æ²¡æœ‰ QIODevice::Text */
     {
         QDataStream out(&file);
 
-        /* ½â¾ö²»Í¬Qt°æ±¾µÄÊı¾İÁ÷ÎÄ¼ş¸ñÊ½¿ÉÄÜ²»Í¬µÄÎÊÌâ */
+        /* è§£å†³ä¸åŒQtç‰ˆæœ¬çš„æ•°æ®æµæ–‡ä»¶æ ¼å¼å¯èƒ½ä¸åŒçš„é—®é¢˜ */
         out.setVersion(QDataStream::Qt_4_7);
 
         out << QString("D.T.Software");
@@ -52,14 +52,14 @@ void data_stream_test(QString f)
         file.close();
     }
 
-    if( file.open(QIODevice::ReadOnly) ) /* ´Ë´¦Ã»ÓĞ QIODevice::Text */
+    if( file.open(QIODevice::ReadOnly) ) /* æ­¤å¤„æ²¡æœ‰ QIODevice::Text */
     {
         QDataStream in(&file);
         QString dt = "";
         QString result = "";
         double value = 0;
 
-        /* ½â¾ö²»Í¬Qt°æ±¾µÄÊı¾İÁ÷ÎÄ¼ş¸ñÊ½¿ÉÄÜ²»Í¬µÄÎÊÌâ */
+        /* è§£å†³ä¸åŒQtç‰ˆæœ¬çš„æ•°æ®æµæ–‡ä»¶æ ¼å¼å¯èƒ½ä¸åŒçš„é—®é¢˜ */
         in.setVersion(QDataStream::Qt_4_7);
 
         in >> dt;

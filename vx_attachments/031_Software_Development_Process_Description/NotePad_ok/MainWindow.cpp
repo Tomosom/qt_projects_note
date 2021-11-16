@@ -89,7 +89,7 @@ bool MainWindow::initStatusBar()
         label->setMinimumWidth(200);
         label->setAlignment(Qt::AlignCenter);
 
-        sb->addPermanentWidget(new QLabel()); // ÒÔÕâÖÖ·½Ê½¼Ó·Ö¸ô·û
+        sb->addPermanentWidget(new QLabel()); // ä»¥è¿™ç§æ–¹å¼åŠ åˆ†éš”ç¬¦
         sb->addPermanentWidget(&statusLbl);
         sb->addPermanentWidget(label);
     }

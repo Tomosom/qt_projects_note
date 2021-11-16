@@ -7,31 +7,33 @@
     - 整个程序由<font color=red>一个主窗口</font>和<font color=red>多个对话框</font>组成
 
 - Qt中的主窗口
-    - Qt开发平台中aj妾支持主窗口的概念
-    - QMainWindow是Qt中主窗口的基类
-    - QMainWindow继承于<font color=red>QWidget</font>是一种<font color=red>容器类型</font>(非数据结构中的容器)的组件
+    - Qt开发平台中直接支持主窗口的概念
+    - `QMainWindow`是Qt中主窗口的基类
+    - `QMainWindow`继承于`QWidget`是一种<font color=red>容器类型</font>(非数据结构中的容器)的组件
 
     ![](vx_images/027_1.png)
 
-- QMainWindow中封装的秘密
-    1-菜单栏 2-工具栏 3-中心组件 4-停靠组件 5-状态栏
+- `QMainWindow`中封装的秘密
+    1-菜单栏（Menu Bar）
+    2-工具栏（Toolbars）
+    3-中心组件（Central Widget）
+    4-停靠组件（Dock Widgets）
+    5-状态栏（Status Bar）
     ![](vx_images/027_2.png)
 
-- QMainWindow中的组件布局 (自带的布局管理功能)
+- `QMainWindow`中的组件布局 (自带的布局管理功能)
     ![](vx_images/027_3.png)
-    > QMainWindow也是一个容器类型的组件, 并且是一个顶层的组件, 只能以窗口的形式存在, 不能作为其他组件的子组件
+    > `QMainWindow`也是一个容器类型的组件, 并且是一个顶层的组件, 只能以窗口的形式存在, 不能作为其他组件的子组件
 
 # 2. 主窗口中的菜单
 ![](vx_images/027_4.png)
 
 - 在Qt主窗口中创建菜单
-    ```c
-    QMenuBar *mb = menuBar(); // member function
+    ```cpp
+    QMenuBar *mb = menuBar(); /* member function */
     QMenu *menu = new QMenu ("File (&F)") ;
     QAction *action = new QAction ("New", NULL);
-
-    menu->addAction(action);
-
+    menu->addAction(action); /* 组合 */
     mb->addMenu(menu);
     ```
 
@@ -49,6 +51,6 @@
 # 4. 小结
 - 主窗口是与用户<font color=red>进行长时间交互的顶层窗口</font>
 - 主窗口通常是<font color=red>应用程序启动后显示的第一个窗口</font>
-- <font color=red>QMainWindow</font> 是Qt中主窗口的基类
-- <font color=red>QMainWindow</font> 是一种<font color=red>容器类型</font>的窗口组件
-- <font color=red>QMainWindow</font> 中封装了菜单栏，工具栏，状态栏等组件
+- `QMainWindow` 是Qt中主窗口的基类
+- `QMainWindow` 是一种<font color=red>容器类型</font>的窗口组件
+- `QMainWindow` 中封装了菜单栏，工具栏，状态栏等组件

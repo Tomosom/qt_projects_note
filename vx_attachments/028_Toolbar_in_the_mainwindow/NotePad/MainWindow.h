@@ -25,9 +25,9 @@ private:
     bool initViewMenu(QMenuBar* mb);
     bool initHelpMenu(QMenuBar* mb);
     bool initFileToolItem(QToolBar* tb);
-    /* ÖØÔØ : ÓÃÓÚ´´½¨²Ëµ¥À¸ */
+    /* é‡è½½ : ç”¨äºåˆ›å»ºèœå•æ  */
     bool makeAction(QAction*& action, QString text, int key);
-    /* ÖØÔØ : ÓÃÓÚ´´½¨¹¤¾ßÀ¸ */
+    /* é‡è½½ : ç”¨äºåˆ›å»ºå·¥å…·æ  */
     bool makeAction(QAction*& action, QString tip, QString icon);
 public:
     static MainWindow* NewInstance();
