@@ -35,8 +35,11 @@
     - <font color=red>addPermanentWidget</font> 在状态栏<font color=red>右半部份</font>添加组件
 
 # 2. 实验 - 状态栏的初体验
+实验目录：[29-1](vx_attachments\029_Statusbar_in_the_mainwindow\29-1)
 
 # 3. 实验 - 工具栏实战
+实验目录：[NotePad](vx_attachments\029_Statusbar_in_the_mainwindow\NotePad)
+
 代码框架
 ![](vx_images/029_e2.png)
 

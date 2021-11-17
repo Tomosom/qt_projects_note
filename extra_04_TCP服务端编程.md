@@ -1,4 +1,4 @@
-# TCP服务端编程
+# 1. TCP服务端编程
 - 网络中的服务端
     服务端是为客户端服务的，服务的内容诸如向客户端提供资源，保存客户端数据，为客户端提供功能接口，等。
 
@@ -48,9 +48,10 @@
 -  Client/Server 交互流程
     ![](_v_images_/.png)
 
-# 编程实验 QServerSocket 编程示例
+# 2. 编程实验 QServerSocket 编程示例
+实验目录：[xxx](vx_attachments\xxx)
 
-# 小结
+# 3. 小结
 - 服务端是为客户端提供功能服务，被动的接受连接
 - Qt提供了 QTcpServer 类，用于端口的连接监听
 - 监听到连接后，生成 QTcpSocket 对象与客户端通信

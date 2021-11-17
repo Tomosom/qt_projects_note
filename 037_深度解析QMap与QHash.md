@@ -56,6 +56,7 @@
         - 当Key不存在：<font color=red>插入新的键值对</font>
 
 # 2. 编程实验 QMap使用体验
+实验目录：[xxx](vx_attachments\xxx)
 
 # 3. QHash深度解析
 - <font color=red>QHash</font> 是Qt中的哈希数据结构
@@ -80,7 +81,8 @@
     }
     ```
 
-# 4. [<u>编程实验 QHash 使用体验</u>](code/037_Anatomy_of_QMap_and_QHash)
+# 4. 编程实验 QHash 使用体验
+实验目录：[xxx](vx_attachments\xxx)
 
 # 5. QMap和QHash对比分析
 - QMap 和 QHash 的接口相同，可直接替换使用
@@ -93,7 +95,9 @@
     - <font color=red>QHash</font> 的键必须提供 `operator==()` 和 `qHash(key)` 函数
     - <font color=red>QMap</font> 的键类型必须提供 `operator<()` 函数
 
-# 6. [<u>编程实验 文本编辑器中的后缀映射</u>](code/037_Anatomy_of_QMap_and_QHash)
+# 6. 编程实验 文本编辑器中的后缀映射
+实验目录：[xxx](vx_attachments\xxx)
+
 解决自动保存文件后缀问题
 
 # 7. 小结<font color=red>

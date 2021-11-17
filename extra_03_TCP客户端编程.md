@@ -1,4 +1,4 @@
-# TCP 客户端编程
+# 1. TCP 客户端编程
 - Qt中的TCP客户端编程
     ![](_v_images_/.png)
 
@@ -25,7 +25,8 @@
 -  QTcpSocket的同步编程
     ![](_v_images_/.png)
 
-# 编程实验 QTcpSocket 同步编程
+# 2. 编程实验 QTcpSocket 同步编程
+实验目录：[xxx](vx_attachments\xxx)
 
 -  QTcpSocket的异步编程
     - QTcpSocket对象通过发送信号的方式返回操作结果
@@ -38,9 +39,9 @@
     - readyRead() : 远端数据到达本机
     - bytesWritten(qint64) : 数据成功发送至系统（OS)
 
-# 编程实验 QTcpSocket 异步编程
+# 3. 编程实验 QTcpSocket 异步编程
 
-# 小结
+# 4. 小结
 - Qt提供了 QTcpSocket类，其对象可用于收发TCP数据
 - QTcpSocket默认使用异步编程的方式
 - QTcpSocket提供了辅助函数，可完成同步编程的方式

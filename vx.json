@@ -254,9 +254,9 @@
         {
             "attachment_folder": "027_mianwindow_in_app",
             "created_time": "2020-04-06T11:50:10Z",
-            "id": "125",
+            "id": "132",
             "modified_time": "2021-11-15T16:39:50Z",
-            "name": "027_主窗口-QMainWindow.md",
+            "name": "027_QMainWindow的概念及菜单栏.md",
             "signature": "53181920145254",
             "tags": [
             ]
@@ -265,7 +265,7 @@
             "attachment_folder": "028_Toolbar_in_the_mainwindow",
             "created_time": "2020-04-06T11:50:22Z",
             "id": "126",
-            "modified_time": "2021-11-03T15:38:03Z",
+            "modified_time": "2021-11-17T16:02:14Z",
             "name": "028_QMainWindow中的工具栏.md",
             "signature": "74824260349798",
             "tags": [
@@ -275,7 +275,7 @@
             "attachment_folder": "029_Statusbar_in_the_mainwindow",
             "created_time": "2020-04-06T11:50:54Z",
             "id": "127",
-            "modified_time": "2021-11-03T15:39:39Z",
+            "modified_time": "2021-11-17T16:03:38Z",
             "name": "029_QMainWindow中的状态栏.md",
             "signature": "80386242998118",
             "tags": [
@@ -285,7 +285,7 @@
             "attachment_folder": "030_Text_editing_component_in_Qt",
             "created_time": "2020-04-06T11:51:08Z",
             "id": "32",
-            "modified_time": "2021-11-03T15:41:11Z",
+            "modified_time": "2021-11-17T16:13:23Z",
             "name": "030_Qt中的文本编辑组件.md",
             "signature": "84689800228710",
             "tags": [
@@ -295,7 +295,7 @@
             "attachment_folder": "031_Software_Development_Process_Description",
             "created_time": "2020-04-06T11:51:23Z",
             "id": "33",
-            "modified_time": "2021-11-03T15:42:48Z",
+            "modified_time": "2021-11-17T16:14:17Z",
             "name": "031_软件开发流程简介.md",
             "signature": "85450009440102",
             "tags": [
@@ -305,7 +305,7 @@
             "attachment_folder": "032_File_operations_in_Qt",
             "created_time": "2020-04-06T11:51:36Z",
             "id": "34",
-            "modified_time": "2021-11-03T15:43:49Z",
+            "modified_time": "2021-11-17T16:14:42Z",
             "name": "032_Qt中的文件操作.md",
             "signature": "23396321947494",
             "tags": [
@@ -315,7 +315,7 @@
             "attachment_folder": "033_Text_and_data_streams",
             "created_time": "2020-04-06T11:51:48Z",
             "id": "35",
-            "modified_time": "2021-11-03T15:45:12Z",
+            "modified_time": "2021-11-17T16:15:01Z",
             "name": "033_文本流和数据流.md",
             "signature": "93314094559078",
             "tags": [
@@ -325,7 +325,7 @@
             "attachment_folder": "034_Buffer_operations_and_directory_operations",
             "created_time": "2020-04-06T11:52:04Z",
             "id": "36",
-            "modified_time": "2021-11-03T15:46:25Z",
+            "modified_time": "2021-11-17T16:15:48Z",
             "name": "034_缓冲区操作与目录操作.md",
             "signature": "63442597015398",
             "tags": [
@@ -335,7 +335,7 @@
             "attachment_folder": "035_Data_access_in_text_editor",
             "created_time": "2020-04-06T11:52:18Z",
             "id": "37",
-            "modified_time": "2021-11-03T15:47:26Z",
+            "modified_time": "2021-11-17T16:16:18Z",
             "name": "035_文本编辑器中的数据存取.md",
             "signature": "49556967747430",
             "tags": [
@@ -345,7 +345,7 @@
             "attachment_folder": "036_Functional_interaction_in_text_editor",
             "created_time": "2020-04-06T11:52:29Z",
             "id": "38",
-            "modified_time": "2021-11-03T15:48:06Z",
+            "modified_time": "2021-11-17T16:16:35Z",
             "name": "036_文本编辑器中的功能交互.md",
             "signature": "8028928962406",
             "tags": [
@@ -355,7 +355,7 @@
             "attachment_folder": "037_Anatomy_of_QMap_and_QHash",
             "created_time": "2020-04-06T11:52:43Z",
             "id": "39",
-            "modified_time": "2021-11-03T15:48:32Z",
+            "modified_time": "2021-11-17T16:17:33Z",
             "name": "037_深度解析QMap与QHash.md",
             "signature": "85523023884134",
             "tags": [
@@ -365,7 +365,7 @@
             "attachment_folder": "038_Event_handling_in_Qt_1",
             "created_time": "2020-04-06T11:52:55Z",
             "id": "40",
-            "modified_time": "2021-11-03T15:50:49Z",
+            "modified_time": "2021-11-17T16:18:03Z",
             "name": "038_Qt中的事件处理-上.md",
             "signature": "110240560672614",
             "tags": [
@@ -375,7 +375,7 @@
             "attachment_folder": "039_Event_handling_in_Qt_2",
             "created_time": "2020-04-06T11:53:06Z",
             "id": "41",
-            "modified_time": "2021-11-03T15:51:43Z",
+            "modified_time": "2021-11-17T16:18:21Z",
             "name": "039_Qt中的事件处理-下.md",
             "signature": "112954980003686",
             "tags": [
@@ -385,7 +385,7 @@
             "attachment_folder": "040_Anatomy_of_drag_event",
             "created_time": "2020-04-06T11:53:17Z",
             "id": "42",
-            "modified_time": "2020-04-06T11:53:17Z",
+            "modified_time": "2021-11-17T16:18:34Z",
             "name": "040_拖放事件深度剖析.md",
             "signature": "73166402973542",
             "tags": [
@@ -395,7 +395,7 @@
             "attachment_folder": "041_Implementation_of_editing_interactive_functions",
             "created_time": "2020-04-06T11:53:29Z",
             "id": "43",
-            "modified_time": "2020-04-06T11:53:29Z",
+            "modified_time": "2021-11-17T16:18:56Z",
             "name": "041_编辑交互功能的实现.md",
             "signature": "42496041512806",
             "tags": [
@@ -405,7 +405,7 @@
             "attachment_folder": "042_Text_printing_and_cursor_positioning",
             "created_time": "2020-04-06T11:53:40Z",
             "id": "44",
-            "modified_time": "2020-04-06T11:53:40Z",
+            "modified_time": "2021-11-17T16:19:09Z",
             "name": "042_文本打印与光标定位.md",
             "signature": "123280081383270",
             "tags": [
@@ -415,7 +415,7 @@
             "attachment_folder": "043_Sending_custom_events_1",
             "created_time": "2020-04-06T11:53:51Z",
             "id": "45",
-            "modified_time": "2020-04-06T11:53:51Z",
+            "modified_time": "2021-11-17T16:19:23Z",
             "name": "043_发送自定义事件-上.md",
             "signature": "102269101371238",
             "tags": [
@@ -425,7 +425,7 @@
             "attachment_folder": "044_Sending_custom_events_2",
             "created_time": "2020-04-06T11:54:02Z",
             "id": "46",
-            "modified_time": "2020-04-06T11:54:02Z",
+            "modified_time": "2021-11-17T16:19:32Z",
             "name": "044_发送自定义事件-下.md",
             "signature": "134528600731494",
             "tags": [
@@ -435,7 +435,7 @@
             "attachment_folder": "045_Create_search_dialog",
             "created_time": "2020-04-06T11:54:13Z",
             "id": "47",
-            "modified_time": "2020-04-06T11:54:13Z",
+            "modified_time": "2021-11-17T16:19:40Z",
             "name": "045_创建查找对话框.md",
             "signature": "130280878075750",
             "tags": [
@@ -445,7 +445,7 @@
             "attachment_folder": "046_Function_realization_of_search_dialog",
             "created_time": "2020-04-06T11:54:26Z",
             "id": "48",
-            "modified_time": "2020-04-06T11:54:26Z",
+            "modified_time": "2021-11-17T16:19:47Z",
             "name": "046_查找对话框的功能实现.md",
             "signature": "75906592108390",
             "tags": [
@@ -455,7 +455,7 @@
             "attachment_folder": "047_Color_palette_in_Qt",
             "created_time": "2020-04-06T11:54:47Z",
             "id": "49",
-            "modified_time": "2020-04-06T11:54:47Z",
+            "modified_time": "2021-11-17T16:19:56Z",
             "name": "047_Qt中的调色板.md",
             "signature": "20033362554726",
             "tags": [
@@ -465,7 +465,7 @@
             "attachment_folder": "048_Design_and_implementation_of_replacement_dialog",
             "created_time": "2020-04-06T11:55:01Z",
             "id": "50",
-            "modified_time": "2020-04-06T11:55:01Z",
+            "modified_time": "2021-11-17T16:20:06Z",
             "name": "048_替换对话框的设计与实现.md",
             "signature": "65031734914918",
             "tags": [
@@ -475,7 +475,7 @@
             "attachment_folder": "049_Text_editor_project_continues_to_develop",
             "created_time": "2020-04-06T11:55:11Z",
             "id": "51",
-            "modified_time": "2020-04-06T11:55:11Z",
+            "modified_time": "2021-11-17T16:20:18Z",
             "name": "049_文本编辑器项目持续开发.md",
             "signature": "33120127905638",
             "tags": [
@@ -485,7 +485,7 @@
             "attachment_folder": "050_dialog_of_About",
             "created_time": "2020-04-06T11:55:24Z",
             "id": "52",
-            "modified_time": "2020-04-06T11:55:24Z",
+            "modified_time": "2021-11-17T16:20:26Z",
             "name": "050_关于对话框_about.md",
             "signature": "121347346100070",
             "tags": [
@@ -495,7 +495,7 @@
             "attachment_folder": "051_Configuration_files_in_the_program",
             "created_time": "2020-04-06T11:55:35Z",
             "id": "53",
-            "modified_time": "2020-04-06T11:55:35Z",
+            "modified_time": "2021-11-17T16:20:36Z",
             "name": "051_程序中的配置文件.md",
             "signature": "29499470475110",
             "tags": [
@@ -505,7 +505,7 @@
             "attachment_folder": "052_Application_of_command_line_parameters",
             "created_time": "2020-04-06T11:55:47Z",
             "id": "54",
-            "modified_time": "2020-04-06T11:55:47Z",
+            "modified_time": "2021-11-17T16:20:49Z",
             "name": "052_命令行参数的应用.md",
             "signature": "109725164597094",
             "tags": [
@@ -515,7 +515,7 @@
             "attachment_folder": "053_Packaging_and_publishing_applications",
             "created_time": "2020-03-15T09:00:54Z",
             "id": "110",
-            "modified_time": "2021-11-03T15:53:22Z",
+            "modified_time": "2021-11-17T16:21:14Z",
             "name": "053【应用程序的打包与发布】.md",
             "signature": "118731711016806",
             "tags": [
@@ -525,7 +525,7 @@
             "attachment_folder": "054_Multi-page_switching_component_in_Qt",
             "created_time": "2020-04-06T11:56:26Z",
             "id": "56",
-            "modified_time": "2020-04-06T11:56:26Z",
+            "modified_time": "2021-11-17T16:21:41Z",
             "name": "054_Qt中的多页面切换组件.md",
             "signature": "140283856908134",
             "tags": [
@@ -535,7 +535,7 @@
             "attachment_folder": "055_Model_view_design_pattern_1",
             "created_time": "2020-04-06T11:56:58Z",
             "id": "57",
-            "modified_time": "2020-04-06T11:56:58Z",
+            "modified_time": "2021-11-17T16:21:55Z",
             "name": "055_模型视图设计模式-上.md",
             "signature": "140691878801254",
             "tags": [
@@ -545,7 +545,7 @@
             "attachment_folder": "056_Model_view_design_pattern_2",
             "created_time": "2020-04-06T11:57:12Z",
             "id": "58",
-            "modified_time": "2020-04-06T11:57:12Z",
+            "modified_time": "2021-11-17T16:22:04Z",
             "name": "056_模型视图设计模式-中.md",
             "signature": "86059894796134",
             "tags": [
@@ -555,7 +555,7 @@
             "attachment_folder": "057_Model_view_design_pattern_3",
             "created_time": "2020-04-06T11:57:22Z",
             "id": "59",
-            "modified_time": "2020-04-06T11:57:22Z",
+            "modified_time": "2021-11-17T16:22:14Z",
             "name": "057_模型视图设计模式-下.md",
             "signature": "55230619545446",
             "tags": [
@@ -565,7 +565,7 @@
             "attachment_folder": "058_Custom_model_class_1",
             "created_time": "2020-04-06T11:57:33Z",
             "id": "60",
-            "modified_time": "2020-04-06T11:57:33Z",
+            "modified_time": "2021-11-17T16:22:23Z",
             "name": "058_自动以模型类-上.md",
             "signature": "37466634809190",
             "tags": [
@@ -575,7 +575,7 @@
             "attachment_folder": "059_Custom_model_class_2",
             "created_time": "2020-04-06T11:57:43Z",
             "id": "61",
-            "modified_time": "2020-04-06T11:57:43Z",
+            "modified_time": "2021-11-17T16:22:31Z",
             "name": "059_自定义模型类-中.md",
             "signature": "41838911516518",
             "tags": [
@@ -585,7 +585,7 @@
             "attachment_folder": "060_Custom_model_class_3",
             "created_time": "2020-04-06T11:57:53Z",
             "id": "62",
-            "modified_time": "2020-04-06T11:57:53Z",
+            "modified_time": "2021-11-17T16:22:39Z",
             "name": "060_自定义模型类-下.md",
             "signature": "118237789777766",
             "tags": [
@@ -595,7 +595,7 @@
             "attachment_folder": "061_Delegates_in_the_model_view_1",
             "created_time": "2020-04-06T12:02:19Z",
             "id": "63",
-            "modified_time": "2020-04-06T12:02:19Z",
+            "modified_time": "2021-11-17T16:22:55Z",
             "name": "061_模型视图中的委托-上.md",
             "signature": "3343119642470",
             "tags": [
@@ -605,7 +605,7 @@
             "attachment_folder": "062_Delegates_in_the_model_view_2",
             "created_time": "2020-04-06T12:02:32Z",
             "id": "64",
-            "modified_time": "2020-04-06T12:02:32Z",
+            "modified_time": "2021-11-17T16:23:06Z",
             "name": "062_模型视图中的委托-下.md",
             "signature": "52898452303718",
             "tags": [
@@ -615,7 +615,7 @@
             "attachment_folder": "063_Anatomy_of_views_and_delegates_1",
             "created_time": "2020-04-06T12:02:46Z",
             "id": "65",
-            "modified_time": "2020-04-06T12:02:46Z",
+            "modified_time": "2021-11-17T16:23:24Z",
             "name": "063_深入解析视图与委托-上.md",
             "signature": "13036860829542",
             "tags": [
@@ -625,7 +625,7 @@
             "attachment_folder": "064_Anatomy_of_views_and_delegates_2",
             "created_time": "2020-04-06T12:03:04Z",
             "id": "66",
-            "modified_time": "2020-04-06T12:03:04Z",
+            "modified_time": "2021-11-17T16:23:36Z",
             "name": "064_深入解析视图与委托-下.md",
             "signature": "95306959384422",
             "tags": [
@@ -635,7 +635,7 @@
             "attachment_folder": "065_Anatomy_of_signals_and_slots",
             "created_time": "2020-04-06T12:03:16Z",
             "id": "67",
-            "modified_time": "2020-04-06T12:03:16Z",
+            "modified_time": "2021-11-17T16:23:45Z",
             "name": "065_深入浅出信号与槽.md",
             "signature": "7912964845414",
             "tags": [
@@ -645,7 +645,7 @@
             "attachment_folder": "066_Basic_graphics_drawing_1",
             "created_time": "2020-04-06T12:03:26Z",
             "id": "68",
-            "modified_time": "2020-04-06T12:03:26Z",
+            "modified_time": "2021-11-17T16:23:59Z",
             "name": "066_基础图形绘制-上.md",
             "signature": "1238585667430",
             "tags": [
@@ -655,7 +655,7 @@
             "attachment_folder": "067_Basic_graphics_drawing_2",
             "created_time": "2020-04-06T12:03:36Z",
             "id": "69",
-            "modified_time": "2020-04-06T12:03:36Z",
+            "modified_time": "2021-11-17T16:24:12Z",
             "name": "067_基础图形绘制-中.md",
             "signature": "129305920499558",
             "tags": [
@@ -665,7 +665,7 @@
             "attachment_folder": "068_Basic_graphics_drawing_3",
             "created_time": "2020-04-06T12:03:47Z",
             "id": "70",
-            "modified_time": "2020-04-06T12:03:47Z",
+            "modified_time": "2021-11-17T16:24:31Z",
             "name": "068_基础图形绘制-下.md",
             "signature": "38828139442022",
             "tags": [
@@ -675,7 +675,7 @@
             "attachment_folder": "069_Image_processing_and_rendering",
             "created_time": "2020-04-06T12:04:00Z",
             "id": "71",
-            "modified_time": "2020-04-06T12:04:00Z",
+            "modified_time": "2021-11-17T16:24:43Z",
             "name": "069_图像处理与绘制.md",
             "signature": "38407232647014",
             "tags": [
@@ -685,7 +685,7 @@
             "attachment_folder": "070_Text_drawing_skills",
             "created_time": "2020-04-06T12:04:11Z",
             "id": "72",
-            "modified_time": "2020-04-06T12:04:11Z",
+            "modified_time": "2021-11-17T16:24:55Z",
             "name": "070_文本绘制技巧.md",
             "signature": "82739885076326",
             "tags": [
@@ -695,7 +695,7 @@
             "attachment_folder": "071_Improvements_to_the_login_dialog",
             "created_time": "2020-04-06T12:04:21Z",
             "id": "109",
-            "modified_time": "2020-04-06T12:04:21Z",
+            "modified_time": "2021-11-17T16:25:06Z",
             "name": "071【登陆对话框改进】.md",
             "signature": "97274054405990",
             "tags": [
@@ -705,7 +705,7 @@
             "attachment_folder": "072_The_concept_of_processes_and_threads",
             "created_time": "2020-04-06T12:04:32Z",
             "id": "74",
-            "modified_time": "2020-04-06T12:04:32Z",
+            "modified_time": "2021-11-17T16:25:14Z",
             "name": "072_进行与线程的概念.md",
             "signature": "117881307492198",
             "tags": [
@@ -715,7 +715,7 @@
             "attachment_folder": "073_Multithreaded_programming_in_Qt",
             "created_time": "2020-04-06T12:04:45Z",
             "id": "75",
-            "modified_time": "2020-04-06T12:04:45Z",
+            "modified_time": "2021-11-17T16:25:28Z",
             "name": "073_Qt中的多线程编程.md",
             "signature": "102243331567462",
             "tags": [
@@ -725,7 +725,7 @@
             "attachment_folder": "074_Multi-threaded_synchronization",
             "created_time": "2020-04-06T12:04:56Z",
             "id": "76",
-            "modified_time": "2020-04-06T12:04:56Z",
+            "modified_time": "2021-11-17T16:25:41Z",
             "name": "074_多线程间的同步.md",
             "signature": "68248665419622",
             "tags": [
@@ -735,7 +735,7 @@
             "attachment_folder": "075_Mutex_between_multiple_threads_1",
             "created_time": "2020-04-06T12:05:06Z",
             "id": "77",
-            "modified_time": "2020-04-06T12:05:06Z",
+            "modified_time": "2021-11-17T16:25:51Z",
             "name": "075_多线程间的互斥-上.md",
             "signature": "28902470020966",
             "tags": [
@@ -745,7 +745,7 @@
             "attachment_folder": "076_Mutex_between_multiple_threads_2",
             "created_time": "2020-04-06T12:05:16Z",
             "id": "78",
-            "modified_time": "2020-04-06T12:05:16Z",
+            "modified_time": "2021-11-17T16:26:03Z",
             "name": "076_多线程间的互斥-下.md",
             "signature": "104669988089702",
             "tags": [
@@ -755,7 +755,7 @@
             "attachment_folder": "077_Analysis_and_Implementation_of_Banker_Algorithm",
             "created_time": "2020-04-06T12:05:29Z",
             "id": "79",
-            "modified_time": "2020-04-06T12:05:29Z",
+            "modified_time": "2021-11-17T16:26:10Z",
             "name": "077_银行家算法的分析与实现.md",
             "signature": "65929383079782",
             "tags": [
@@ -765,7 +765,7 @@
             "attachment_folder": "078_Signals_and_slots_in_multithreading_1",
             "created_time": "2020-04-06T12:05:41Z",
             "id": "80",
-            "modified_time": "2020-04-06T12:05:41Z",
+            "modified_time": "2021-11-17T16:26:18Z",
             "name": "078_多线程中的信号与槽-上.md",
             "signature": "64451914329958",
             "tags": [
@@ -775,7 +775,7 @@
             "attachment_folder": "079_Signals_and_slots_in_multithreading_2",
             "created_time": "2020-04-06T12:05:53Z",
             "id": "81",
-            "modified_time": "2020-04-06T12:05:53Z",
+            "modified_time": "2021-11-17T16:28:27Z",
             "name": "079_多线程中的信号与槽-中.md",
             "signature": "133579412959078",
             "tags": [
@@ -785,7 +785,7 @@
             "attachment_folder": "080_Signals_and_slots_in_multithreading_3",
             "created_time": "2020-04-06T12:06:03Z",
             "id": "82",
-            "modified_time": "2020-04-06T12:06:03Z",
+            "modified_time": "2021-11-17T16:28:50Z",
             "name": "080_多线程中的信号与槽-下.md",
             "signature": "104768772337510",
             "tags": [
@@ -795,7 +795,7 @@
             "attachment_folder": "081_Signal_and_slot_connection",
             "created_time": "2020-04-06T12:06:14Z",
             "id": "83",
-            "modified_time": "2020-04-06T12:06:14Z",
+            "modified_time": "2021-11-17T16:28:57Z",
             "name": "081_信号与槽的连接方式.md",
             "signature": "15240179052390",
             "tags": [
@@ -805,7 +805,7 @@
             "attachment_folder": "082_Thread_lifetime_issues",
             "created_time": "2020-04-06T12:06:24Z",
             "id": "84",
-            "modified_time": "2020-04-06T12:06:24Z",
+            "modified_time": "2021-11-17T16:29:11Z",
             "name": "082_线程的生命周期问题.md",
             "signature": "84307548139366",
             "tags": [
@@ -815,7 +815,7 @@
             "attachment_folder": "083_Another_way_to_create_threads",
             "created_time": "2020-04-06T12:06:36Z",
             "id": "85",
-            "modified_time": "2020-04-06T12:06:36Z",
+            "modified_time": "2021-11-17T16:29:20Z",
             "name": "083_另一种创建线程的方式.md",
             "signature": "54217007263590",
             "tags": [
@@ -825,7 +825,7 @@
             "attachment_folder": "084_Communication_between_multithreading_and_interface_components_1",
             "created_time": "2020-04-06T12:06:46Z",
             "id": "86",
-            "modified_time": "2020-04-06T12:06:46Z",
+            "modified_time": "2021-11-17T16:29:29Z",
             "name": "084_多线程与界面组件的通信-上.md",
             "signature": "103441627443046",
             "tags": [
@@ -835,7 +835,7 @@
             "attachment_folder": "085_Communication_between_multithreading_and_interface_components_2",
             "created_time": "2020-04-06T12:06:57Z",
             "id": "87",
-            "modified_time": "2020-04-06T12:06:57Z",
+            "modified_time": "2021-11-17T16:29:38Z",
             "name": "085_多线程与界面组件的通信-下.md",
             "signature": "85703412510566",
             "tags": [
@@ -845,7 +845,7 @@
             "attachment_folder": "extra_01_Network_Programming_Fundamentals_1",
             "created_time": "2020-04-06T12:07:09Z",
             "id": "88",
-            "modified_time": "2020-04-06T12:07:09Z",
+            "modified_time": "2021-11-17T16:30:54Z",
             "name": "extra_01_网络编程基础-上.md",
             "signature": "80558041689958",
             "tags": [
@@ -855,7 +855,7 @@
             "attachment_folder": "extra_02_Network_Programming_Fundamentals_2",
             "created_time": "2020-04-06T12:07:24Z",
             "id": "89",
-            "modified_time": "2020-04-06T12:07:24Z",
+            "modified_time": "2021-11-17T16:30:57Z",
             "name": "extra_02_网络编程基础-下.md",
             "signature": "50854047870822",
             "tags": [
@@ -865,7 +865,7 @@
             "attachment_folder": "extra_03_TCP_client_programming",
             "created_time": "2020-04-06T12:07:33Z",
             "id": "90",
-            "modified_time": "2020-04-06T12:07:33Z",
+            "modified_time": "2021-11-17T16:30:50Z",
             "name": "extra_03_TCP客户端编程.md",
             "signature": "21330442678118",
             "tags": [
@@ -875,7 +875,7 @@
             "attachment_folder": "extra_04_TCP_server_programming",
             "created_time": "2020-04-06T12:07:43Z",
             "id": "91",
-            "modified_time": "2020-04-06T12:07:43Z",
+            "modified_time": "2021-11-17T16:31:09Z",
             "name": "extra_04_TCP服务端编程.md",
             "signature": "31681313861478",
             "tags": [
@@ -885,7 +885,7 @@
             "attachment_folder": "extra_05_Design_and_Implementation_of_Text_Protocol",
             "created_time": "2020-04-06T12:07:52Z",
             "id": "92",
-            "modified_time": "2020-04-06T12:07:52Z",
+            "modified_time": "2021-11-17T16:31:18Z",
             "name": "extra_05_文本协议的设计与实现.md",
             "signature": "59834824486758",
             "tags": [
@@ -895,7 +895,7 @@
             "attachment_folder": "extra_06_Assemble_text_protocol_object_from_byte_stream",
             "created_time": "2020-04-06T12:08:04Z",
             "id": "93",
-            "modified_time": "2020-04-06T12:08:04Z",
+            "modified_time": "2021-11-17T16:31:31Z",
             "name": "extra_06_从字节流装配文本协议对象.md",
             "signature": "112993634709350",
             "tags": [
@@ -905,7 +905,7 @@
             "attachment_folder": "extra_07_Chinese_processing_of_text_protocols",
             "created_time": "2020-04-06T12:08:14Z",
             "id": "94",
-            "modified_time": "2020-04-06T12:08:14Z",
+            "modified_time": "2021-11-17T16:31:44Z",
             "name": "extra_07_文本协议的中文处理.md",
             "signature": "72775560949606",
             "tags": [
@@ -915,7 +915,7 @@
             "attachment_folder": "extra_08_Text_Protocol_Network_Application",
             "created_time": "2020-04-06T12:08:24Z",
             "id": "95",
-            "modified_time": "2020-04-06T12:08:24Z",
+            "modified_time": "2021-11-17T16:31:53Z",
             "name": "extra_08_文本协议的网络应用.md",
             "signature": "139326079201126",
             "tags": [
@@ -925,7 +925,7 @@
             "attachment_folder": "extra_09_Build_a_web_chat_program_1",
             "created_time": "2020-04-06T12:08:35Z",
             "id": "96",
-            "modified_time": "2020-04-06T12:08:35Z",
+            "modified_time": "2021-11-17T16:32:00Z",
             "name": "extra_09_打造网络聊天程序-上.md",
             "signature": "105769499717478",
             "tags": [
@@ -935,7 +935,7 @@
             "attachment_folder": "extra_10_Build_a_web_chat_program_2",
             "created_time": "2020-04-06T12:08:46Z",
             "id": "97",
-            "modified_time": "2020-04-06T12:08:46Z",
+            "modified_time": "2021-11-17T16:32:09Z",
             "name": "extra_10_打造网络聊天程序-中.md",
             "signature": "48633549778790",
             "tags": [
@@ -945,7 +945,7 @@
             "attachment_folder": "extra_11_Build_a_web_chat_program_3",
             "created_time": "2020-04-06T12:08:58Z",
             "id": "98",
-            "modified_time": "2020-04-06T12:08:58Z",
+            "modified_time": "2021-11-17T16:32:16Z",
             "name": "extra_11_打造网络聊天程序-下.md",
             "signature": "23782869004134",
             "tags": [
@@ -955,7 +955,7 @@
             "attachment_folder": "extra_12_Design_and_Implementation_of_Private_Chat_Mode",
             "created_time": "2020-04-06T12:09:12Z",
             "id": "99",
-            "modified_time": "2020-04-06T12:09:12Z",
+            "modified_time": "2021-11-17T16:32:29Z",
             "name": "extra_12_私聊模式的设计与实现.md",
             "signature": "92506640707430",
             "tags": [
@@ -965,7 +965,7 @@
             "attachment_folder": "extra_13_Implementation_of_administrator_rights",
             "created_time": "2020-04-06T12:09:23Z",
             "id": "100",
-            "modified_time": "2020-04-06T12:09:23Z",
+            "modified_time": "2021-11-17T16:32:35Z",
             "name": "extra_13_管理员权限的实现.md",
             "signature": "69227917963110",
             "tags": [
@@ -975,7 +975,7 @@
             "attachment_folder": "extra_14_Improvement_of_Internet_chat_program",
             "created_time": "2020-04-06T12:09:34Z",
             "id": "101",
-            "modified_time": "2020-04-06T12:09:34Z",
+            "modified_time": "2021-11-17T16:32:45Z",
             "name": "extra_14_网络聊天程序的完善.md",
             "signature": "8943756996454",
             "tags": [
