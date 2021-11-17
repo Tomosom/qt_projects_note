@@ -7,10 +7,8 @@ int main(int argc, char *argv[])
     MainWindow* w = MainWindow::NewInstance();
     int ret = -1;
 
-    if( w != NULL )
-    {
+    if (w != NULL) {
         w->show();
-
         ret = a.exec();
     }
 
