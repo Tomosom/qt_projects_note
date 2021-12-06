@@ -8,21 +8,22 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
-    QToolBar* tb = addToolBar("Tool Bar");
-    QAction* action = new QAction("", NULL);
+    QToolBar *tb = addToolBar("Tool Bar");
+    QAction *action = new QAction("", NULL);
 
+    /* 工具栏位置写死 */
     tb->setFloatable(false);
     tb->setMovable(false);
 
-    action->setToolTip("Open");
-    action->setIcon(QIcon(":/Res/open.png"));
+    action->setToolTip("Open"); /* 鼠标悬停提示 */
+    action->setIcon(QIcon(":/Res/open.png")); /* 需传QIcon的对象 */
 
     tb->addAction(action);
 
-    QPushButton* b = new QPushButton("Button");
-    QLabel* l = new QLabel("Label");
-    QLineEdit* e = new QLineEdit();
-
+    /* 工具栏中可添加widget对象 */
+    QPushButton *b = new QPushButton("Button");
+    QLabel *l = new QLabel("Label");
+    QLineEdit *e = new QLineEdit();
     tb->addWidget(b);
     tb->addWidget(l);
     tb->addWidget(e);
@@ -30,5 +31,4 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
 MainWindow::~MainWindow()
 {
-    
 }

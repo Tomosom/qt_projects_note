@@ -394,5 +394,4 @@ bool MainWindow::makeAction(QAction*& action, QString tip, QString icon)
 
 MainWindow::~MainWindow()
 {
-    
 }

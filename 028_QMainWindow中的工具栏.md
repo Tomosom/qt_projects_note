@@ -1,6 +1,6 @@
 # 1. 主窗口中的工具栏
 
-- 工具栏的概念和意义
+- <font color=red>工具栏</font>的概念和意义
     - 应用程序中<font color=red>集成各种功能</font>实现快捷使用的一个区域
     - 工具栏并<font color=red>不是</font>应用程序中<font color=red>必须</font>存在的组件
     - 工具栏中的元素<font color=red>可以是各种窗口组件</font>
@@ -26,11 +26,12 @@
 
 - `QToolBar`的关键成员函数
     - `void setFloatable(bool floatable)` /* 当前创建的工具栏能否悬浮 */
-    - `void setMovable(bool movable)` /* 工具栏停留在上下左右的边上 */
-    - `void setIconSize(const QSize& iconSize)` /* 设置图标按钮大小 */
+    - `void setMovable(bool movable)` /* 工具栏能否停留吸附在上下左右的边上 */
+    - `void setIconSize(const QSize &iconSize)` /* 设置图标按钮大小 */
 
-# 2. 实验 - 工具栏的初体验
+# 2. 实验 - 工具栏可包含的内容
 实验目录：[28-1](vx_attachments\028_Toolbar_in_the_mainwindow\28-1)
+![](vx_images/028_e1.png)
 
 - `QToolBar`中可以加入任意的`QWidget`组件
     ```c
@@ -62,8 +63,8 @@
     - `makeAction(action, "New(&N)", Qt::CTRL + Qt::Key_N)`
         > 多一个 '&' 表示单击菜单栏后, 按相应的按键可打开相应的功能
 
-- 代码结构
-    ![](vx_images/028_e1.png)
+- 代码结构（框架）
+    ![](vx_images/028_e2.png)
 
 
 # 4. 小结
