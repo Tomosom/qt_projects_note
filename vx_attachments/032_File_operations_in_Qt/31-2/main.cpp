@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
 
     QFileInfo info(tempFile);
 
-    qDebug() << info.isFile();
-    qDebug() << info.path();
-    qDebug() << info.fileName();
+    qDebug() << "isFile   : " << info.isFile();
+    qDebug() << "path     : " << info.path();
+    qDebug() << "fileName : " << info.fileName();
     
     return a.exec();
 }
