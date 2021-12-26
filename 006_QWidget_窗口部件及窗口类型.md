@@ -94,7 +94,7 @@ l.setText ( "This is a Label control.");
 
 # 7. 小结
 - Qt以<font color=red>组件对象</font>的方式<font color=red>构建图形用户界面</font>
-- QWidget类是所有<font color=red>用户界面组件的父类</font>
-- QWidget类对象常作为<font color=red>父组件</font>或<font color=red>顶级组件</font>使用
+- `QWidget`类是所有<font color=red>用户界面组件的父类</font>
+- `QWidget`类对象常作为<font color=red>父组件</font>或<font color=red>顶级组件</font>使用
 - Qt中可以根据需要<font color=red>定制窗口式样</font>
-- QLabel用于<font color=red>显示</font>一个提示性的<font color=red>字符串</font>
+- `QLabel`用于<font color=red>显示</font>一个提示性的<font color=red>字符串</font>
