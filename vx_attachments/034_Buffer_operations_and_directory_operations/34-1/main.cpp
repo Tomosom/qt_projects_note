@@ -4,26 +4,19 @@
 #include <QDataStream>
 #include <QDebug>
 
-void write_buffer(int type, QBuffer& buffer)
+void write_buffer(int type, QBuffer &buffer)
 {
-    if( buffer.open(QIODevice::WriteOnly) )
-    {
+    if (buffer.open(QIODevice::WriteOnly)) {
         QDataStream out(&buffer);
 
         out << type;
-
-        if( type == 0 )
-        {
+        if (type == 0) { /* 字符串 */
             out << QString("D.T.Software");
             out << QString("3.1415");
-        }
-        else if( type == 1 )
-        {
+        } else if (type == 1) { /* 整型 */
             out << 3;
             out << 1415;
-        }
-        else if( type == 2 )
-        {
+        } else if (type == 2) { /* 浮点数 */
             out << 3.1415;
         }
 
@@ -31,17 +24,15 @@ void write_buffer(int type, QBuffer& buffer)
     }
 }
 
-void read_buffer(QBuffer& buffer)
+void read_buffer(QBuffer &buffer)
 {
-    if( buffer.open(QIODevice::ReadOnly) )
-    {
+    if (buffer.open(QIODevice::ReadOnly)) {
         int type = -1;
         QDataStream in(&buffer);
 
         in >> type;
 
-        if( type == 0 )
-        {
+        if (type == 0) {
             QString dt = "";
             QString pi = "";
 
@@ -50,9 +41,7 @@ void read_buffer(QBuffer& buffer)
 
             qDebug() << dt;
             qDebug() << pi;
-        }
-        else if( type == 1 )
-        {
+        } else if (type == 1) {
             int a = 0;
             int b = 0;
 
@@ -61,9 +50,7 @@ void read_buffer(QBuffer& buffer)
 
             qDebug() << a;
             qDebug() << b;
-        }
-        else if( type == 2 )
-        {
+        } else if (type == 2) {
             double pi = 0;
 
             in >> pi;
@@ -81,8 +68,14 @@ int main(int argc, char *argv[])
     QByteArray array;
     QBuffer buffer(&array);
 
-    write_buffer(2, buffer);
+    write_buffer(0, buffer);
     read_buffer(buffer);
     
+    write_buffer(1, buffer);
+    read_buffer(buffer);
+
+    write_buffer(2, buffer);
+    read_buffer(buffer);
+
     return a.exec();
 }
