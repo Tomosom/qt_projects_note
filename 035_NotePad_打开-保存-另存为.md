@@ -14,8 +14,9 @@
 ![](vx_images/035_1.png)
 
 # 3. 文件保存操作
-定义成员变量<font color=red>m_filePath</font>, 用于标记数据来源。
+定义成员变量 <font color=red>m_filePath</font>, 用于标记数据来源。
 ![](vx_images/035_2.png)
+> 将数据源显示在标题栏中。
 
 # 4. 文件另存为操作
 ![](vx_images/035_3.png)
@@ -24,12 +25,13 @@
 实验目录：[NotePad](vx_attachments\035_Data_access_in_text_editor\NotePad)
 UI与工程文件分离
 
-- 思考
-如何判断是否存在未保存的数据？
-
 # 6. 小结
 - Qt项目中尽量将<font color=red>界面代码</font>与<font color=red>功能代码</font>分离开
 - Qt项目开发时尽量<font color=red>复用平台中提供的相关组件</font>
 - Qt项目中的多数情况都是<font color=red>编写相应的槽函数</font>
     - 槽函数用于相应用户操作
     - 槽函数是具体功能的触发点
+
+# 7. 遗留
+思考：如何判断是否存在未保存的数据？
+> bug：打开一个新文件，会在没有提示的情况下将编辑过的窗口清空并显示新文件内容
