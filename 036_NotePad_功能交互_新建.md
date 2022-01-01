@@ -11,6 +11,7 @@ void cursorPositionChanged()
 void redoAvailable(bool)
 void undoAvailable(bool)
 ```
+> 此节使用 `textChanged()` 信号。
 
 - 解决方案
     1. 定义槽函数 `void onTextChanged()`
