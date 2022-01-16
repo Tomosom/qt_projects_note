@@ -10,8 +10,7 @@ Widget::Widget(QWidget *parent)
 
 bool Widget::event(QEvent* e)
 {
-    if( e->type() == QEvent::KeyPress )
-    {
+    if (e->type() == QEvent::KeyPress) {
         qDebug() << "Widget::event";
     }
 
@@ -21,11 +20,9 @@ bool Widget::event(QEvent* e)
 void Widget::keyPressEvent(QKeyEvent* e)
 {
     qDebug() << "Widget::keyPressEvent";
-
     QWidget::keyPressEvent(e);
 }
 
 Widget::~Widget()
 {
-    
 }
