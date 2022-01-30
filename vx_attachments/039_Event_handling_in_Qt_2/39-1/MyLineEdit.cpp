@@ -14,13 +14,15 @@ bool MyLineEdit::event(QEvent *e)
         qDebug() << "MyLineEdit::event";
     }
 
-    return QLineEdit::event(e);
+    return QLineEdit::event(e); /* 调用父类的事件处理函数 */
+    //return 0;
 }
 
 void MyLineEdit::keyPressEvent(QKeyEvent *e)
 {
     qDebug() << "MyLineEdit::keyPressEvent";
-    QLineEdit::keyPressEvent(e);
+    QLineEdit::keyPressEvent(e); /* 调用父类的事件处理函数，里边会设置当前事件已被处理 */
 
-    // e->ignore();
+    // 告诉QT平台当前的事件没有处理，会自动给父组件处理
+    e->ignore();
 }

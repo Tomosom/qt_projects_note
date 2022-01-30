@@ -10,10 +10,10 @@ class Widget : public QWidget
     
     MyLineEdit myLineEdit;
 public:
-    Widget(QWidget* parent = 0);
-    bool event(QEvent* e);
-    void keyPressEvent(QKeyEvent* e);
-    bool eventFilter(QObject* obj, QEvent* e);
+    Widget(QWidget *parent = 0);
+    bool event(QEvent *e);
+    void keyPressEvent(QKeyEvent *e);
+    bool eventFilter(QObject *obj, QEvent *e);
     ~Widget();
 };
 

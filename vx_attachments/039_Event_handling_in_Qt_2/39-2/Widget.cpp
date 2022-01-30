@@ -3,41 +3,37 @@
 #include <QEvent>
 #include <QKeyEvent>
 
-Widget::Widget(QWidget *parent)
-    : QWidget(parent), myLineEdit(this)
+Widget::Widget(QWidget *parent) : QWidget(parent), myLineEdit(this)
 {
-    myLineEdit.installEventFilter(this);
+    myLineEdit.installEventFilter(this); // 安装事件过滤器对象
 }
 
-bool Widget::event(QEvent* e)
+bool Widget::event(QEvent *e)
 {
-    if( e->type() == QEvent::KeyPress )
-    {
+    if (e->type() == QEvent::KeyPress) {
         qDebug() << "Widget::event";
     }
 
     return QWidget::event(e);
 }
 
-void Widget::keyPressEvent(QKeyEvent* e)
+void Widget::keyPressEvent(QKeyEvent *e)
 {
     qDebug() << "Widget::keyPressEvent";
 
     QWidget::keyPressEvent(e);
 }
 
-bool Widget::eventFilter(QObject* obj, QEvent* e)
+bool Widget::eventFilter(QObject *obj, QEvent *e)
 {
     bool ret = true;
 
-    if( (obj == &myLineEdit) && (e->type() == QEvent::KeyPress) )
-    {
+    if ((obj == &myLineEdit) && (e->type() == QEvent::KeyPress)) {
         qDebug() << "Widget::eventFilter";
-
-        QKeyEvent* evt = dynamic_cast<QKeyEvent*>(e);
-
-        switch(evt->key())
-        {
+        //ret = false;
+#if 1
+        QKeyEvent *evt = dynamic_cast<QKeyEvent*>(e);
+        switch (evt->key()) {
         case Qt::Key_0:
         case Qt::Key_1:
         case Qt::Key_2:
@@ -48,15 +44,14 @@ bool Widget::eventFilter(QObject* obj, QEvent* e)
         case Qt::Key_7:
         case Qt::Key_8:
         case Qt::Key_9:
-            ret = false;
+            ret = false; // 若是可接受的按键就传递下去
             break;
         default:
-            break;
+            break; // 若不可接受的按键就没收掉 (bug:中文切英文的时候仍会传下去?)
         }
-    }
-    else
-    {
-        ret = QWidget::eventFilter(obj, e);
+#endif
+    } else {
+        ret = QWidget::eventFilter(obj, e); // 调用父类的函数
     }
 
     return ret;
@@ -64,5 +59,5 @@ bool Widget::eventFilter(QObject* obj, QEvent* e)
 
 Widget::~Widget()
 {
-    
+
 }
