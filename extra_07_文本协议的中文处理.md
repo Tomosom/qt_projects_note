@@ -4,11 +4,11 @@
 
 # 2. 文本协议的中文处理
 - 回顾协议设计
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
     数据区存储的是文本字符（QString), 因此，从设计的角度，只要Qt字符串支持中文，文本协议的实现就支持中文。
 
 - 下面的代码有相同的输出吗？
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 # 3. 编程实验 中文支持验证
 实验目录：[xxx](vx_attachments\xxx)
@@ -21,7 +21,7 @@
     - Lenqth: 4个ASCII字符（存储数据区字节数）
     - 数据区：使用 UTF-8 方式进行编码
 
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 编码小知识
     - ASCII

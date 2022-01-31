@@ -3,13 +3,13 @@
     如何实现聊天室中的私聊模式?
 
 - 私聊模式：用户在聊天时能够指定消息的接收者
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 聊天界面的改动
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - Qt中的列表类 QListWidget
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 -  USER消息设计
     - 新增USER消息，用于传输当前的磁用户

@@ -13,7 +13,7 @@
         - 在客户端接收到消息时（MSGA), 闪烁窗口
         - void QWidget::activateWindow()
 
-        ![](_v_images_/.png)
+        ![](vx_images/.png)
 
 - 系统消息
     - 用户登录或退出时通知所有在线客户端
@@ -38,7 +38,7 @@
     - 完善 QLoginQialog 使其能够对用户名进行合法性验证
         - 解决方案
 
-        ![](_v_images_/.png)
+        ![](vx_images/.png)
 
 - 快捷发送
     - 按回车键发送输入框中的消息

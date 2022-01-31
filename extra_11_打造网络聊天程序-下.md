@@ -11,16 +11,16 @@
         - 公聊消息，私聊消息
 
 - 文本消息传输模型（公聊模式)
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 文本消息传输模型（私聊模式)
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 -  用户登录/注册流程
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 -  服务端认证流程
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 简化设计
     - 为了重点突出基于 TCP 的消息传输：

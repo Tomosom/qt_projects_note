@@ -6,7 +6,7 @@
     经常听说的 C/S 网络结构是什么?
 
 - Client / Server 软件架构简介
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - Client / Server软件架构的特点
     - 服务端被动接受连接（服务端无法主动连接客户端）
@@ -25,14 +25,14 @@
     - B/S 中的客户端与服务端通常采用http协议进行通信
 
 -  Qt中的TCP服务端编程
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - Qt中的TCP服务端编程
     - Qt提供了 QTcpServer类（封装了 TCP协议细节）
     - 将QTcpServer的对象当作黑盒使用，进行连接监听
     - 每一个连接生成一个QTcpSocket对象进行通信
 
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 -  QTcpServer的使用方式
     1. 监听本机地址的端口（ listen() )
@@ -46,7 +46,7 @@
     - 监听到连接后，生成QTcpSocket对象与客户端通信
 
 -  Client/Server 交互流程
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 # 2. 编程实验 QServerSocket 编程示例
 实验目录：[xxx](vx_attachments\xxx)

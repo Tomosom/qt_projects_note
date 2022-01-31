@@ -16,13 +16,13 @@
     - 封账号：禁止某个用户（ID)登录聊天室
 
 - 管理员相关功能设计
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 管理交互流程
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 引入管理员后的登录交互
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 控制消息设计
     - ADMN消息（管理员 ⇒ 服务端）

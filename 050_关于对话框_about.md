@@ -8,7 +8,7 @@
     - ...
 
 - 经典设计方案
-![](_v_images_/.png)
+![](vx_images/.png)
 
 # 2. 编程实验 关于对话框的创建
 实验目录：[xxx](vx_attachments\xxx)

@@ -1,13 +1,13 @@
 # 1. TCP 客户端编程
 - Qt中的TCP客户端编程
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 -  Qt中的TCP客户端编程
     - 对于Qt编程而言，网络只是数据传输的通道
     - Qt提供了 QTcpSocket类（封装了 TCP协议细节）
     - 将QTcpSocket的对象当作黑盒使用，进行数据收发
 
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 -  QTcpSocket的使用方式
     1. 连接服务端主机 ( connectToHost() )
@@ -23,7 +23,7 @@
         - waitForBytesWritten() / waitForReadyRead()
 
 -  QTcpSocket的同步编程
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 # 2. 编程实验 QTcpSocket 同步编程
 实验目录：[xxx](vx_attachments\xxx)

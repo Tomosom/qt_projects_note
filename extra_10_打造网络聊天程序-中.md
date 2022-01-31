@@ -1,6 +1,6 @@
 # 1. 打造网络聊天程序（中)
 - 在主窗口类中使用客户端类
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 初步设计方案
     - 主窗口中通过 ClientDemo 进行消息发送
@@ -9,7 +9,7 @@
     - 最终，将网络消息显示在文本控件中
 
 - 连接服务端流程
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 两个关键的操作
     - 连接成功
@@ -28,7 +28,7 @@
 实验目录：[xxx](vx_attachments\xxx)
 
 - 服务端设计初步
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 设计要素分析
     - 一般情况下，聊天服务端只负责消息传递
@@ -40,7 +40,7 @@
         - 客户端的连接（QTcpSokcet对象）有唯一标识符（ID)
         - 可以通过 ID 查找对应的 QTcpSocket 对象，进而发送消息
 
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 # 3. 编程实验 聊天服务端初步开发
 

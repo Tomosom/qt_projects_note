@@ -8,11 +8,11 @@
         - bytesAvailable() 获取接收缓冲区中数据的字节数
 
 - 小知识
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 -  TCP应用编程中的 "问题"
     数据接收端无法知道数据的发送方式！！
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
     接收端无法知道 "ABC" 是分开3次进行发送的！
 
 - 网络程序设计中的期望
@@ -35,12 +35,12 @@
         - 数据区：字符数据（变长区域）
 
 - 协议设计示例
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
     因此：
     - 数据消息至少8个字符（数据类型 + 数据长度)
     - 通过计算数据消息的总长度，能够避开数据粘连的问题
 
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 # 2. 编程实验 class TextMessage;
 实验目录：[xxx](vx_attachments\xxx)

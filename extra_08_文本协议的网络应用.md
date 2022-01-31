@@ -1,6 +1,6 @@
 # 1. 文本协议的网络应用
 - 将TextMessage对象作为网络传输的基本单位
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
     ```c
     TextMessage message("Demo", "狄泰软件学院！"）；
     ClientDemo client;
@@ -10,7 +10,7 @@
     ```
 
 - 架构设计
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 实现概要
     - 客户端提供发送 TextMessage 对象的成员函数
@@ -27,7 +27,7 @@
 
 - 解决方案初步
     为每一个与客户端通信的TcpSocket对象分配一个专用的装配对象！！
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 -  Qt中的QMap容器
     - QMap是一种基于键值对（Key-Value)的字典数据结构

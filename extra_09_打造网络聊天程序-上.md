@@ -1,15 +1,15 @@
 # 1. 打造网络聊天程序(上)
 - 界面设计
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 -  界面实现方案
     - 使用不同Layout对组件进行嵌套布局
 
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 - 代码复用 - 登录对话框
     只需要将代码实现中的文本字符串替换为中文，代码逻辑几乎无需改动！
-    ![](_v_images_/.png)
+    ![](vx_images/.png)
 
 # 2. 编程实验 创建聊天界面
 实验目录：[xxx](vx_attachments\xxx)
