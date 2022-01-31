@@ -8,10 +8,10 @@
     - ...
 
 - 经典设计方案
-![](vx_images/.png)
+![](vx_images/050_1.png)
 
 # 2. 编程实验 关于对话框的创建
-实验目录：[xxx](vx_attachments\xxx)
+实验目录：[NotePad](vx_attachments\050_dialog_of_About\NotePad)
 
 # 3. 开发目标
 - [x] 自定义文本编辑框中的字体和大小
@@ -35,7 +35,7 @@
     - QDesktopServices::openUrl (QUrl("path"))
 
 # 7. 编程实验 项目持续开发
-实验目录：[xxx](vx_attachments\xxx)
+实验目录：[NotePad](vx_attachments\050_dialog_of_About\NotePad)
 
 # 8. 小结
 - 关于对话框用于标识软件自身的信息
