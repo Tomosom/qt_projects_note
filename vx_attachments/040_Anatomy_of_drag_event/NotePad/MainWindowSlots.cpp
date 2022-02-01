@@ -252,7 +252,7 @@ void MainWindow::dropEvent(QDropEvent* e)
     if( e->mimeData()->hasUrls() )
     {
         QList<QUrl> list = e->mimeData()->urls();
-        QString path = list[0].toLocalFile();
+        QString path = list[0].toLocalFile(); // 取第一个文件，因本程序是单文本编辑器
         QFileInfo fi(path);
 
         if( fi.isFile() )
