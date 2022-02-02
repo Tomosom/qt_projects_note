@@ -305,6 +305,7 @@ QAction* MainWindow::findMenuBarAction(QString text)
 
     for(int i=0; i<list.count(); i++)
     {
+        // c++语法，目前只有一个菜单栏，因此只有一个对象可以dynamic_cast成功。
         QMenu* menu = dynamic_cast<QMenu*>(list[i]);
 
         if( menu != NULL )
@@ -332,6 +333,7 @@ QAction* MainWindow::findToolBarAction(QString text)
 
     for(int i=0; i<list.count(); i++)
     {
+        // c++语法，目前只有一个工具栏，因此只有一个对象可以dynamic_cast成功。
         QToolBar* toolBar = dynamic_cast<QToolBar*>(list[i]);
 
         if( toolBar != NULL )
