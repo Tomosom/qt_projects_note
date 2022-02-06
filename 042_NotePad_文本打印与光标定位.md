@@ -5,10 +5,13 @@
 
     ![](vx_images/042_1.png)
 
+    > 在QT里边所有的架构都遵循MVC的思想，即，界面和界面里边的数据相分离的思想。`QPIainTextEdit`的内部有一个指针，这个指针指向一个`QTextDocument` 的对象，这个对象就负责存储文本数据。
+    > `QPIainTextEdit`的内部有一个指针，这个指针指向一个`QTextCursor`的对象。`QTextCursor`这个类负责光标的一切行为。
+
 - `QTextDocument` 是表示文本以及文本属性的数据类
     - <font color=red>设置文本的属性</font>：排版，字体，标题，等
     - <font color=red>获取文本参数</font>：行数，文本宽度，文本信息，等
-    - <font color=red>实现标准操作</font>：撤销，重做，查找，打印，等
+    - <font color=red>实现标准操作</font>：撤销，重做，查找，<font color=red>打印</font>，等
     - ...
 
 - 打印功能的实现步骤
@@ -41,7 +44,7 @@
 实验目录：[NotePad](vx_attachments\042_Text_printing_and_cursor_positioning\NotePad)
 
 # 5. 小结
-- `QPIainTextEdit` 将数据和界面分开设计
+- `QPIainTextEdit` 将数据和界面分开设计（MVC思想）
 - `QTextDocument` 用于存储数据信息
 - `QTextCursor` 用于提供光标相关的信息
-- 可以通过光标的字符位置信息计算坐标
+- <font color=red>可以通过光标的字符位置信息计算坐标</font>
