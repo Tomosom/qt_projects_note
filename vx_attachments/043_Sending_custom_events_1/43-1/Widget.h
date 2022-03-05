@@ -8,12 +8,12 @@ class Widget : public QWidget
 {
     Q_OBJECT
     
-    QPushButton m_pushButton;
+    QPushButton m_sendEventButton;
+    QPushButton m_postEventButton;
 
-    void testSendEvent();
-    void testPostEvent();
 protected slots:
-    void onButtonClicked();
+    void onSendEventButtonClicked();
+    void onPostEventButtonClicked();
 public:
     Widget(QWidget *parent = 0);
     bool event(QEvent* evt);

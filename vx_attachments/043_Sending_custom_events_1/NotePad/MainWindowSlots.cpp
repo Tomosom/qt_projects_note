@@ -395,6 +395,7 @@ void MainWindow::onCursorPositionChanged()
 
 void MainWindow::onEditDelete()
 {
+    // Qt::NoModifier指的是我们单纯地按下的只是一个键，不包括ctrl,alt等其他功能键
     QKeyEvent keyPress(QEvent::KeyPress, Qt::Key_Delete, Qt::NoModifier);
     QKeyEvent keyRelease(QEvent::KeyRelease, Qt::Key_Delete, Qt::NoModifier);
 
