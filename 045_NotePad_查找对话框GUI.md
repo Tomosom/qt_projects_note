@@ -22,6 +22,7 @@
 
 # 2. 编程实验 查找对话框界面开发
 实验目录：[NotePad](vx_attachments\045_Create_search_dialog\NotePad)
+注：QT智能指针`QSharedPointer`的使用-c++深度解析
 
 # 3. 小结
 - 查找对话框可以作用一个<font color=red>可复用的软件部件</font>进行开发
