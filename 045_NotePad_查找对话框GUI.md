@@ -12,7 +12,7 @@
         ![](vx_images/045_1.png)
 
     - 附加需求
-        - <font color=red>点击关闭按钮后隐藏</font>
+        - <font color=red>点击关闭按钮后隐藏</font>（重写`event()`）
 
 - 查找对话框的架构与设计
     ![](vx_images/045_2.png)
