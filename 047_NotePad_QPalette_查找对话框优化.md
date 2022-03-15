@@ -40,6 +40,13 @@
 # 3. 编程实验 查找功能的优化
 实验目录：[NotePad](vx_attachments\047_Color_palette_in_Qt\NotePad)
 
+```cpp
+QPalette p = mainEditor.palette();
+p.setColor(QPalette::Inactive, QPalette::Highlight, p.color(QPalette::Active, QPalette::Highlight));
+p.setColor(QPalette::Inactive, QPalette::HighlightedText, p.color(QPalette::Active, QPalette::HighlightedText));
+mainEditor.setPalette(p);
+```
+
 # 4. 小结
 - `QPalette` 是 Qt 中<font color=red>标识颜色信息</font>的数据结构
 - 窗口组件内部都拥有 `QPalette` 对象
