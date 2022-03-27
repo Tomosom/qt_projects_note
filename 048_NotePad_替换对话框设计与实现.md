@@ -12,11 +12,17 @@
 
 - 替换对话框的设计与实现
 ![](vx_images/048_2.png)
+> <font color=red>继承查找对话框</font>
+
+# 2. 编程实验 替换界面的实现
+实验目录：[NotePad](vx_attachments\048_Design_and_implementation_of_replacement_dialog\NotePad)
 
 - 替换对话框的界面布局
 ![](vx_images/048_3.png)
 
-# 2. 编程实验 替换对话框的创建
+> 同`FindDialog`，使用智能指针`QSharedPointer`
+
+# 3. 编程实验 替换功能的实现
 实验目录：[NotePad](vx_attachments\048_Design_and_implementation_of_replacement_dialog\NotePad)
 
 - 替换算法流程图
@@ -25,11 +31,10 @@
 - `Mainwindows` 与 `ReplaceDialog` 之间的关系图
 ![](vx_images/048_5.png)
 
-# 3. 编程实验 替换功能的实现
-实验目录：[NotePad](vx_attachments\048_Design_and_implementation_of_replacement_dialog\NotePad)
+> 总结：MainWindow和FindDialog、QPlainTextEdit、ReplaceDialog之间是整体与局部的关系，这种整理与部分的关系在面向对象里边叫做组合。FindDialog、ReplaceDialog和QPlainTextEdit之间并不是非常严重的依赖关系，这样的弱耦合关系，在面向对象里边叫做聚合。
 
 # 4. 小结
 - 替换对话框的功能<font color=red>涵盖了</font>查找对话框的功能
 - 替换对话框可以<font color=red>继承自查找对话框</font>
 - 替换功能的实现是<font color=red>基于查找算法完成的</font>
-- 替换对话框是<font color=red>一个可复用的软件部件</font>
+- 替换对话框是一个<font color=red>可复用</font>的软件部件
