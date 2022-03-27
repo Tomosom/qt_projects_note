@@ -9,7 +9,7 @@
     - <font color=red>确定后光标跳转到指定行</font>
 
 - 行间跳转算法设计
-    1. 通过输入对话框获取目标行号
+    1. 通过输入对话框获取目标行号（使用QT提供的标准对话框）
     2. <font color=red>查找换行符的位置</font>计算目标行第一个字符的下标
     3. 通过 `QTextCursor` 定位到目标行
 
@@ -27,6 +27,18 @@
 
 # 5. 编程实验 可见性设置
 实验目录：[NotePad](vx_attachments\049_Text_editor_project_continues_to_develop\NotePad)
+
+```cpp
+const QObjectList& list = children();
+for (int i=0; i<list.count(); i++) {
+    QToolBar* tb = dynamic_cast<QToolBar*>(list[i]);
+    if (tb != NULL) {
+		// process
+        break;
+    }
+}
+```
+> 查找工具栏的方法：`dynamic_cast`，父类向子类强转的技巧，非空表示成功。
 
 # 6. 小结
 - 通过输入对话框获取目标行并<font color=red>实现行间跳转</font>
