@@ -16,7 +16,7 @@
     - <font color=red>私有二进制文件格式</font>
 
 - Qt中的解决方案
-    - 通过<font color=red>二进制数据流</font>将状态参数直接存储于文件中
+    - 通过<font color=red>二进制数据流</font>将状态参数直接存储于文件中（`QDataStream`）
     - 优势：
         - <font color=red>参数的存储和读取简单高效</font>，易于编码实现
         - 最终文件为二进制格式，<font color=red>不易被恶意修改</font>
@@ -26,6 +26,19 @@
 
 # 2. 编程实验 文本编辑器的状态配置
 实验目录：[NotePad](vx_attachments\051_Configuration_files_in_the_program\NotePad)
+
+注：`QDataStream`需指定版本号，方便指定文件的移植
+```cpp
+QDataStream in(&file);
+in.setVersion(QDataStream::Qt_4_7);
+
+QDataStream out(&file);
+out.setVersion(QDataStream::Qt_4_7);
+```
+
+提取函数：`dynamic_cast`方式查找工具栏的函数：`QToolBar* toolBar();`
+
+> `restore()`成员函数暂未用到。
 
 # 3. 小结
 - 应用程序中在退出时保存程序状态（<font color=red>用户配置</font>）
